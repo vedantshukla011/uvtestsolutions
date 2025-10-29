@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -26,21 +27,25 @@ const CTASection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all font-semibold"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Request Quote
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary transition-all font-semibold"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              Call Us Now
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all font-semibold"
+              >
+                <Mail className="w-5 h-5 mr-2" />
+                Request Quote
+              </Button>
+            </Link>
+            <a href="tel:+15551234567">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary transition-all font-semibold"
+              >
+                <Phone className="w-5 h-5 mr-2" />
+                Call Us Now
+              </Button>
+            </a>
           </div>
 
           {/* Contact Info */}

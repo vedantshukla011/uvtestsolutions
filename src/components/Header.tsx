@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -24,16 +25,18 @@ const Header = () => {
             <a href="#about" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
               About
             </a>
-            <a href="#contact" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+            <Link to="/contact" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="default" size="sm">
-              Get Quote
-            </Button>
+            <Link to="/contact">
+              <Button variant="default" size="sm">
+                Get Quote
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Zap, Award } from "lucide-react";
 import heroImage from "@/assets/hero-instruments.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -46,9 +47,11 @@ const Hero = () => {
               Explore Products
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="hero-outline" size="lg">
-              Contact Sales
-            </Button>
+            <Link to="/contact">
+              <Button variant="hero-outline" size="lg">
+                Contact Sales
+              </Button>
+            </Link>
           </div>
 
           {/* Trust Indicators */}
