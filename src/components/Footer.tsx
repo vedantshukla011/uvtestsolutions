@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
-              MeasureTech
+              UV Test Solutions
             </h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
               Leading provider of precision electronic measuring instruments for industrial and laboratory applications.
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2024 MeasureTech. All rights reserved.
+              © 2024 UV Test Solutions. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">

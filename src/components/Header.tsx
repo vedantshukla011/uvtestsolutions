@@ -10,7 +10,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-              MeasureTech
+              UV Test Solutions
             </span>
           </Link>
 
