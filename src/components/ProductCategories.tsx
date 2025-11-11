@@ -2,37 +2,44 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Activity, Gauge, Radio, Thermometer, Zap, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const categories = [
   {
     icon: Activity,
     title: "Oscilloscopes",
     description: "High-performance digital and analog oscilloscopes for precise waveform analysis",
+    link: "/products/oscilloscopes"
   },
   {
     icon: Gauge,
     title: "Multimeters",
     description: "Professional-grade digital multimeters for accurate voltage, current, and resistance measurements",
+    link: "/products/multimeters"
   },
   {
     icon: Radio,
     title: "Signal Generators",
     description: "Advanced signal generation equipment for testing and calibration applications",
+    link: "/products/signal-generators"
   },
   {
     icon: Thermometer,
     title: "Temperature Sensors",
     description: "Industrial temperature measurement solutions with high accuracy and reliability",
+    link: "/products/temperature-sensors"
   },
   {
     icon: Zap,
     title: "Power Supplies",
     description: "Precision programmable power supplies for laboratory and industrial use",
+    link: "/products/power-supplies"
   },
   {
     icon: Cpu,
     title: "Logic Analyzers",
     description: "Digital logic analysis tools for embedded systems development and debugging",
+    link: "/products/logic-analyzers"
   },
 ];
 
@@ -69,10 +76,12 @@ const ProductCategories = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="ghost" className="group/btn p-0 h-auto font-semibold text-primary hover:text-accent hover:bg-transparent">
-                    Learn More
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
+                  <Link to={category.link}>
+                    <Button variant="ghost" className="group/btn p-0 h-auto font-semibold text-primary hover:text-accent hover:bg-transparent">
+                      Learn More
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             );
