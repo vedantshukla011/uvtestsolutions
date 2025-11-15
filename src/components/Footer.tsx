@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -30,10 +31,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">About Us</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Products</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Services</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Careers</a></li>
+              <li><Link to="/" className="text-sm text-muted-foreground hover:text-accent transition-colors">About Us</Link></li>
+              <li><Link to="/#products" className="text-sm text-muted-foreground hover:text-accent transition-colors">Products</Link></li>
             </ul>
           </div>
 
@@ -41,10 +40,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Documentation</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Technical Support</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Warranty Info</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Contact Us</a></li>
+              <li><Link to="/contact" className="text-sm text-muted-foreground hover:text-accent transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
