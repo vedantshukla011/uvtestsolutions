@@ -36,7 +36,7 @@ const CTASection = () => {
                 Request Quote
               </Button>
             </Link>
-            <a href="tel:+15551234567">
+            <a href="tel:+919643295120">
               <Button 
                 size="lg" 
                 variant="outline"
@@ -52,11 +52,11 @@ const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center text-white/80 text-sm">
             <div className="flex items-center justify-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 9643295120</span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>info@yourcompany.com</span>
+              <span>uvtestsolutions@gmail.com</span>
             </div>
           </div>
         </div>
