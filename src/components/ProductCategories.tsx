@@ -90,9 +90,12 @@ const ProductCategories = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="default" size="lg">
-            View All Products
-          </Button>
+          <p className="text-lg text-muted-foreground">
+            For other requirements please{" "}
+            <Link to="/contact" className="text-primary hover:text-accent font-semibold underline underline-offset-4">
+              share your query
+            </Link>
+          </p>
         </div>
       </div>
     </section>
