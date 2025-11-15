@@ -17,10 +17,10 @@ const ContactInfo = () => {
             <div>
               <div className="font-medium text-sm text-muted-foreground">Phone</div>
               <a 
-                href="tel:+15551234567" 
+                href="tel:+919643295120" 
                 className="text-foreground hover:text-accent transition-colors font-medium"
               >
-                +1 (555) 123-4567
+                +91 9643295120
               </a>
               <div className="text-xs text-muted-foreground mt-1">Mon-Fri, 9AM-6PM EST</div>
             </div>
@@ -34,10 +34,10 @@ const ContactInfo = () => {
             <div>
               <div className="font-medium text-sm text-muted-foreground">Email</div>
               <a 
-                href="mailto:info@yourcompany.com" 
+                href="mailto:uvtestsolutions@gmail.com" 
                 className="text-foreground hover:text-accent transition-colors font-medium break-all"
               >
-                info@yourcompany.com
+                uvtestsolutions@gmail.com
               </a>
               <div className="text-xs text-muted-foreground mt-1">24/7 support</div>
             </div>
