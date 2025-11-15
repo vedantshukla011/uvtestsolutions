@@ -51,8 +51,9 @@ const ContactInfo = () => {
             <div>
               <div className="font-medium text-sm text-muted-foreground">Address</div>
               <div className="text-foreground font-medium">
-                123 Tech Park Drive<br />
-                Innovation City, CA 94000
+                Park view apartment ph-2<br />
+                Gandhi Nagar Ghaziabad,<br />
+                Uttar Pradesh, 201001
               </div>
             </div>
           </div>
