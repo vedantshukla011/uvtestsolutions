@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   return (
@@ -15,19 +21,32 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#products" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
-              Products
-            </a>
-            <a href="#solutions" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
-              Solutions
-            </a>
-            <a href="#about" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
-              About
-            </a>
-            <Link to="/contact" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
-              Contact
-            </Link>
+          <div className="hidden md:flex items-center gap-4">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="sm" className="gap-1">
+                  Menu
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48 bg-background">
+                <DropdownMenuItem asChild>
+                  <a href="#about" className="cursor-pointer">
+                    About Us
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a href="#products" className="cursor-pointer">
+                    Products
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/contact" className="cursor-pointer">
+                    Contact Us
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           {/* CTA Button */}
