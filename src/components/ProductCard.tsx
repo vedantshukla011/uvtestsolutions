@@ -69,9 +69,16 @@ const ProductCard = ({ name, brand, image, description, features, price, inStock
               Request Quote
             </Button>
           </Link>
-          <Button variant="outline" className="flex-1">
-            Details
-          </Button>
+          <a 
+            href={`https://www.google.com/search?q=${encodeURIComponent(`${brand} ${name}`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1"
+          >
+            <Button variant="outline" className="w-full">
+              Details
+            </Button>
+          </a>
         </div>
       </CardContent>
     </Card>
