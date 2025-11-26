@@ -56,11 +56,6 @@ const Header = () => {
               </Button>
             </Link>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button className="md:hidden p-2 rounded-lg hover:bg-accent/10 transition-colors">
-            <Menu className="w-6 h-6 text-foreground" />
-          </button>
         </div>
       </nav>
     </header>
