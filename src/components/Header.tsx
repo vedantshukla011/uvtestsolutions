@@ -22,6 +22,14 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
+            {/* CTA Button */}
+            <Link to="/contact">
+              <Button variant="default" size="sm">
+                Get Quote
+              </Button>
+            </Link>
+            
+            {/* Hamburger Menu */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon">
@@ -46,15 +54,6 @@ const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link to="/contact">
-              <Button variant="default" size="sm">
-                Get Quote
-              </Button>
-            </Link>
           </div>
         </div>
       </nav>
