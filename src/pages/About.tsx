@@ -75,6 +75,36 @@ const About = () => {
           </div>
         </section>
 
+        {/* Leadership */}
+        <section className="py-16 bg-muted/20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-12 text-center text-foreground">
+                Leadership
+              </h2>
+              <div className="bg-card p-8 rounded-lg border border-border/50 shadow-lg">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <Users className="w-12 h-12 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2 text-foreground">
+                    Vinod Shukla
+                  </h3>
+                  <p className="text-primary font-semibold mb-4">
+                    Director (Founder)
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed max-w-2xl">
+                    With more than 20 years in the industry, Vinod Shukla brings extensive expertise 
+                    in industrial applications. His deep understanding of measurement technology and 
+                    commitment to quality has been instrumental in establishing UV Test Solutions as 
+                    a trusted partner for precision electronic measuring instruments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose Us */}
         <section className="py-16 bg-muted/20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
