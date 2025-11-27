@@ -38,9 +38,9 @@ const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48 bg-background">
                 <DropdownMenuItem asChild>
-                  <a href="#about" className="cursor-pointer">
+                  <Link to="/about" className="cursor-pointer">
                     About Us
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <a href="#products" className="cursor-pointer">
