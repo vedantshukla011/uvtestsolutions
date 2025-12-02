@@ -94,7 +94,7 @@ const About = () => {
                     Director (Founder)
                   </p>
                   <p className="text-muted-foreground leading-relaxed max-w-2xl">
-                    With more than 20 years in the industry, Vinod Shukla brings extensive expertise 
+                    With more than 15 years in the industry, Vinod Shukla brings extensive expertise 
                     in industrial applications. His deep understanding of measurement technology and 
                     commitment to quality has been instrumental in establishing UV Test Solutions as 
                     a trusted partner for precision electronic measuring instruments.

@@ -83,7 +83,7 @@ const ContactInfo = () => {
                 <Users className="w-5 h-5 text-accent" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-foreground">1000+</div>
+                <div className="text-2xl font-bold text-foreground">150+</div>
                 <div className="text-sm text-muted-foreground">Satisfied Clients</div>
               </div>
             </div>
@@ -94,7 +94,7 @@ const ContactInfo = () => {
                 <Award className="w-5 h-5 text-accent" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-foreground">20+ Years</div>
+                <div className="text-2xl font-bold text-foreground">15+ Years</div>
                 <div className="text-sm text-muted-foreground">Industry Experience</div>
               </div>
             </div>
