@@ -75,7 +75,7 @@ const Hero = () => {
                 <Award className="w-5 h-5 text-accent" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-foreground">20+ Years</div>
+                <div className="text-2xl font-bold text-foreground">15+ Years</div>
                 <div className="text-sm text-muted-foreground">Experience</div>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Hero = () => {
                 <Zap className="w-5 h-5 text-accent" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-foreground">1000+</div>
+                <div className="text-2xl font-bold text-foreground">150+</div>
                 <div className="text-sm text-muted-foreground">Clients</div>
               </div>
             </div>
