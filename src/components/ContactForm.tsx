@@ -10,6 +10,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
 
 const contactFormSchema = z.object({
   fullName: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
@@ -63,10 +64,35 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      
-      console.log("Contact Form Submission:", data);
+      // Store in database
+      const { error: dbError } = await supabase
+        .from('quote_requests')
+        .insert({
+          full_name: data.fullName,
+          email: data.email,
+          phone: data.phone || null,
+          company: data.company || null,
+          industry: data.industry,
+          product_interest: data.productInterest,
+          timeline: data.timeline,
+          budget_range: data.budgetRange || null,
+          message: data.message,
+        });
+
+      if (dbError) {
+        console.error("Database error:", dbError);
+        throw new Error("Failed to save quote request");
+      }
+
+      // Send email notification
+      const { error: emailError } = await supabase.functions.invoke('send-quote-notification', {
+        body: data,
+      });
+
+      if (emailError) {
+        console.error("Email notification error:", emailError);
+        // Don't throw - the quote was saved, just log the email issue
+      }
       
       toast({
         title: "Quote Request Submitted!",
@@ -77,6 +103,7 @@ const ContactForm = () => {
       reset();
       setSelectedProducts([]);
     } catch (error) {
+      console.error("Submission error:", error);
       toast({
         title: "Submission Failed",
         description: "Please try again or contact us directly.",
