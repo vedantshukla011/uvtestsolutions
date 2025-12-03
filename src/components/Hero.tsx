@@ -60,32 +60,32 @@ const Hero = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid grid-cols-3 gap-6 animate-fade-in">
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-accent/10">
-                <Shield className="w-5 h-5 text-accent" />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 animate-fade-in">
+            <div className="flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg">
+              <div className="p-3 rounded-lg bg-primary/20">
+                <Shield className="w-6 h-6 text-primary" />
               </div>
               <div>
                 <div className="text-2xl font-bold text-foreground">ISO 9001</div>
-                <div className="text-sm text-muted-foreground">Certified</div>
+                <div className="text-sm text-muted-foreground font-medium">Certified</div>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-accent/10">
-                <Award className="w-5 h-5 text-accent" />
+            <div className="flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg">
+              <div className="p-3 rounded-lg bg-primary/20">
+                <Award className="w-6 h-6 text-primary" />
               </div>
               <div>
                 <div className="text-2xl font-bold text-foreground">15+ Years</div>
-                <div className="text-sm text-muted-foreground">Experience</div>
+                <div className="text-sm text-muted-foreground font-medium">Experience</div>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-accent/10">
-                <Zap className="w-5 h-5 text-accent" />
+            <div className="flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg">
+              <div className="p-3 rounded-lg bg-primary/20">
+                <Zap className="w-6 h-6 text-primary" />
               </div>
               <div>
                 <div className="text-2xl font-bold text-foreground">150+</div>
-                <div className="text-sm text-muted-foreground">Clients</div>
+                <div className="text-sm text-muted-foreground font-medium">Clients</div>
               </div>
             </div>
           </div>
