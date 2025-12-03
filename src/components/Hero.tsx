@@ -61,30 +61,30 @@ const Hero = () => {
 
           {/* Trust Indicators */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 animate-fade-in">
-            <div className="flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg">
-              <div className="p-3 rounded-lg bg-primary/20">
-                <Shield className="w-6 h-6 text-primary" />
+            <div className="group flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/50 hover:bg-background/95">
+              <div className="p-3 rounded-lg bg-primary/20 transition-all duration-300 group-hover:bg-primary/30 group-hover:scale-110">
+                <Shield className="w-6 h-6 text-primary transition-transform duration-300 group-hover:rotate-12" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-foreground">ISO 9001</div>
+                <div className="text-2xl font-bold text-foreground transition-colors duration-300 group-hover:text-primary">ISO 9001</div>
                 <div className="text-sm text-muted-foreground font-medium">Certified</div>
               </div>
             </div>
-            <div className="flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg">
-              <div className="p-3 rounded-lg bg-primary/20">
-                <Award className="w-6 h-6 text-primary" />
+            <div className="group flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/50 hover:bg-background/95">
+              <div className="p-3 rounded-lg bg-primary/20 transition-all duration-300 group-hover:bg-primary/30 group-hover:scale-110">
+                <Award className="w-6 h-6 text-primary transition-transform duration-300 group-hover:rotate-12" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-foreground">15+ Years</div>
+                <div className="text-2xl font-bold text-foreground transition-colors duration-300 group-hover:text-primary">15+ Years</div>
                 <div className="text-sm text-muted-foreground font-medium">Experience</div>
               </div>
             </div>
-            <div className="flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg">
-              <div className="p-3 rounded-lg bg-primary/20">
-                <Zap className="w-6 h-6 text-primary" />
+            <div className="group flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/50 hover:bg-background/95">
+              <div className="p-3 rounded-lg bg-primary/20 transition-all duration-300 group-hover:bg-primary/30 group-hover:scale-110">
+                <Zap className="w-6 h-6 text-primary transition-transform duration-300 group-hover:rotate-12" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-foreground">150+</div>
+                <div className="text-2xl font-bold text-foreground transition-colors duration-300 group-hover:text-primary">150+</div>
                 <div className="text-sm text-muted-foreground font-medium">Clients</div>
               </div>
             </div>
