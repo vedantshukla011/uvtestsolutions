@@ -16,8 +16,6 @@ const products = [
     image: vernierCaliperImg,
     description: "High-precision digital caliper with 150mm measuring range, featuring an easy-to-read LCD display and data output capability.",
     features: ["0.01mm resolution", "IP67 dust/water protection", "Data output function", "Carbide-tipped jaws"],
-    price: "₹8,500",
-    inStock: true
   },
   {
     name: "Dial Vernier Caliper 200mm",
@@ -25,8 +23,6 @@ const products = [
     image: vernierCaliperImg,
     description: "Professional dial caliper with 200mm range, offering reliable mechanical measurement for industrial applications.",
     features: ["0.02mm accuracy", "Hardened stainless steel", "Shock-resistant dial", "Thumb roller adjustment"],
-    price: "₹4,200",
-    inStock: true
   },
   {
     name: "Industrial Air Purifier HEPA",
@@ -34,8 +30,6 @@ const products = [
     image: airPurifierImg,
     description: "Heavy-duty industrial air purifier with HEPA filtration, designed for manufacturing and laboratory environments.",
     features: ["HEPA H13 filter", "500 CFM capacity", "Activated carbon layer", "Auto air quality sensor"],
-    price: "₹45,000",
-    inStock: true
   },
   {
     name: "Portable Air Purifier with UV",
@@ -43,8 +37,6 @@ const products = [
     image: airPurifierImg,
     description: "Compact portable air purifier with UV-C sterilization, ideal for cleanrooms and sensitive work areas.",
     features: ["UV-C sterilization", "3-stage filtration", "Quiet operation", "Energy efficient"],
-    price: "₹28,000",
-    inStock: false
   },
   {
     name: "Precision Resistor Kit",
@@ -52,8 +44,6 @@ const products = [
     image: electricalComponentImg,
     description: "Comprehensive precision resistor assortment kit with metal film resistors for laboratory and R&D applications.",
     features: ["1% tolerance", "500+ pieces", "Metal film type", "Organized storage case"],
-    price: "₹3,500",
-    inStock: true
   },
   {
     name: "Capacitor Assortment Kit",
@@ -61,8 +51,6 @@ const products = [
     image: electricalComponentImg,
     description: "Professional electrolytic and ceramic capacitor kit for electronics prototyping and repair work.",
     features: ["Wide value range", "300+ pieces", "High-quality brands", "Multiple types included"],
-    price: "₹2,800",
-    inStock: true
   },
   {
     name: "SMD Component Kit",
@@ -70,8 +58,6 @@ const products = [
     image: electricalComponentImg,
     description: "Complete SMD component assortment including resistors, capacitors, and semiconductors for surface mount applications.",
     features: ["2000+ pieces", "Multiple package sizes", "Component book storage", "Value labeled"],
-    price: "₹5,500",
-    inStock: true
   },
   {
     name: "Digital Micrometer 0-25mm",
@@ -79,8 +65,6 @@ const products = [
     image: vernierCaliperImg,
     description: "High-precision digital micrometer with 0-25mm range, featuring electronic display and data output.",
     features: ["0.001mm resolution", "SPC data output", "Ratchet thimble", "Carbide measuring faces"],
-    price: "₹12,000",
-    inStock: true
   },
   {
     name: "Industrial Dust Collector",
@@ -88,8 +72,6 @@ const products = [
     image: airPurifierImg,
     description: "Heavy-duty industrial dust collector for workshop and manufacturing floor air quality management.",
     features: ["1000 CFM capacity", "Auto filter cleaning", "Mobile design", "Low noise operation"],
-    price: "₹85,000",
-    inStock: false
   }
 ];
 
