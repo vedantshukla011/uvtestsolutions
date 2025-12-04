@@ -12,6 +12,7 @@ import SignalGenerators from "./pages/products/SignalGenerators";
 import TemperatureSensors from "./pages/products/TemperatureSensors";
 import PowerSupplies from "./pages/products/PowerSupplies";
 import LogicAnalyzers from "./pages/products/LogicAnalyzers";
+import OtherProducts from "./pages/products/OtherProducts";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/products/temperature-sensors" element={<TemperatureSensors />} />
           <Route path="/products/power-supplies" element={<PowerSupplies />} />
           <Route path="/products/logic-analyzers" element={<LogicAnalyzers />} />
+          <Route path="/products/other-products" element={<OtherProducts />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
