@@ -51,9 +51,9 @@ const ContactInfo = () => {
             <div>
               <div className="font-medium text-sm text-muted-foreground">Address</div>
               <div className="text-foreground font-medium">
-                Park view apartment ph-2<br />
+                A9 Park View Apartment Ph-2<br />
                 Gandhi Nagar Ghaziabad,<br />
-                Uttar Pradesh, 201001
+                Uttar Pradesh, India
               </div>
             </div>
           </div>
