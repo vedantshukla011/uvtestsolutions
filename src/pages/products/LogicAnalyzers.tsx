@@ -15,91 +15,91 @@ import logicAnalyzerImage from "@/assets/products/logic-analyzer.jpg";
 
 const products = [
   {
-    name: "MSO5000 Series Mixed Signal Oscilloscope",
-    brand: "TEKTRONIX",
+    name: "16860A Series Logic Analyzer",
+    brand: "KEYSIGHT",
     image: logicAnalyzerImage,
-    description: "Advanced mixed signal oscilloscope combining analog and digital analysis with exceptional performance.",
+    description: "High-performance portable logic analyzer with deep memory and fast timing for debugging complex digital systems.",
+    features: [
+      "Up to 204 channels at 250 MHz",
+      "4M sample depth per channel",
+      "400 ps timing resolution",
+      "Advanced triggering capabilities",
+      "Eye scan and jitter analysis"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "U4164A Logic Analyzer Module",
+    brand: "KEYSIGHT",
+    image: logicAnalyzerImage,
+    description: "Modular logic analyzer providing exceptional timing and state analysis for high-speed digital design verification.",
+    features: [
+      "136 channels at 2.5 Gb/s",
+      "6.25 GHz timing analysis",
+      "Deep memory options",
+      "Advanced protocol decode",
+      "Pattern generator option"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "DS70000 Series Digital Oscilloscope",
+    brand: "RIGOL",
+    image: logicAnalyzerImage,
+    description: "High-bandwidth digital oscilloscope with integrated logic analyzer functionality for mixed-signal debugging.",
+    features: [
+      "Up to 2 GHz bandwidth",
+      "16 digital channels option",
+      "10 GSa/s sample rate",
+      "500 Mpts memory depth",
+      "Protocol triggering and decode"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "MSO8000 Series Mixed Signal Oscilloscope",
+    brand: "RIGOL",
+    image: logicAnalyzerImage,
+    description: "Professional mixed signal oscilloscope combining analog and digital analysis with exceptional performance.",
     features: [
       "4 analog + 16 digital channels",
       "Up to 2 GHz analog bandwidth",
-      "12.5 M record length per channel",
-      "FastAcq with 500,000 wfms/s capture rate",
-      "Advanced serial protocol triggering and decode"
+      "10 GSa/s sample rate",
+      "500 Mpts memory depth",
+      "Advanced serial decode"
     ],
     price: "Request Quote",
     inStock: true
   },
   {
-    name: "Logic Pro 16 USB Logic Analyzer",
-    brand: "SALEAE",
-    image: logicAnalyzerImage,
-    description: "High-performance USB logic analyzer with intuitive software for embedded systems debugging and validation.",
-    features: [
-      "16 digital channels with 100 MS/s sampling",
-      "Voltage range: 1.2V to 5.5V",
-      "Advanced protocol analyzers built-in",
-      "Intuitive cross-platform software",
-      "Automatic protocol detection"
-    ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "MSOX3000 Series Mixed Signal Oscilloscope",
+    name: "MSOX6004A Mixed Signal Oscilloscope",
     brand: "KEYSIGHT",
     image: logicAnalyzerImage,
-    description: "Versatile mixed signal oscilloscope delivering comprehensive analysis with 16 integrated digital channels.",
+    description: "Industry-leading mixed signal oscilloscope with FlexChannel technology for comprehensive signal analysis.",
     features: [
-      "4 analog + 16 digital channels",
-      "1 GHz analog bandwidth options",
-      "Upgradable memory up to 4 Mpts",
-      "Built-in protocol decode and triggering",
-      "8.5-inch capacitive touchscreen"
+      "Up to 6 GHz bandwidth",
+      "Flexible 4-8 analog channels",
+      "16 digital channels per scope",
+      "Zone touch triggering",
+      "Advanced jitter analysis"
     ],
     price: "Request Quote",
     inStock: true
   },
   {
-    name: "SLA5000 Series Logic Analyzer",
-    brand: "SIGLENT",
-    image: logicAnalyzerImage,
-    description: "Cost-effective logic analyzer providing comprehensive digital analysis capabilities for embedded development.",
-    features: [
-      "16 digital channels with 500 MS/s",
-      "Up to 64 Mpts memory depth",
-      "Multiple protocol decode options",
-      "Advanced triggering capabilities",
-      "USB connectivity with PC software"
-    ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "MSO6000 Series Mixed Signal Oscilloscope",
+    name: "MSO5000 Series Mixed Signal Oscilloscope",
     brand: "RIGOL",
     image: logicAnalyzerImage,
-    description: "Professional mixed signal oscilloscope combining powerful analog and digital analysis in one instrument.",
+    description: "Versatile mixed signal oscilloscope offering excellent value for embedded systems development and debugging.",
     features: [
       "4 analog + 16 digital channels",
-      "Up to 1 GHz analog bandwidth",
-      "1 GSa/s digital sample rate",
-      "Comprehensive serial bus decode",
-      "10.1-inch multi-touch display"
-    ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "MSO64 Mixed Signal Oscilloscope",
-    brand: "TEKTRONIX",
-    image: logicAnalyzerImage,
-    description: "Industry-leading MSO delivering unprecedented visibility into complex embedded systems with 12-bit ADC.",
-    features: [
-      "4, 6, or 8 FlexChannel inputs",
-      "Up to 8 GHz analog bandwidth",
-      "12-bit ADC with TEK061 technology",
-      "Up to 62.5 Mpts per channel memory",
-      "15.6-inch high-definition touchscreen"
+      "Up to 350 MHz bandwidth",
+      "8 GSa/s sample rate",
+      "200 Mpts memory depth",
+      "Serial protocol analysis"
     ],
     price: "Request Quote",
     inStock: true

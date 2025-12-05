@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Activity, Gauge, Radio, Thermometer, Zap, Cpu, Wrench } from "lucide-react";
+import { Activity, Gauge, Radio, Thermometer, Zap, Cpu, Wrench, Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -40,6 +40,12 @@ const categories = [
     title: "Logic Analyzers",
     description: "Digital logic analysis tools for embedded systems development and debugging",
     link: "/products/logic-analyzers"
+  },
+  {
+    icon: Waves,
+    title: "Spectrum Analyzers",
+    description: "RF and signal analysis solutions for wireless testing and EMC compliance",
+    link: "/products/spectrum-analyzers"
   },
   {
     icon: Wrench,
