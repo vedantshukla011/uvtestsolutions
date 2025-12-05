@@ -45,6 +45,66 @@ const products = [
     inStock: true
   },
   {
+    name: "EDU33210A Waveform Generator",
+    brand: "KEYSIGHT",
+    image: signalGenImage,
+    description: "Education-focused waveform generator with Trueform technology ideal for academic and training environments.",
+    features: [
+      "20 MHz sine and square wave output",
+      "14-bit resolution with 125 MSa/s sample rate",
+      "Built-in arbitrary waveform capability",
+      "USB and LAN connectivity",
+      "Compact benchtop form factor"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "DG900 Pro Series Waveform Generator",
+    brand: "RIGOL",
+    image: signalGenImage,
+    description: "Professional dual-channel function/arbitrary waveform generator with superior signal quality.",
+    features: [
+      "25 MHz to 70 MHz bandwidth options",
+      "625 MSa/s sample rate with 16-bit resolution",
+      "16 Mpts arbitrary waveform memory",
+      "SiFi IV signal generation technology",
+      "4.3-inch TFT color display"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "DG800 Pro Series Waveform Generator",
+    brand: "RIGOL",
+    image: signalGenImage,
+    description: "Entry-level professional function generator with excellent signal quality for R&D and education.",
+    features: [
+      "25 MHz to 35 MHz bandwidth options",
+      "625 MSa/s sample rate with 16-bit resolution",
+      "16 Mpts arbitrary waveform memory",
+      "Comprehensive modulation functions",
+      "4.3-inch TFT color display"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "DG5000 Series Function/Arbitrary Waveform Generator",
+    brand: "RIGOL",
+    image: signalGenImage,
+    description: "High-performance dual-channel generator with advanced capabilities for demanding applications.",
+    features: [
+      "100 MHz, 200 MHz, or 350 MHz bandwidth",
+      "1 GSa/s sample rate with 14-bit vertical resolution",
+      "8 Mpts arbitrary waveform memory per channel",
+      "Rich modulation functions including AM, FM, PM",
+      "Built-in 7-inch color display"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
     name: "SDG6000X Series Arbitrary Waveform Generator",
     brand: "SIGLENT",
     image: signalGenImage,
@@ -70,21 +130,6 @@ const products = [
       "High output power up to +18 dBm",
       "Analog and digital modulation capabilities",
       "Fast frequency and level switching"
-    ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "DG5000 Series Function/Arbitrary Waveform Generator",
-    brand: "RIGOL",
-    image: signalGenImage,
-    description: "Cost-effective dual-channel generator combining high performance with user-friendly operation.",
-    features: [
-      "100 MHz, 200 MHz, or 350 MHz bandwidth",
-      "1 GSa/s sample rate with 14-bit vertical resolution",
-      "8 Mpts arbitrary waveform memory per channel",
-      "Rich modulation functions including AM, FM, PM",
-      "Built-in 7-inch color display"
     ],
     price: "Request Quote",
     inStock: true

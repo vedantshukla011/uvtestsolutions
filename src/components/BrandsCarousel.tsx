@@ -10,6 +10,7 @@ import insizeLogo from "@/assets/brands/insize.png";
 import siglentLogo from "@/assets/brands/siglent.png";
 import rohdeSchwarzLogo from "@/assets/brands/rohde-schwarz.png";
 import mitutoyoLogo from "@/assets/brands/mitutoyo.png";
+import rigolLogo from "@/assets/brands/rigol.png";
 
 const brands = [
   { name: "Keysight Technologies", logo: keysightLogo },
@@ -22,6 +23,7 @@ const brands = [
   { name: "Siglent", logo: siglentLogo },
   { name: "Rohde & Schwarz", logo: rohdeSchwarzLogo },
   { name: "Mitutoyo", logo: mitutoyoLogo },
+  { name: "Rigol", logo: rigolLogo },
 ];
 
 const BrandsCarousel = () => {
@@ -33,7 +35,7 @@ const BrandsCarousel = () => {
 
     let animationId: number;
     let scrollPosition = 0;
-    const scrollSpeed = 0.5;
+    const scrollSpeed = 1.2;
 
     const animate = () => {
       scrollPosition += scrollSpeed;
@@ -88,13 +90,13 @@ const BrandsCarousel = () => {
           {duplicatedBrands.map((brand, index) => (
             <div
               key={`${brand.name}-${index}`}
-              className="flex-shrink-0 flex flex-col items-center justify-center p-6 bg-background rounded-xl border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300 min-w-[160px] md:min-w-[200px] group"
+              className="flex-shrink-0 flex flex-col items-center justify-center p-6 bg-background rounded-xl border border-border/50 hover:border-primary hover:shadow-xl hover:shadow-primary/20 hover:bg-primary/5 transition-all duration-300 min-w-[160px] md:min-w-[200px] group"
             >
               <div className="h-16 md:h-20 flex items-center justify-center mb-3">
                 <img
                   src={brand.logo}
                   alt={`${brand.name} logo`}
-                  className="max-h-full max-w-[120px] md:max-w-[150px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                  className="max-h-full max-w-[120px] md:max-w-[150px] object-contain transition-all duration-300 group-hover:scale-110"
                 />
               </div>
               <span className="text-sm text-muted-foreground font-medium text-center group-hover:text-foreground transition-colors">

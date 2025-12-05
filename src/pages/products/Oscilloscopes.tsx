@@ -45,6 +45,21 @@ const products = [
     inStock: true
   },
   {
+    name: "InfiniiVision DSOX3000G Series",
+    brand: "KEYSIGHT",
+    image: oscilloscopeImage,
+    description: "General purpose oscilloscope with built-in waveform generator for comprehensive signal analysis and stimulus response testing.",
+    features: [
+      "100 MHz to 1 GHz bandwidth options",
+      "5 GSa/s sample rate with 4 Mpts memory",
+      "Built-in 20 MHz waveform generator",
+      "8.5-inch WVGA capacitive touch display",
+      "Zone touch triggering technology"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
     name: "RTM3000 Oscilloscope",
     brand: "ROHDE & SCHWARZ",
     image: oscilloscopeImage,
@@ -60,16 +75,46 @@ const products = [
     inStock: true
   },
   {
-    name: "DS7000 Series Digital Oscilloscope",
+    name: "DHO4000 Series Digital Oscilloscope",
     brand: "RIGOL",
     image: oscilloscopeImage,
-    description: "Cost-effective high-performance oscilloscope ideal for embedded systems and power electronics applications.",
+    description: "High-bandwidth digital oscilloscope with UltraVision III architecture for advanced debugging and analysis.",
     features: [
-      "100 MHz to 500 MHz bandwidth",
-      "10 GSa/s maximum real-time sample rate",
-      "Up to 500 Mpts memory depth",
-      "Low noise front-end design",
-      "Multiple serial bus decoding options"
+      "200 MHz to 800 MHz bandwidth options",
+      "4 GSa/s real-time sample rate",
+      "Up to 250 Mpts memory depth",
+      "12-bit vertical resolution ADC",
+      "10.1-inch HD capacitive touchscreen"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "DHO800/900 Series Digital Oscilloscope",
+    brand: "RIGOL",
+    image: oscilloscopeImage,
+    description: "Entry-level digital oscilloscope with 12-bit ADC resolution perfect for education and basic R&D applications.",
+    features: [
+      "70 MHz to 200 MHz bandwidth",
+      "1.25 GSa/s sample rate per channel",
+      "12-bit vertical resolution",
+      "50 Mpts memory depth",
+      "7-inch WVGA touchscreen display"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "MSO8000 Series Mixed Signal Oscilloscope",
+    brand: "RIGOL",
+    image: oscilloscopeImage,
+    description: "Professional mixed signal oscilloscope with deep memory and comprehensive protocol analysis capabilities.",
+    features: [
+      "600 MHz to 2 GHz bandwidth",
+      "10 GSa/s maximum sample rate",
+      "500 Mpts max memory depth",
+      "16 digital channels for MSO",
+      "10.1-inch capacitive multi-touch display"
     ],
     price: "Request Quote",
     inStock: true

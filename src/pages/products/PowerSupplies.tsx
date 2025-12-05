@@ -30,6 +30,21 @@ const products = [
     inStock: true
   },
   {
+    name: "E36200 Series Autoranging DC Power Supply",
+    brand: "KEYSIGHT",
+    image: powerSupplyImage,
+    description: "Single output autoranging power supply with advanced protection features and fast transient response.",
+    features: [
+      "Autoranging output up to 200W",
+      "Output voltage: 0-60V, Current: 0-10A",
+      "Low output noise: <3 mVpp",
+      "Fast transient response < 50 µs",
+      "USB, LAN, and GPIB interfaces"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
     name: "PWS4000 Series Programmable DC Power Supply",
     brand: "TEKTRONIX",
     image: powerSupplyImage,
@@ -45,21 +60,6 @@ const products = [
     inStock: true
   },
   {
-    name: "SPD3000X Series Programmable DC Power Supply",
-    brand: "SIGLENT",
-    image: powerSupplyImage,
-    description: "Linear DC power supply with ultra-low ripple and noise for sensitive electronic measurements.",
-    features: [
-      "Triple-channel output configuration",
-      "≤ 350µVrms ripple and noise",
-      "5-digit high-resolution display",
-      "Built-in waveform display function",
-      "USB, LAN, and RS232 interfaces"
-    ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
     name: "DP800 Series Programmable Linear DC Power Supply",
     brand: "RIGOL",
     image: powerSupplyImage,
@@ -70,6 +70,51 @@ const products = [
       "High resolution: 1 mV/0.1 mA",
       "Built-in V, A, W measurements and waveforms",
       "Flexible output configurations"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "DP900 Series Programmable Power Supply",
+    brand: "RIGOL",
+    image: powerSupplyImage,
+    description: "Entry-level triple output power supply with excellent stability and low noise for basic applications.",
+    features: [
+      "Three isolated output channels",
+      "32V/3A per channel capability",
+      "Low ripple and noise < 500 µVrms",
+      "Timing output control function",
+      "USB interface for remote control"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "DP2000 Series High Precision Power Supply",
+    brand: "RIGOL",
+    image: powerSupplyImage,
+    description: "High-precision linear DC power supply with ultra-low noise for sensitive electronic applications.",
+    features: [
+      "Dual channel isolated outputs",
+      "60V/5A or 30V/10A configurations",
+      "Ultra-low ripple: < 300 µVrms",
+      "High resolution: 0.1 mV/0.01 mA",
+      "4.3-inch TFT LCD display"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "SPD3000X Series Programmable DC Power Supply",
+    brand: "SIGLENT",
+    image: powerSupplyImage,
+    description: "Linear DC power supply with ultra-low ripple and noise for sensitive electronic measurements.",
+    features: [
+      "Triple-channel output configuration",
+      "≤ 350µVrms ripple and noise",
+      "5-digit high-resolution display",
+      "Built-in waveform display function",
+      "USB, LAN, and RS232 interfaces"
     ],
     price: "Request Quote",
     inStock: true
