@@ -30,6 +30,36 @@ const products = [
     inStock: true
   },
   {
+    name: "Fluke 117 Electrician's Multimeter",
+    brand: "FLUKE",
+    image: multimeterImage,
+    description: "Ideal multimeter for electricians with VoltAlert technology and non-contact voltage detection.",
+    features: [
+      "True RMS for accurate measurements on non-linear loads",
+      "VoltAlert technology for non-contact voltage detection",
+      "AutoVolt automatic AC/DC voltage selection",
+      "Large white LED backlight for low-light areas",
+      "CAT III 600V safety rated"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "Fluke 289 True-RMS Industrial Logging Multimeter",
+    brand: "FLUKE",
+    image: multimeterImage,
+    description: "The most advanced Fluke multimeter featuring TrendCapture graphing and data logging for troubleshooting.",
+    features: [
+      "50,000 count resolution with 0.025% DC accuracy",
+      "TrendCapture displays readings as graph over time",
+      "Data logging up to 15,000 recorded events",
+      "Low-pass filter for motor drive measurements",
+      "CAT III 1000V, CAT IV 600V safety rated"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
     name: "U1272A Handheld Digital Multimeter",
     brand: "KEYSIGHT",
     image: multimeterImage,
@@ -45,16 +75,16 @@ const products = [
     inStock: true
   },
   {
-    name: "175 True-RMS Digital Multimeter",
-    brand: "FLUKE",
+    name: "34465A Digital Multimeter 6½ Digit",
+    brand: "KEYSIGHT",
     image: multimeterImage,
-    description: "Compact true-RMS multimeter with built-in thermometer for HVAC and electrical troubleshooting applications.",
+    description: "Truevolt series DMM with graphical display and industry-leading accuracy for benchtop measurements.",
     features: [
-      "True-RMS AC voltage and current",
-      "Built-in thermometer with type-K thermocouple",
-      "Min/Max/Average recording",
-      "Large digit display with backlight",
-      "CAT III 1000V, CAT IV 600V rated"
+      "6½ digit resolution with 0.0016% DCV accuracy",
+      "1,000 readings/second digitizing rate",
+      "Graphical display with histogram, trend chart",
+      "Math operations and limit testing",
+      "USB, LAN, and GPIB connectivity"
     ],
     price: "Request Quote",
     inStock: true
@@ -70,6 +100,21 @@ const products = [
       "Up to 50,000 readings/s scanning speed",
       "Built-in 6-slot scanner card",
       "USB, LAN, and GPIB interfaces"
+    ],
+    price: "Request Quote",
+    inStock: true
+  },
+  {
+    name: "DM800 Series Digital Multimeter",
+    brand: "RIGOL",
+    image: multimeterImage,
+    description: "High-precision 5½ digit benchtop multimeter with fast measurement speed and comprehensive functions.",
+    features: [
+      "5½ digit resolution with 0.015% DCV accuracy",
+      "150 readings/s measurement speed",
+      "4.3-inch TFT LCD color display",
+      "Multiple math functions including statistics",
+      "USB and LAN interfaces"
     ],
     price: "Request Quote",
     inStock: true
