@@ -17,6 +17,7 @@ const contactFormSchema = z.object({
   email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
   phone: z.string().trim().optional(),
   company: z.string().trim().max(100, "Company name must be less than 100 characters").optional(),
+  city: z.string().optional(),
   industry: z.string().min(1, "Please select an industry"),
   productInterest: z.array(z.string()).min(1, "Select at least one product"),
   timeline: z.string().min(1, "Please select a timeline"),
@@ -144,7 +145,7 @@ const ContactForm = () => {
               id="email"
               type="email"
               {...register("email")}
-              placeholder="john@company.com"
+              placeholder="name@company.com"
               className={errors.email ? "border-destructive" : ""}
             />
             {errors.email && (
@@ -154,23 +155,57 @@ const ContactForm = () => {
 
           <div className="space-y-2">
             <Label htmlFor="phone">Phone Number</Label>
-            <Input
-              id="phone"
-              type="tel"
-              {...register("phone")}
-              placeholder="+1 (555) 123-4567"
-            />
+            <div className="flex">
+              <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-input bg-muted text-muted-foreground text-sm">
+                +91
+              </span>
+              <Input
+                id="phone"
+                type="tel"
+                {...register("phone")}
+                placeholder="9876543210"
+                className="rounded-l-none"
+              />
+            </div>
           </div>
         </div>
 
-        {/* Company */}
-        <div className="space-y-2">
-          <Label htmlFor="company">Company Name</Label>
-          <Input
-            id="company"
-            {...register("company")}
-            placeholder="Your Company Inc."
-          />
+        {/* Company & City/State */}
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="space-y-2">
+            <Label htmlFor="company">Company / Organization</Label>
+            <Input
+              id="company"
+              {...register("company")}
+              placeholder="Your Company Pvt. Ltd."
+            />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="city">City / State</Label>
+            <Select onValueChange={(value) => setValue("city", value)}>
+              <SelectTrigger>
+                <SelectValue placeholder="Select city/state" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="delhi-ncr">Delhi NCR</SelectItem>
+                <SelectItem value="mumbai">Mumbai</SelectItem>
+                <SelectItem value="bangalore">Bangalore</SelectItem>
+                <SelectItem value="chennai">Chennai</SelectItem>
+                <SelectItem value="hyderabad">Hyderabad</SelectItem>
+                <SelectItem value="kolkata">Kolkata</SelectItem>
+                <SelectItem value="pune">Pune</SelectItem>
+                <SelectItem value="ahmedabad">Ahmedabad</SelectItem>
+                <SelectItem value="uttar-pradesh">Uttar Pradesh</SelectItem>
+                <SelectItem value="rajasthan">Rajasthan</SelectItem>
+                <SelectItem value="gujarat">Gujarat</SelectItem>
+                <SelectItem value="tamil-nadu">Tamil Nadu</SelectItem>
+                <SelectItem value="karnataka">Karnataka</SelectItem>
+                <SelectItem value="maharashtra">Maharashtra</SelectItem>
+                <SelectItem value="other">Other</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
 
         {/* Industry & Timeline */}
@@ -249,10 +284,10 @@ const ContactForm = () => {
               <SelectValue placeholder="Select budget range" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="under-5k">Under $5,000</SelectItem>
-              <SelectItem value="5k-20k">$5,000 - $20,000</SelectItem>
-              <SelectItem value="20k-50k">$20,000 - $50,000</SelectItem>
-              <SelectItem value="50k-plus">$50,000+</SelectItem>
+              <SelectItem value="under-1l">Under ₹1 Lakh</SelectItem>
+              <SelectItem value="1l-5l">₹1 Lakh - ₹5 Lakh</SelectItem>
+              <SelectItem value="5l-20l">₹5 Lakh - ₹20 Lakh</SelectItem>
+              <SelectItem value="20l-plus">₹20 Lakh+</SelectItem>
               <SelectItem value="not-sure">Not sure yet</SelectItem>
             </SelectContent>
           </Select>

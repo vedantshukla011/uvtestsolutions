@@ -34,10 +34,10 @@ const ContactInfo = () => {
             <div>
               <div className="font-medium text-sm text-muted-foreground">Email</div>
               <a 
-                href="mailto:uvtestsolutions@gmail.com" 
+                href="mailto:vinod.shukla@uvtestsolutions.com" 
                 className="text-foreground hover:text-accent transition-colors font-medium break-all"
               >
-                uvtestsolutions@gmail.com
+                vinod.shukla@uvtestsolutions.com
               </a>
               <div className="text-xs text-muted-foreground mt-1">24/7 support</div>
             </div>
