@@ -10,7 +10,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
 import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 
 const contactFormSchema = z.object({
   fullName: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
@@ -65,34 +64,28 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      // Store in database
-      const { error: dbError } = await supabase
-        .from('quote_requests')
-        .insert({
-          full_name: data.fullName,
+      // Submit to Formspree
+      const response = await fetch("https://formspree.io/f/mldqlzer", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: data.fullName,
           email: data.email,
-          phone: data.phone || null,
-          company: data.company || null,
+          phone: data.phone ? `+91 ${data.phone}` : "",
+          company: data.company || "",
+          city: data.city || "",
           industry: data.industry,
-          product_interest: data.productInterest,
+          productInterest: data.productInterest.join(", "),
           timeline: data.timeline,
-          budget_range: data.budgetRange || null,
+          budgetRange: data.budgetRange || "",
           message: data.message,
-        });
-
-      if (dbError) {
-        console.error("Database error:", dbError);
-        throw new Error("Failed to save quote request");
-      }
-
-      // Send email notification
-      const { error: emailError } = await supabase.functions.invoke('send-quote-notification', {
-        body: data,
+        }),
       });
 
-      if (emailError) {
-        console.error("Email notification error:", emailError);
-        // Don't throw - the quote was saved, just log the email issue
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
       }
       
       toast({
