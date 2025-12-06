@@ -36,7 +36,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send notification email to UV Test Solutions
     const emailResponse = await resend.emails.send({
       from: "UV Test Solutions <onboarding@resend.dev>",
-      to: ["uvtestsolutions@gmail.com"],
+      to: ["vinod.shukla@uvtestsolutions.com"],
       subject: `New Quote Request from ${data.fullName}`,
       html: `
         <h1>New Quote Request</h1>

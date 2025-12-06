@@ -56,7 +56,7 @@ const CTASection = () => {
             </div>
             <div className="flex items-center justify-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>uvtestsolutions@gmail.com</span>
+              <span>vinod.shukla@uvtestsolutions.com</span>
             </div>
           </div>
         </div>
