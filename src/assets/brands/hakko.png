@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>HAKKO | HAKKO Corporation</title>
+
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no,email=no">
+<meta name="keywords" content="HAKKO,白光,はんだ,はんだこて,はんだごて,はんだづけ,ハンダ,シーラー,メルター,ドライヤー">
+<meta name="description" content="白光は世界中のはんだ付けニーズに応える会社です。世界品質のはんだこてとその周辺機器を提供し、あらゆるお客様の満足をお約束します。">
+<link rel="icon" href="/english/common/img/favicon/favicon.ico" type="image/vnd.microsoft.icon">
+  <meta property="og:title" content="HAKKO | HAKKO Corporation">
+      <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.hakko.com/english/">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="HAKKO">
+  <meta property="og:description" content="白光は世界中のはんだ付けニーズに応える会社です。世界品質のはんだこてとその周辺機器を提供し、あらゆるお客様の満足をお約束します。">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-57RQLR2');</script>
+<!-- End Google Tag Manager -->
+<link href="/english/common/css/common.css" rel="stylesheet" media="all">
+<link href="/english/common/js/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet" media="all">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<script src="/english/common/js/global/jquery-2.2.4.min.js"></script>
+<script src="/english/common/js/plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="/japan/common/js/global/special_nav.js"></script>
+</head>
+
+<body id="top">
+  <!-- GAタグなどを入れてください。 -->
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57RQLR2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div class="blue-box">
+    <h1 class="logo-hd01"><img src="./common/img/logo_white.png" alt=""></h1>
+  </div>
+  <header class="clearfix">
+  <figure class="logo-img"><a href="/"><img src="/english/common/img/logo.png" alt="HAKKO"></a></figure>
+  <nav class="nav-area">
+    <ul class="nav-ul">
+      <li class="li01"><a href="/english/">Home</a></li>
+      <li class="li02"><span>Product Search / Where to Buy</span>
+        <div class="mega-box">
+          <ul class="mega-inr-ul">
+            <li><a href="/english/products/">Products</a></li>
+            <li><a href="/world_network.php">Overseas Affiliates/Distributors</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="li03"><span>Customer Support</span>
+        <div class="mega-box">
+          <ul class="mega-inr-ul">
+            <li><a href="/english/support/">Support & Service</a></li>
+            <li><a href="/english/hakkosupport/">Auto-Soldering System</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="li04"><span>About HAKKO</span>
+        <div class="mega-box">
+          <ul class="mega-inr-ul">
+            <li><a href="/english/company/message.php">Message</a></li>
+            <li><a href="/english/company/profile.php">Corporate Profile</a></li>
+            <li><a href="/english/company/news.php">News & Topics</a></li>
+            <li><a href="/english/company/history.php">History</a></li>
+            <li><a href="/english/company/intellectual_property.php">Intellectual Property Protection</a></li>
+            <li><a href="/english/company/policy.php">Quality Policy / Environment Policy</a></li>
+            <li><a href="/english/company/conflict_minerals.php">Conflict Mineral Policy</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="li05"><a href="/english/access/">Location</a></li>
+      <li class="li06"><a href="/english/contact/">Contact us</a></li>
+    </ul>
+    <p class="language-txt"><a href="/japan/">JP</a> / <a href="/english/" class="current">EN</a></p>
+  </nav>
+  <!--▲▲ /nav-area ▲▲-->
+  <p class="spMenu"><span></span><span></span><span></span></p>
+</header>
+<section id="spNav">
+  <nav class="spmenu-box">
+    <p class="spmeun-tit"><a href="/english/">Home</a></p>
+    <p class="spmeun-bgtit">Product Search / Where to Buy<span><img src="/english/common/img/plus.png"></span></p>
+    <div class="spmenu-inr">
+      <p class="spmeun-txt01"><a href="/english/products/">Products</a></p>
+      <p class="spmeun-txt01"><a href="/world_network.php">Overseas Affiliates/Distributors</a></p>
+    </div>
+    <p class="spmeun-bgtit">Customer Support<span><img src="/english/common/img/plus.png"></span></p>
+    <div class="spmenu-inr">
+      <p class="spmeun-txt01"><a href="/english/support/">Support & Service</a></p>
+      <p class="spmeun-txt01"><a href="/english/hakkosupport/">Auto-Soldering System</a></p>
+    </div>
+    <p class="spmeun-bgtit">About HAKKO<span><img src="/english/common/img/plus.png"></span></p>
+    <div class="spmenu-inr">
+      <p class="spmeun-txt01"><a href="/english/company/message.php">Message</a></p>
+      <p class="spmeun-txt01"><a href="/english/company/profile.php">Corporate Profile</a></p>
+      <p class="spmeun-txt01"><a href="/english/company/news.php">News & Topics</a></p>
+      <p class="spmeun-txt01"><a href="/english/company/history.php">History</a></p>
+      <p class="spmeun-txt01"><a href="/english/company/intellectual_property.php">Intellectual Property Protection</a></p>
+      <p class="spmeun-txt01"><a href="/english/company/policy.php">Quality Policy / Environment Policy</a></p>
+      <p class="spmeun-txt01"><a href="/english/company/conflict_minerals.php">Conflict Mineral Policy</a></p>
+    </div>
+    <p class="spmeun-tit"><a href="/english/access/">Location</a></p>
+    <p class="spmeun-tit"><a href="/english/contact/">Contact us</a></p>
+    <p class="spmeun-tit"><a href="/english/privacy_policy/">Privacy Policy</a></p>
+    <!-- <p class="spmeun-tit btm20"><a href="/english/sitemap/">Site Map</a></p> -->
+    <div class="center">
+      <p class="language-txt"><a href="/japan/">JP</a> / <a href="/english/" class="current">EN</a></p>
+    </div>
+  </nav>
+</section>
+<!-- /▲▲spNav -->
+  <div class="contents">
+    <div class="mv-area">
+      <div class="mvbg01"></div>
+      <div class="line"></div>
+      <div class="mv-gray-box">
+        <div class="mv-gray-box-inr">
+          <div class="mv-txt-zone">
+            <p class="mv-hd01"><img src="./common/img/top/mv_txt.png" alt=""></p>
+            <p class="mv-txt">HAKKO IS A SOLDERING IRON MANUFACTURER THAT WAS ESTABLISHED IN 1952.</p>
+          </div>
+          <div class="bxslider-box pc-show">
+            <div class="change-box">
+              <figure class="mv-img01 mv03"><img src="./common/img/top/mv03_img01.png" alt="" width="817" height="937"></figure>
+              <figure class="mv-img01 mv01"><img src="./common/img/top/mv01_img01.png" alt="" width="817" height="937"></figure>
+              <figure class="mv-img01 mv02"><img src="./common/img/top/mv02_img01.png" alt="" width="817" height="937"></figure>
+            </div>
+          </div>
+          <div class="bxslider-box sp-show">
+            <div class="change-box">
+              <figure class="mv-img01 mv03"><img src="./common/img/top/mv03_img01_sp.png" alt="" width="404" height="469"></figure>
+              <figure class="mv-img01 mv01"><img src="./common/img/top/mv01_img01_sp.png" alt="" width="404" height="469"></figure>
+              <figure class="mv-img01 mv02"><img src="./common/img/top/mv02_img01_sp.png" alt="" width="404" height="469"></figure>
+            </div>
+          </div>
+          <div class="bxslider-box01">
+            <div class="change-box">
+              <figure class="mv-img02 mv03"><img src="./common/img/top/mv03_img02.png" alt="" width="800" height="868"></figure>
+              <figure class="mv-img02 mv01"><img src="./common/img/top/mv01_img02.png" alt="" width="800" height="868"></figure>
+              <figure class="mv-img02 mv02"><img src="./common/img/top/mv02_img02.png" alt="" width="800" height="868"></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mv-blue-bg">
+        <div class="change-box">
+          <div class="mv-txt-box">
+            <p class="mv-txt01">HU-200</p>
+            <p class="mv-txt02">Auto-Soldering System</p>
+          </div>
+          <div class="mv-txt-box">
+            <p class="mv-txt01">FX-888DX</p>
+            <p class="mv-txt02">Soldering iron /<br>Station type</p>
+          </div>
+          <div class="mv-txt-box">
+            <p class="mv-txt01">FN-1102</p>
+            <p class="mv-txt02">Soldering iron /<br>Station type</p>
+          </div>
+        </div>
+      </div>
+      <div class="mv-copy-txt">©2021 HAKKO Corporation. All Rights Reserved.</div>
+    </div>
+    <!--▲▲ /mv-area ▲▲-->
+    <div class="contents-width">
+      <div class="entrance-area">
+        <div class="big-box">
+          <div class="entrance-inr" style="background-image:url(./common/img/top/product_bg.png);">
+            <div class="entrance-tit-box">
+              <h2 class="basic-tit02 barlow">PRODUCTS</h2>
+            </div>
+            <div class="entrance-ul-zone">
+              <ul class="entrance-ul">
+                <li><a href="./products/">
+                    <figure><img src="./common/img/top/icon01.png" alt=""></figure>
+                    <p>Products</p>
+                  </a></li>
+                <li><a href="../world_network.php">
+                    <figure><img src="./common/img/top/icon02.png" alt=""></figure>
+                    <p>Overseas Affiliates/Distributors</p>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="entrance-inr" style="background-image:url(./common/img/top/customer_support.png);">
+            <div class="entrance-tit-box">
+              <h2 class="basic-tit02 barlow">CUSTOMER SUPPORT</h2>
+            </div>
+            <div class="entrance-ul-zone">
+              <ul class="entrance-ul">
+                <li><a href="./support/">
+                    <figure><img src="./common/img/top/icon03.png" alt=""></figure>
+                    <p>Support & Service</p>
+                  </a></li>
+                <li><a href="./hakkosupport/">
+                    <figure><img src="./common/img/top/icon05.png" alt=""></figure>
+                    <p>Auto-Soldering System</p>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--▲▲ /clm02 ▲▲-->
+      </div>
+      <!--▲▲ /entrance-area ▲▲-->
+    </div>
+    <!--▲▲ /contents-width ▲▲-->
+    <div class=" message-zone">
+      <div class="message-zone-inr">
+        <div class="clearfix sp-message-zone">
+          <div class="message-zone-left">
+            <h2 class="top-tit02 ie-hide"><span class="tit02-en">MESSAGE</span></h2>
+            <h2 class="top-tit02 ie-show"><img src="./common/img/top/message_tit.png" alt="MESSAGE"></h2>
+          </div>
+          <div class="message-zone-right">
+            <p class="message-zone-en">WE, HAKKO, ARE THE COMPANY<br class="pcEle">
+              THAT MEETS THE SOLDERING NEEDS<br class="pcEle">AROUND THE WORLD.</p>
+          </div>
+        </div>
+        <p><a href="./company/message.php" class="btn type01">MORE</a></p>
+      </div>
+    </div>
+    <!--▲▲ /message-zone ▲▲-->
+    <div class="company-zone">
+      <div class="main-width">
+        <div class="width412">
+          <div class="company-box">
+            <h2 class="top-tit02 company-tit02W ie-hide"><span class="tit02-en">COMPANY</span></h2>
+            <h2 class="top-tit02 company-tit02W ie-show"><img src="./common/img/top/company_tit.png" alt="COMPANY"></h2>
+            <p class="company-txt">
+              <span>Since its founding in 1952, HAKKO has been supplying products to over 60 countries and leading the soldering industry.<br>
+                HAKKO meets the needs of all the thermal control with its high-quality products for a wide range of
+                markets, from leading-edge products loved by engineers around the world to fundamental products loved by
+                personal users.</span></p>
+          </div>
+          <figure class="company-txt-img"><img src="./common/img/top/company_txt.png" alt="Japan to the world"></figure>
+          <p><a href="./company/profile.php" class="btn type01">MORE</a></p>
+        </div>
+      </div>
+    </div>
+    <!--▲▲ /company-zone ▲▲-->
+    <div class="news-area-box">
+      <div class="news-area-inr">
+        <div class="width1080">
+          <h2 class="top-tit02 news-tit01 ie-hide"><span class="tit02-en">NEWS</span></h2>
+          <h2 class="top-tit02 news-tit01 ie-show"><img src="./common/img/top/news_tit.png" alt="NEWS"></h2>
+          <div class="basic-box01 news-zone">
+            <ul class="basic-news-ul">
+                                              <li>
+                  <a href="./company/news_detail.php?seq=153" >
+                    <p class="date">2025/07/08</p>
+                    <p class="category-box"><span
+                        class="category">New Products</span></p>
+                    <div class="news-title-box">
+                    <div class="news-title-box-inr">
+                    <h3 class="news-title">NEW STANDARD　New product released in the evolved FX-971 series</h3>
+                                        </div>
+                    </div>
+                  </a>
+                </li>
+                                              <li>
+                  <a href="./company/news_detail.php?seq=152" >
+                    <p class="date">2025/06/11</p>
+                    <p class="category-box"><span
+                        class="category">New Products</span></p>
+                    <div class="news-title-box">
+                    <div class="news-title-box-inr">
+                    <h3 class="news-title">New Product: Auto-Soldering Iron Unit HF-600</h3>
+                                        </div>
+                    </div>
+                  </a>
+                </li>
+                                              <li>
+                  <a href="./company/news_detail.php?seq=151" >
+                    <p class="date">2025/06/11</p>
+                    <p class="category-box"><span
+                        class="category">New Products</span></p>
+                    <div class="news-title-box">
+                    <div class="news-title-box-inr">
+                    <h3 class="news-title">New Product: Micro Hot Air Station FR-850 </h3>
+                                        </div>
+                    </div>
+                  </a>
+                </li>
+                                              <li>
+                  <a href="./company/news_detail.php?seq=150" >
+                    <p class="date">2025/04/23</p>
+                    <p class="category-box"><span
+                        class="category">New Products</span></p>
+                    <div class="news-title-box">
+                    <div class="news-title-box-inr">
+                    <h3 class="news-title">Auto-Soldering System Additional Option : Auto Temperature Measurement and Adjustment System</h3>
+                                        </div>
+                    </div>
+                  </a>
+                </li>
+                                              <li>
+                  <a href="./company/news_detail.php?seq=149" >
+                    <p class="date">2025/01/14</p>
+                    <p class="category-box"><span
+                        class="category">New Products</span></p>
+                    <div class="news-title-box">
+                    <div class="news-title-box-inr">
+                    <h3 class="news-title">New WICK Desoldering Wire</h3>
+                                        </div>
+                    </div>
+                  </a>
+                </li>
+                          </ul>
+          </div>
+          <p><a href="./company/news.php" class="btn type01">MORE</a></p>
+        </div>
+      </div>
+    </div>
+    <!--▲▲ /news-area ▲▲-->
+  </div>
+  <!--▲▲ /contents ▲▲-->
+
+
+  <footer>
+  <div class="footer-width">
+    <figure class="footer-logo"><a href="/"><img src="/english/common/img/footer_logo.png" alt="It's for you HAKKO"></a></figure>
+    <div class="sns-free">
+      <ul class="sns-ul">
+        <li><a href="https://twitter.com/Hakko_Corp" target="_blank"><img src="/japan/common/img/x_logo.png" alt="x_logo" style="padding:4px;"></a></li>
+        <li><a href="https://www.instagram.com/hakkocorporation" target="_blank"><img src="/japan/common/img/instagram.png" alt="instagram"></a></li>
+      </ul>
+    </div>
+    <div class="clm04 footer-clm04">
+      <div class="clm04-inr">
+        <p class="footer-txt01"><a href="/english/">Home</a></p>
+      </div>
+      <!--▲▲ /clm04-inr ▲▲-->
+      <div class="clm04-inr">
+        <p class="footer-txt01"><span>Product Search / Where to Buy</span></p>
+        <ul class="footer-ul">
+          <li><a href="/english/products/">Products</a></li>
+          <li><a href="/world_network.php">Overseas Affiliates/Distributors</a></li>
+        </ul>
+      </div>
+      <!--▲▲ /clm04-inr ▲▲-->
+      <div class="clm04-inr">
+        <p class="footer-txt01"><span>Customer Support</span></p>
+        <ul class="footer-ul btm40">
+          <li><a href="/english/support/">Support & Service</a></li>
+          <li><a href="/english/hakkosupport/">Auto-Soldering System</a></li>
+        </ul>
+      </div>
+      <!--▲▲ /clm04-inr ▲▲-->
+      <div class="clm04-inr">
+        <p class="footer-txt01">About HAKKO</p>
+        <ul class="footer-ul">
+          <li><a href="/english/company/message.php">Message</a></li>
+          <li><a href="/english/company/profile.php">Corporate Profile</a></li>
+          <li><a href="/english/company/news.php">News & Topics</a></li>
+          <li><a href="/english/company/history.php">History</a></li>
+          <li><a href="/english/company/intellectual_property.php">Intellectual Property Protection</a></li>
+          <li><a href="/english/company/policy.php">Quality Policy / Environment Policy</a></li>
+          <li><a href="/english/company/conflict_minerals.php">Conflict Mineral Policy</a></li>
+        </ul>
+      </div>
+      <!--▲▲ /clm04-inr ▲▲-->
+      <div class="clm04-inr">
+        <p class="footer-txt01"><a href="/english/access/">Location</a></p>
+        <p class="footer-txt01"><a href="/english/contact/">Contact us</a></p>
+        <p class="footer-txt01"><a href="/english/privacy_policy/">Privacy Policy</a></p>
+        <p class="footer-txt01"><a href="/english/link_policy/">Link Policy</a></p>
+        <p class="footer-txt01"><a href="/english/cookie_policy/">Cookie Policy</a></p>
+        <!-- <p class="footer-txt01"><a href="/english/sitemap/">Site Map</a></p> -->
+      </div>
+      <!--▲▲ /clm04-inr ▲▲-->
+    </div>
+    <!--▲▲ /clm04 ▲▲-->
+    <figure class="center"><img src="/english/common/img/footer_txt.png" alt="It's for you"></figure>
+  </div>
+  <div class="copy-txt">©2021 HAKKO Corporation. All Rights Reserved.</div>
+</footer>
+<div id="page-top"><a href="#"></a></div>
+<script src="/english/common/js/common-dist.js"></script>  <script type="text/javascript" src="/japan/common/js/global/jquery.shuffleLetters.js"></script>
+  <script type="text/javascript" src="/japan/common/js/global/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="/japan/common/js/global/top.js"></script>
+  </body>
+
+</html>

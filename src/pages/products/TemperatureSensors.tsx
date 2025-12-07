@@ -26,74 +26,55 @@ const products = [
       "Data logging with USB interface",
       "NVLAP-accredited calibration available"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
-    name: "Pt100 RTD Temperature Sensor",
-    brand: "OMEGA ENGINEERING",
+    name: "testo 735 Precision Thermometer",
+    brand: "TESTO",
     image: tempSensorImage,
-    description: "Industrial-grade Pt100 RTD sensors offering exceptional accuracy and long-term stability for demanding applications.",
+    description: "High-precision multichannel thermometer for laboratory and industrial temperature measurement.",
     features: [
-      "Class A accuracy: ± 0.15°C at 0°C",
-      "Temperature range: -200°C to 850°C",
-      "2-wire, 3-wire, or 4-wire configurations",
-      "Various probe lengths and diameters available",
-      "316 stainless steel construction"
+      "3-channel measurement capability",
+      "Accuracy up to ±0.05°C",
+      "Memory for 10,000 readings",
+      "PC software for data analysis",
+      "Multiple probe compatibility"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
+  },
+  {
+    name: "testo 926 Temperature Measuring Instrument",
+    brand: "TESTO",
+    image: tempSensorImage,
+    description: "Fast-response temperature measuring instrument ideal for food industry applications.",
+    features: [
+      "Response time < 3 seconds",
+      "Temperature range: -50°C to +400°C",
+      "Audible alarm function",
+      "Waterproof housing IP65",
+      "HACCP compliant"
+    ],
+    price: "Request Quote"
   },
   {
     name: "Type K Thermocouple Probes",
     brand: "FLUKE",
     image: tempSensorImage,
-    description: "Versatile Type K thermocouple probes designed for general purpose temperature measurements in industrial environments.",
+    description: "Versatile Type K thermocouple probes designed for general purpose temperature measurements.",
     features: [
       "Temperature range: -40°C to 260°C",
-      "Fast response time for quick measurements",
-      "Ruggedized design for harsh environments",
+      "Fast response time",
+      "Ruggedized design",
       "Compatible with all FLUKE thermometers",
-      "Various probe tip configurations available"
+      "Various probe tip configurations"
     ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "T3000 Series Temperature Transmitter",
-    brand: "SIEMENS",
-    image: tempSensorImage,
-    description: "Smart temperature transmitter with HART protocol for accurate and reliable industrial temperature monitoring.",
-    features: [
-      "Universal input for RTD, TC, and mV signals",
-      "Accuracy up to ± 0.05% of span",
-      "HART 7 communication protocol",
-      "4-20 mA output with diagnostics",
-      "Wide operating temperature range"
-    ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "Thermistor Temperature Sensors",
-    brand: "TE CONNECTIVITY",
-    image: tempSensorImage,
-    description: "High-precision thermistor sensors providing exceptional sensitivity and accuracy for laboratory applications.",
-    features: [
-      "High sensitivity: 10,000 Ω at 25°C",
-      "Accuracy to ± 0.1°C or better",
-      "Fast thermal response time",
-      "Excellent long-term stability",
-      "Small form factor for point measurements"
-    ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "IR Temperature Sensor Module",
     brand: "OPTRIS",
     image: tempSensorImage,
-    description: "Non-contact infrared temperature sensor for accurate measurements in challenging industrial applications.",
+    description: "Non-contact infrared temperature sensor for accurate measurements in challenging applications.",
     features: [
       "Measurement range: -40°C to 1030°C",
       "Response time: 150 ms",
@@ -101,8 +82,21 @@ const products = [
       "USB interface for configuration",
       "IP65 protection rating"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
+  },
+  {
+    name: "DT-8869H IR Thermometer",
+    brand: "HTC",
+    image: tempSensorImage,
+    description: "Professional infrared thermometer with high temperature measurement capability.",
+    features: [
+      "Temperature range: -50°C to 1850°C",
+      "Distance to spot ratio: 50:1",
+      "Adjustable emissivity",
+      "Data logging function",
+      "Laser targeting system"
+    ],
+    price: "Request Quote"
   }
 ];
 
@@ -111,7 +105,6 @@ const TemperatureSensors = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/5 via-accent/5 to-background overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
@@ -121,22 +114,17 @@ const TemperatureSensors = () => {
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Breadcrumb */}
           <div className="mb-8">
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
                   <BreadcrumbLink asChild>
-                    <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
-                      Home
-                    </Link>
+                    <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">Home</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbPage className="text-accent font-semibold">
-                    Temperature Sensors
-                  </BreadcrumbPage>
+                  <BreadcrumbPage className="text-accent font-semibold">Temperature Sensors</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
@@ -150,19 +138,16 @@ const TemperatureSensors = () => {
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Precision
-              <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Temperature Sensors
-              </span>
+              <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Temperature Sensors</span>
             </h1>
 
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              Industrial temperature measurement solutions from FLUKE CALIBRATION, OMEGA ENGINEERING, and other leading manufacturers
+              Industrial temperature measurement solutions from FLUKE, TESTO, HTC and other leading manufacturers
             </p>
           </div>
         </div>
       </section>
 
-      {/* Products Grid */}
       <section className="py-16 flex-grow">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

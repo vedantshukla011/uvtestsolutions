@@ -26,8 +26,7 @@ const products = [
       "Advanced triggering and protocol decode",
       "10.4-inch capacitive touchscreen display"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "InfiniiVision 4000 X-Series Oscilloscope",
@@ -41,23 +40,7 @@ const products = [
       "12.1-inch capacitive touchscreen",
       "Zone touch trigger for complex signals"
     ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "InfiniiVision DSOX3000G Series",
-    brand: "KEYSIGHT",
-    image: oscilloscopeImage,
-    description: "General purpose oscilloscope with built-in waveform generator for comprehensive signal analysis and stimulus response testing.",
-    features: [
-      "100 MHz to 1 GHz bandwidth options",
-      "5 GSa/s sample rate with 4 Mpts memory",
-      "Built-in 20 MHz waveform generator",
-      "8.5-inch WVGA capacitive touch display",
-      "Zone touch triggering technology"
-    ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "DHO4000 Series Digital Oscilloscope",
@@ -71,8 +54,7 @@ const products = [
       "12-bit vertical resolution ADC",
       "10.1-inch HD capacitive touchscreen"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "DHO800/900 Series Digital Oscilloscope",
@@ -86,23 +68,7 @@ const products = [
       "50 Mpts memory depth",
       "7-inch WVGA touchscreen display"
     ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "MSO8000 Series Mixed Signal Oscilloscope",
-    brand: "RIGOL",
-    image: oscilloscopeImage,
-    description: "Professional mixed signal oscilloscope with deep memory and comprehensive protocol analysis capabilities.",
-    features: [
-      "600 MHz to 2 GHz bandwidth",
-      "10 GSa/s maximum sample rate",
-      "500 Mpts max memory depth",
-      "16 digital channels for MSO",
-      "10.1-inch capacitive multi-touch display"
-    ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "SDS6000 Pro Digital Oscilloscope",
@@ -116,23 +82,105 @@ const products = [
       "5,000,000 wfm/s waveform capture rate",
       "13.3-inch full HD capacitive touchscreen"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
-    name: "WaveRunner 8000 HD Oscilloscope",
-    brand: "TELEDYNE LECROY",
+    name: "SDS2000X Plus Oscilloscope",
+    brand: "SIGLENT",
     image: oscilloscopeImage,
-    description: "HD4096 high-definition technology delivers 12-bit resolution for the ultimate measurement clarity and accuracy.",
+    description: "High-performance 4-channel digital oscilloscope with advanced features for professional applications.",
     features: [
-      "1 GHz to 4 GHz bandwidth",
-      "12-bit ADC with HD4096 technology",
-      "Up to 20 GS/s sample rate",
-      "Advanced math and measurement capabilities",
-      "15.6-inch touch screen display"
+      "100 MHz to 350 MHz bandwidth",
+      "2 GSa/s sample rate",
+      "200 Mpts memory depth",
+      "SPO technology for fast waveform capture",
+      "7-inch TFT-LCD touchscreen"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
+  },
+  {
+    name: "DSO5000 Series Digital Oscilloscope",
+    brand: "HANTEK",
+    image: oscilloscopeImage,
+    description: "Cost-effective digital storage oscilloscope ideal for education and basic electronics testing.",
+    features: [
+      "60 MHz to 200 MHz bandwidth",
+      "1 GSa/s real-time sample rate",
+      "40K memory depth per channel",
+      "7-inch TFT LCD display",
+      "USB device and host interfaces"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "DSO2000 Series Portable Oscilloscope",
+    brand: "HANTEK",
+    image: oscilloscopeImage,
+    description: "Compact portable oscilloscope with excellent performance for field service applications.",
+    features: [
+      "70 MHz to 150 MHz bandwidth",
+      "1 GSa/s sample rate",
+      "2M memory depth",
+      "5.6-inch TFT color display",
+      "Compact and lightweight design"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "SDS-E Series Digital Oscilloscope",
+    brand: "OWON",
+    image: oscilloscopeImage,
+    description: "Entry-level digital oscilloscope with essential features for education and hobbyist applications.",
+    features: [
+      "50 MHz to 100 MHz bandwidth",
+      "1 GSa/s sample rate",
+      "10K memory depth",
+      "7-inch color TFT display",
+      "32 automatic measurements"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "XDS Series Digital Oscilloscope",
+    brand: "OWON",
+    image: oscilloscopeImage,
+    description: "Advanced digital oscilloscope with WiFi connectivity and touchscreen interface.",
+    features: [
+      "100 MHz to 200 MHz bandwidth",
+      "1 GSa/s sample rate",
+      "40M record length",
+      "8-inch touchscreen display",
+      "Built-in WiFi connectivity"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "GDS-2000E Series Oscilloscope",
+    brand: "GW INSTEK",
+    image: oscilloscopeImage,
+    description: "Feature-rich digital storage oscilloscope for R&D and production testing environments.",
+    features: [
+      "100 MHz to 200 MHz bandwidth",
+      "1 GSa/s sample rate",
+      "10 Mpts memory depth",
+      "8-inch TFT LCD display",
+      "VPO technology for enhanced visualization"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "GDS-3000 Series Oscilloscope",
+    brand: "GW INSTEK",
+    image: oscilloscopeImage,
+    description: "High-performance oscilloscope with advanced triggering and analysis capabilities.",
+    features: [
+      "150 MHz to 500 MHz bandwidth",
+      "4 GSa/s sample rate",
+      "25 Mpts memory depth",
+      "8-inch WVGA LCD display",
+      "Advanced serial bus decode"
+    ],
+    price: "Request Quote"
   }
 ];
 
@@ -186,7 +234,7 @@ const Oscilloscopes = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              Precision waveform analysis instruments from world-leading brands including TEKTRONIX, KEYSIGHT, and RIGOL
+              Precision waveform analysis instruments from TEKTRONIX, KEYSIGHT, RIGOL, SIGLENT, HANTEK, OWON and GW INSTEK
             </p>
           </div>
         </div>

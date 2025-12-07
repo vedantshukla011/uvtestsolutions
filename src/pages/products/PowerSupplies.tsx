@@ -26,8 +26,7 @@ const products = [
       "Low noise: <350 µVrms (5 Hz-10 MHz)",
       "Built-in data logging and analysis"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "E36200 Series Autoranging DC Power Supply",
@@ -41,23 +40,7 @@ const products = [
       "Fast transient response < 50 µs",
       "USB, LAN, and GPIB interfaces"
     ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "PWS4000 Series Programmable DC Power Supply",
-    brand: "TEKTRONIX",
-    image: powerSupplyImage,
-    description: "High-performance programmable power supply with touchscreen interface and advanced measurement capabilities.",
-    features: [
-      "Up to 800W output power",
-      "Voltage range: 0-80V, Current range: 0-60A",
-      "± 0.02% voltage and current accuracy",
-      "5-inch color touchscreen display",
-      "List mode with up to 100 programmable steps"
-    ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "DP800 Series Programmable Linear DC Power Supply",
@@ -71,23 +54,7 @@ const products = [
       "Built-in V, A, W measurements and waveforms",
       "Flexible output configurations"
     ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "DP900 Series Programmable Power Supply",
-    brand: "RIGOL",
-    image: powerSupplyImage,
-    description: "Entry-level triple output power supply with excellent stability and low noise for basic applications.",
-    features: [
-      "Three isolated output channels",
-      "32V/3A per channel capability",
-      "Low ripple and noise < 500 µVrms",
-      "Timing output control function",
-      "USB interface for remote control"
-    ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "DP2000 Series High Precision Power Supply",
@@ -101,8 +68,7 @@ const products = [
       "High resolution: 0.1 mV/0.01 mA",
       "4.3-inch TFT LCD display"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "SPD3000X Series Programmable DC Power Supply",
@@ -116,23 +82,105 @@ const products = [
       "Built-in waveform display function",
       "USB, LAN, and RS232 interfaces"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
-    name: "ZUP Series Electronic Load and Power Supply",
-    brand: "TDK-LAMBDA",
+    name: "SPD1000X Series Single Channel Power Supply",
+    brand: "SIGLENT",
     image: powerSupplyImage,
-    description: "Versatile programmable power supply combining bipolar operation with electronic load functionality.",
+    description: "Cost-effective single channel power supply with excellent regulation and protection features.",
     features: [
-      "Bipolar operation: source and sink modes",
-      "Up to 1500W output power",
-      "Fast transient response < 30 µs",
-      "Built-in arbitrary waveform generation",
-      "USB, LAN, and GPIB interfaces"
+      "Single channel output up to 360W",
+      "High resolution: 10 mV/1 mA",
+      "Low ripple: < 500 µVrms",
+      "OVP, OCP, OTP protection",
+      "4.3-inch TFT LCD display"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
+  },
+  {
+    name: "IT6000 Series High Power DC Power Supply",
+    brand: "ITECH",
+    image: powerSupplyImage,
+    description: "High power programmable DC power supply for industrial and automotive testing applications.",
+    features: [
+      "Up to 144 kW output power",
+      "Bidirectional power capability",
+      "Fast transient response",
+      "Built-in waveform generation",
+      "Master/slave parallel operation"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "IT6500 Series Wide Range DC Power Supply",
+    brand: "ITECH",
+    image: powerSupplyImage,
+    description: "Wide-range programmable DC power supply with auto-ranging technology for versatile applications.",
+    features: [
+      "Up to 6000W output power",
+      "Auto-ranging output capability",
+      "High slew rate for dynamic testing",
+      "Solar array simulation function",
+      "USB, LAN, RS-232, GPIB interfaces"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "PSW Series Programmable Switching Power Supply",
+    brand: "GW INSTEK",
+    image: powerSupplyImage,
+    description: "High-efficiency switching power supply with compact design for benchtop and system integration.",
+    features: [
+      "Up to 1080W output power",
+      "Voltage range: 0-80V, Current: 0-135A",
+      "Remote sense function",
+      "USB, RS-232, LAN interfaces",
+      "Compact 2U rack-mount design"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "GPD-4303S Programmable Linear DC Power Supply",
+    brand: "GW INSTEK",
+    image: powerSupplyImage,
+    description: "Four-channel programmable linear power supply for comprehensive power supply needs.",
+    features: [
+      "Four independent output channels",
+      "Low noise: < 1 mVrms",
+      "Series/parallel tracking modes",
+      "USB interface for remote control",
+      "Output timer function"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "ODP Series Programmable DC Power Supply",
+    brand: "OWON",
+    image: powerSupplyImage,
+    description: "Compact programmable power supply with multiple channels for education and R&D applications.",
+    features: [
+      "Triple output channels",
+      "Low ripple and noise",
+      "High resolution setting",
+      "OVP/OCP protection",
+      "USB connectivity"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "UTP1000 Series DC Power Supply",
+    brand: "UNI-T",
+    image: powerSupplyImage,
+    description: "Professional DC power supply with precise voltage and current control for laboratory use.",
+    features: [
+      "Dual channel output",
+      "High resolution: 10 mV/1 mA",
+      "Constant voltage/current modes",
+      "Overload protection",
+      "Large LED display"
+    ],
+    price: "Request Quote"
   }
 ];
 
@@ -186,7 +234,7 @@ const PowerSupplies = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              High-precision programmable power supplies from KEYSIGHT, TEKTRONIX, RIGOL for laboratory and industrial applications
+              High-precision programmable power supplies from KEYSIGHT, RIGOL, SIGLENT, ITECH, GW INSTEK, OWON and UNI-T
             </p>
           </div>
         </div>
