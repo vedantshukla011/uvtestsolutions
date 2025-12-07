@@ -26,8 +26,7 @@ const products = [
       "Low-pass filter for precise measurements on VFDs",
       "CAT III 1000V, CAT IV 600V safety rating"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "Fluke 117 Electrician's Multimeter",
@@ -41,23 +40,7 @@ const products = [
       "Large white LED backlight for low-light areas",
       "CAT III 600V safety rated"
     ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "Fluke 289 True-RMS Industrial Logging Multimeter",
-    brand: "FLUKE",
-    image: multimeterImage,
-    description: "The most advanced Fluke multimeter featuring TrendCapture graphing and data logging for troubleshooting.",
-    features: [
-      "50,000 count resolution with 0.025% DC accuracy",
-      "TrendCapture displays readings as graph over time",
-      "Data logging up to 15,000 recorded events",
-      "Low-pass filter for motor drive measurements",
-      "CAT III 1000V, CAT IV 600V safety rated"
-    ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "U1272A Handheld Digital Multimeter",
@@ -71,8 +54,7 @@ const products = [
       "Harmonic ratio measurement",
       "CAT III 1000V, CAT IV 600V safety rated"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "34465A Digital Multimeter 6½ Digit",
@@ -86,8 +68,7 @@ const products = [
       "Math operations and limit testing",
       "USB, LAN, and GPIB connectivity"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "DM3068 Digital Multimeter",
@@ -101,23 +82,7 @@ const products = [
       "Built-in 6-slot scanner card",
       "USB, LAN, and GPIB interfaces"
     ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "DM800 Series Digital Multimeter",
-    brand: "RIGOL",
-    image: multimeterImage,
-    description: "High-precision 5½ digit benchtop multimeter with fast measurement speed and comprehensive functions.",
-    features: [
-      "5½ digit resolution with 0.015% DCV accuracy",
-      "150 readings/s measurement speed",
-      "4.3-inch TFT LCD color display",
-      "Multiple math functions including statistics",
-      "USB and LAN interfaces"
-    ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "SDM3065X Digital Multimeter",
@@ -131,8 +96,35 @@ const products = [
       "Built-in 10-channel scanner card slot",
       "Multiple interface options (USB, LAN, GPIB)"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
+  },
+  {
+    name: "UT61E+ True RMS Multimeter",
+    brand: "UNI-T",
+    image: multimeterImage,
+    description: "Professional True RMS digital multimeter with high accuracy and comprehensive measurement functions.",
+    features: [
+      "22000 count display resolution",
+      "True RMS AC voltage and current",
+      "USB data transfer capability",
+      "Auto power off function",
+      "CAT III 600V safety rated"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "UT139C Digital Multimeter",
+    brand: "UNI-T",
+    image: multimeterImage,
+    description: "Compact True RMS multimeter ideal for field technicians and electronics professionals.",
+    features: [
+      "6000 count auto-ranging display",
+      "True RMS measurement capability",
+      "NCV non-contact voltage detection",
+      "Temperature measurement function",
+      "Data hold and relative mode"
+    ],
+    price: "Request Quote"
   },
   {
     name: "DMM4050 6½ Digit Precision Multimeter",
@@ -146,8 +138,49 @@ const products = [
       "Built-in statistics and histogram functions",
       "USB and Ethernet connectivity"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
+  },
+  {
+    name: "GDM-8261A Digital Multimeter",
+    brand: "GW INSTEK",
+    image: multimeterImage,
+    description: "Dual measurement display DMM with high precision for R&D and production testing applications.",
+    features: [
+      "6½ digit resolution with 0.0035% DCV accuracy",
+      "Dual measurement display",
+      "11 measurement functions",
+      "USB, RS-232, and GPIB interfaces",
+      "Built-in math and statistics"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "DT-9989 Professional Multimeter",
+    brand: "HTC",
+    image: multimeterImage,
+    description: "Professional digital multimeter with thermal imaging capability for comprehensive electrical analysis.",
+    features: [
+      "Built-in thermal imaging camera",
+      "True RMS measurements",
+      "Bluetooth connectivity",
+      "50000 count display",
+      "CAT IV 600V safety rating"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "Rish Multi 18S Multimeter",
+    brand: "RISHABH",
+    image: multimeterImage,
+    description: "Professional grade digital multimeter designed for industrial and laboratory applications.",
+    features: [
+      "True RMS AC/DC measurements",
+      "4000 count display",
+      "Capacitance and frequency measurement",
+      "Auto power off function",
+      "CAT III 600V rated"
+    ],
+    price: "Request Quote"
   }
 ];
 
@@ -201,7 +234,7 @@ const Multimeters = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              Industry-leading digital multimeters from FLUKE, KEYSIGHT, and other trusted brands for accurate electrical measurements
+              Industry-leading digital multimeters from FLUKE, KEYSIGHT, UNI-T, RISHABH and other trusted brands
             </p>
           </div>
         </div>

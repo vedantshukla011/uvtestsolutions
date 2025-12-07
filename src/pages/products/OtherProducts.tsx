@@ -4,7 +4,6 @@ import ProductCard from "@/components/ProductCard";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 
-// Import product images
 import vernierCaliperImg from "@/assets/products/multimeter-fluke.jpg";
 import airPurifierImg from "@/assets/products/power-supply.jpg";
 import electricalComponentImg from "@/assets/products/logic-analyzer.jpg";
@@ -14,64 +13,57 @@ const products = [
     name: "Digital Vernier Caliper 150mm",
     brand: "MITUTOYO",
     image: vernierCaliperImg,
-    description: "High-precision digital caliper with 150mm measuring range, featuring an easy-to-read LCD display and data output capability.",
+    description: "High-precision digital caliper with 150mm measuring range and data output capability.",
     features: ["0.01mm resolution", "IP67 dust/water protection", "Data output function", "Carbide-tipped jaws"],
   },
   {
     name: "Dial Vernier Caliper 200mm",
     brand: "INSIZE",
     image: vernierCaliperImg,
-    description: "Professional dial caliper with 200mm range, offering reliable mechanical measurement for industrial applications.",
+    description: "Professional dial caliper with 200mm range for industrial applications.",
     features: ["0.02mm accuracy", "Hardened stainless steel", "Shock-resistant dial", "Thumb roller adjustment"],
   },
   {
-    name: "Industrial Air Purifier HEPA",
-    brand: "HONEYWELL",
-    image: airPurifierImg,
-    description: "Heavy-duty industrial air purifier with HEPA filtration, designed for manufacturing and laboratory environments.",
-    features: ["HEPA H13 filter", "500 CFM capacity", "Activated carbon layer", "Auto air quality sensor"],
-  },
-  {
-    name: "Portable Air Purifier with UV",
-    brand: "PHILIPS",
-    image: airPurifierImg,
-    description: "Compact portable air purifier with UV-C sterilization, ideal for cleanrooms and sensitive work areas.",
-    features: ["UV-C sterilization", "3-stage filtration", "Quiet operation", "Energy efficient"],
-  },
-  {
-    name: "Precision Resistor Kit",
-    brand: "VISHAY",
+    name: "FX-888D Soldering Station",
+    brand: "HAKKO",
     image: electricalComponentImg,
-    description: "Comprehensive precision resistor assortment kit with metal film resistors for laboratory and R&D applications.",
-    features: ["1% tolerance", "500+ pieces", "Metal film type", "Organized storage case"],
+    description: "Professional digital soldering station with rapid heat recovery.",
+    features: ["70W power output", "Digital temperature control", "Quick heat-up time", "ESD safe design"],
   },
   {
-    name: "Capacitor Assortment Kit",
-    brand: "PANASONIC",
+    name: "BK936D+ Soldering Station",
+    brand: "BAKON",
     image: electricalComponentImg,
-    description: "Professional electrolytic and ceramic capacitor kit for electronics prototyping and repair work.",
-    features: ["Wide value range", "300+ pieces", "High-quality brands", "Multiple types included"],
+    description: "Compact soldering station with precise temperature control for electronics work.",
+    features: ["60W power output", "200-480°C range", "LCD temperature display", "Sleep function"],
   },
   {
-    name: "SMD Component Kit",
-    brand: "YAGEO",
+    name: "Educational Lab Kit",
+    brand: "SCIENTECH",
     image: electricalComponentImg,
-    description: "Complete SMD component assortment including resistors, capacitors, and semiconductors for surface mount applications.",
-    features: ["2000+ pieces", "Multiple package sizes", "Component book storage", "Value labeled"],
+    description: "Comprehensive electronics training kit for educational institutions.",
+    features: ["Multiple experiment modules", "Complete with manual", "Student-friendly design", "Durable construction"],
+  },
+  {
+    name: "Embedded Development Board",
+    brand: "EMBUILT",
+    image: electricalComponentImg,
+    description: "Professional embedded systems development platform for R&D applications.",
+    features: ["ARM processor based", "Multiple I/O interfaces", "USB programming", "Complete SDK included"],
+  },
+  {
+    name: "Scientific Trainer Kit",
+    brand: "JOMA",
+    image: electricalComponentImg,
+    description: "Laboratory trainer kit for electronics and electrical engineering education.",
+    features: ["Multiple experiment setups", "Comprehensive manual", "Modular design", "Industrial grade components"],
   },
   {
     name: "Digital Micrometer 0-25mm",
     brand: "MITUTOYO",
     image: vernierCaliperImg,
-    description: "High-precision digital micrometer with 0-25mm range, featuring electronic display and data output.",
+    description: "High-precision digital micrometer with electronic display and data output.",
     features: ["0.001mm resolution", "SPC data output", "Ratchet thimble", "Carbide measuring faces"],
-  },
-  {
-    name: "Industrial Dust Collector",
-    brand: "BOSCH",
-    image: airPurifierImg,
-    description: "Heavy-duty industrial dust collector for workshop and manufacturing floor air quality management.",
-    features: ["1000 CFM capacity", "Auto filter cleaning", "Mobile design", "Low noise operation"],
   }
 ];
 
@@ -80,10 +72,8 @@ const OtherProducts = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Hero Section */}
         <section className="relative py-16 bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Breadcrumb */}
             <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
               <Link to="/" className="hover:text-primary transition-colors">Home</Link>
               <ChevronRight className="w-4 h-4" />
@@ -91,24 +81,18 @@ const OtherProducts = () => {
             </nav>
             
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Other Products & Accessories
-              </h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Other Products & Accessories</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Explore our range of precision measuring instruments, industrial air purification systems, 
-                and quality electrical components from trusted brands like Mitutoyo, Honeywell, and Vishay.
+                Explore our range of soldering equipment, educational kits, precision measuring instruments from HAKKO, BAKON, SCIENTECH, EMBUILT, JOMA, MITUTOYO and INSIZE.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Products Grid */}
         <section className="py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {products.map((product, index) => (
-                <ProductCard key={index} {...product} />
-              ))}
+              {products.map((product, index) => (<ProductCard key={index} {...product} />))}
             </div>
           </div>
         </section>

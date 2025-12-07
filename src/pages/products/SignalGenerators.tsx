@@ -26,8 +26,7 @@ const products = [
       "Dual-channel independent or synchronized operation",
       "Large 9-inch capacitive touchscreen display"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "33600A Series Waveform Generator",
@@ -41,23 +40,7 @@ const products = [
       "Arbitrary waveform sequencing",
       "Advanced modulation capabilities"
     ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "EDU33210A Waveform Generator",
-    brand: "KEYSIGHT",
-    image: signalGenImage,
-    description: "Education-focused waveform generator with Trueform technology ideal for academic and training environments.",
-    features: [
-      "20 MHz sine and square wave output",
-      "14-bit resolution with 125 MSa/s sample rate",
-      "Built-in arbitrary waveform capability",
-      "USB and LAN connectivity",
-      "Compact benchtop form factor"
-    ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "DG900 Pro Series Waveform Generator",
@@ -71,23 +54,7 @@ const products = [
       "SiFi IV signal generation technology",
       "4.3-inch TFT color display"
     ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
-    name: "DG800 Pro Series Waveform Generator",
-    brand: "RIGOL",
-    image: signalGenImage,
-    description: "Entry-level professional function generator with excellent signal quality for R&D and education.",
-    features: [
-      "25 MHz to 35 MHz bandwidth options",
-      "625 MSa/s sample rate with 16-bit resolution",
-      "16 Mpts arbitrary waveform memory",
-      "Comprehensive modulation functions",
-      "4.3-inch TFT color display"
-    ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "DG5000 Series Function/Arbitrary Waveform Generator",
@@ -101,8 +68,7 @@ const products = [
       "Rich modulation functions including AM, FM, PM",
       "Built-in 7-inch color display"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
     name: "SDG6000X Series Arbitrary Waveform Generator",
@@ -116,23 +82,91 @@ const products = [
       "Multi-tone generation up to 16 tones",
       "Advanced modulation and sweep functions"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
   },
   {
-    name: "WaveStation 3000 Arbitrary Waveform Generator",
-    brand: "TELEDYNE LECROY",
+    name: "SDG2000X Plus Waveform Generator",
+    brand: "SIGLENT",
     image: signalGenImage,
-    description: "Innovative AWG with unique sequencing capabilities for creating complex multi-segment waveforms.",
+    description: "Dual-channel function/arbitrary waveform generator with excellent signal fidelity.",
     features: [
-      "500 MHz maximum output frequency",
-      "2 GSa/s sample rate with 14-bit resolution",
-      "Unique WaveStream and WaveLink features",
-      "Advanced arbitrary waveform sequencing",
-      "Comprehensive modulation options"
+      "120 MHz maximum frequency",
+      "1.2 GSa/s sample rate with 16-bit resolution",
+      "16 Mpts arbitrary waveform memory",
+      "TrueArb and EasyPulse technology",
+      "4.3-inch TFT touchscreen"
     ],
-    price: "Request Quote",
-    inStock: true
+    price: "Request Quote"
+  },
+  {
+    name: "AG Series Arbitrary Waveform Generator",
+    brand: "OWON",
+    image: signalGenImage,
+    description: "Versatile arbitrary waveform generator for education and general-purpose signal generation.",
+    features: [
+      "25 MHz to 60 MHz bandwidth",
+      "250 MSa/s sample rate",
+      "8K points arbitrary waveform",
+      "Multiple standard waveforms",
+      "3.5-inch TFT LCD display"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "AFG-2000 Series Function Generator",
+    brand: "GW INSTEK",
+    image: signalGenImage,
+    description: "Professional function generator with comprehensive modulation and sweep capabilities.",
+    features: [
+      "12 MHz to 25 MHz bandwidth options",
+      "120 MSa/s sample rate",
+      "10-bit resolution",
+      "Multiple modulation modes",
+      "3.5-inch TFT LCD display"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "MFG-2000 Series Multi-Channel Function Generator",
+    brand: "GW INSTEK",
+    image: signalGenImage,
+    description: "Multi-channel function generator with advanced features for complex signal generation.",
+    features: [
+      "60 MHz maximum frequency",
+      "200 MSa/s sample rate",
+      "16K points arbitrary waveform",
+      "Dual-channel independent output",
+      "4.3-inch TFT LCD display"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "IT-115 Function Generator",
+    brand: "ITECH",
+    image: signalGenImage,
+    description: "Compact function generator with essential features for basic signal generation needs.",
+    features: [
+      "15 MHz maximum frequency",
+      "Multiple standard waveforms",
+      "AM/FM modulation capability",
+      "Linear and logarithmic sweep",
+      "Compact benchtop design"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "UTG1000 Series Function Generator",
+    brand: "UNI-T",
+    image: signalGenImage,
+    description: "Dual-channel function generator with arbitrary waveform capability for versatile applications.",
+    features: [
+      "40 MHz to 80 MHz bandwidth",
+      "250 MSa/s sample rate",
+      "14-bit vertical resolution",
+      "Multiple modulation functions",
+      "3.5-inch TFT color display"
+    ],
+    price: "Request Quote"
   }
 ];
 
@@ -186,7 +220,7 @@ const SignalGenerators = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              Precision signal generation equipment from TEKTRONIX, KEYSIGHT, SIGLENT for testing and calibration
+              Precision signal generation equipment from TEKTRONIX, KEYSIGHT, SIGLENT, GW INSTEK, UNI-T and ITECH
             </p>
           </div>
         </div>

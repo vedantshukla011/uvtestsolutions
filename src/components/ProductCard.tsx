@@ -23,16 +23,6 @@ const ProductCard = ({ name, brand, image, description, features, price, inStock
           alt={`${brand} ${name}`}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        {!inStock && (
-          <Badge className="absolute top-4 right-4 bg-destructive">
-            Out of Stock
-          </Badge>
-        )}
-        {inStock && price && (
-          <Badge className="absolute top-4 right-4 bg-accent">
-            In Stock
-          </Badge>
-        )}
       </div>
 
       <CardHeader>
