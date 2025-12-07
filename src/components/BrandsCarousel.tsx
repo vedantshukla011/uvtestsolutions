@@ -8,7 +8,6 @@ import metrelLogo from "@/assets/brands/metrel.png";
 import flukeLogo from "@/assets/brands/fluke.png";
 import insizeLogo from "@/assets/brands/insize.png";
 import siglentLogo from "@/assets/brands/siglent.png";
-import rohdeSchwarzLogo from "@/assets/brands/rohde-schwarz.png";
 import mitutoyoLogo from "@/assets/brands/mitutoyo.png";
 import rigolLogo from "@/assets/brands/rigol.png";
 
@@ -21,7 +20,6 @@ const brands = [
   { name: "Fluke", logo: flukeLogo },
   { name: "Insize", logo: insizeLogo },
   { name: "Siglent", logo: siglentLogo },
-  { name: "Rohde & Schwarz", logo: rohdeSchwarzLogo },
   { name: "Mitutoyo", logo: mitutoyoLogo },
   { name: "Rigol", logo: rigolLogo },
 ];

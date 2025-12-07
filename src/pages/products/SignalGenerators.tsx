@@ -120,21 +120,6 @@ const products = [
     inStock: true
   },
   {
-    name: "SMB100B RF Signal Generator",
-    brand: "ROHDE & SCHWARZ",
-    image: signalGenImage,
-    description: "Versatile microwave signal generator providing outstanding RF performance for a wide range of applications.",
-    features: [
-      "8 kHz to 12.75 GHz or 20 GHz frequency range",
-      "Excellent SSB phase noise and harmonics",
-      "High output power up to +18 dBm",
-      "Analog and digital modulation capabilities",
-      "Fast frequency and level switching"
-    ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
     name: "WaveStation 3000 Arbitrary Waveform Generator",
     brand: "TELEDYNE LECROY",
     image: signalGenImage,
@@ -201,7 +186,7 @@ const SignalGenerators = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              Precision signal generation equipment from TEKTRONIX, KEYSIGHT, ROHDE & SCHWARZ for testing and calibration
+              Precision signal generation equipment from TEKTRONIX, KEYSIGHT, SIGLENT for testing and calibration
             </p>
           </div>
         </div>
