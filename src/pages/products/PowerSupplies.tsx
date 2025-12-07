@@ -120,21 +120,6 @@ const products = [
     inStock: true
   },
   {
-    name: "NGU Series High Power Switching Power Supply",
-    brand: "ROHDE & SCHWARZ",
-    image: powerSupplyImage,
-    description: "Advanced switching power supply delivering high power with exceptional regulation and low noise.",
-    features: [
-      "Up to 400W output power per channel",
-      "Output voltage: 0-80V, Current: 0-80A",
-      "Ultra-low output noise < 3 mVpp",
-      "4.3-inch color touchscreen display",
-      "Advanced protection features"
-    ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
     name: "ZUP Series Electronic Load and Power Supply",
     brand: "TDK-LAMBDA",
     image: powerSupplyImage,
@@ -201,7 +186,7 @@ const PowerSupplies = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              High-precision programmable power supplies from KEYSIGHT, TEKTRONIX, ROHDE & SCHWARZ for laboratory and industrial applications
+              High-precision programmable power supplies from KEYSIGHT, TEKTRONIX, RIGOL for laboratory and industrial applications
             </p>
           </div>
         </div>

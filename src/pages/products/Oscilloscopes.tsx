@@ -60,21 +60,6 @@ const products = [
     inStock: true
   },
   {
-    name: "RTM3000 Oscilloscope",
-    brand: "ROHDE & SCHWARZ",
-    image: oscilloscopeImage,
-    description: "Versatile oscilloscope with outstanding signal fidelity and the industry's best 10-bit ADC for precision measurements.",
-    features: [
-      "100 MHz to 1 GHz bandwidth",
-      "10-bit ADC resolution for superior accuracy",
-      "Up to 5 GSa/s real-time sampling",
-      "80 million waveforms/s update rate",
-      "Large 10.1-inch HD touchscreen"
-    ],
-    price: "Request Quote",
-    inStock: true
-  },
-  {
     name: "DHO4000 Series Digital Oscilloscope",
     brand: "RIGOL",
     image: oscilloscopeImage,
@@ -201,7 +186,7 @@ const Oscilloscopes = () => {
             </h1>
 
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              Precision waveform analysis instruments from world-leading brands including TEKTRONIX, KEYSIGHT, and ROHDE & SCHWARZ
+              Precision waveform analysis instruments from world-leading brands including TEKTRONIX, KEYSIGHT, and RIGOL
             </p>
           </div>
         </div>
