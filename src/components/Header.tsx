@@ -43,9 +43,9 @@ const Header = () => {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <a href="#products" className="cursor-pointer">
+                  <Link to="/#products" className="cursor-pointer">
                     Products
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/contact" className="cursor-pointer">

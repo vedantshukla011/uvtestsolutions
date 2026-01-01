@@ -14,6 +14,35 @@ import { Link } from "react-router-dom";
 import multimeterImage from "@/assets/products/multimeter-fluke.jpg";
 
 const products = [
+  // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
+  {
+    name: "U1272A Handheld Digital Multimeter",
+    brand: "KEYSIGHT",
+    image: multimeterImage,
+    description: "Professional handheld DMM with dual display, data logging, and PC connectivity for comprehensive measurements.",
+    features: [
+      "60,000 count resolution with 0.025% basic DCV accuracy",
+      "Dual display with analog bar graph",
+      "Built-in data logger with USB interface",
+      "Harmonic ratio measurement",
+      "CAT III 1000V, CAT IV 600V safety rated"
+    ],
+    price: "Request Quote"
+  },
+  {
+    name: "34465A Digital Multimeter 6½ Digit",
+    brand: "KEYSIGHT",
+    image: multimeterImage,
+    description: "Truevolt series DMM with graphical display and industry-leading accuracy for benchtop measurements.",
+    features: [
+      "6½ digit resolution with 0.0016% DCV accuracy",
+      "1,000 readings/second digitizing rate",
+      "Graphical display with histogram, trend chart",
+      "Math operations and limit testing",
+      "USB, LAN, and GPIB connectivity"
+    ],
+    price: "Request Quote"
+  },
   {
     name: "87V Industrial Multimeter",
     brand: "FLUKE",
@@ -43,33 +72,20 @@ const products = [
     price: "Request Quote"
   },
   {
-    name: "U1272A Handheld Digital Multimeter",
-    brand: "KEYSIGHT",
+    name: "DMM4050 6½ Digit Precision Multimeter",
+    brand: "TEKTRONIX",
     image: multimeterImage,
-    description: "Professional handheld DMM with dual display, data logging, and PC connectivity for comprehensive measurements.",
+    description: "Precision benchtop DMM combining exceptional measurement accuracy with comprehensive analysis capabilities.",
     features: [
-      "60,000 count resolution with 0.025% basic DCV accuracy",
-      "Dual display with analog bar graph",
-      "Built-in data logger with USB interface",
-      "Harmonic ratio measurement",
-      "CAT III 1000V, CAT IV 600V safety rated"
+      "6½ digit resolution with 0.0024% DCV accuracy",
+      "Graphical display with trend chart",
+      "1000 reading/s digitize rate",
+      "Built-in statistics and histogram functions",
+      "USB and Ethernet connectivity"
     ],
     price: "Request Quote"
   },
-  {
-    name: "34465A Digital Multimeter 6½ Digit",
-    brand: "KEYSIGHT",
-    image: multimeterImage,
-    description: "Truevolt series DMM with graphical display and industry-leading accuracy for benchtop measurements.",
-    features: [
-      "6½ digit resolution with 0.0016% DCV accuracy",
-      "1,000 readings/second digitizing rate",
-      "Graphical display with histogram, trend chart",
-      "Math operations and limit testing",
-      "USB, LAN, and GPIB connectivity"
-    ],
-    price: "Request Quote"
-  },
+  // Other brands
   {
     name: "DM3068 Digital Multimeter",
     brand: "RIGOL",
@@ -123,20 +139,6 @@ const products = [
       "NCV non-contact voltage detection",
       "Temperature measurement function",
       "Data hold and relative mode"
-    ],
-    price: "Request Quote"
-  },
-  {
-    name: "DMM4050 6½ Digit Precision Multimeter",
-    brand: "TEKTRONIX",
-    image: multimeterImage,
-    description: "Precision benchtop DMM combining exceptional measurement accuracy with comprehensive analysis capabilities.",
-    features: [
-      "6½ digit resolution with 0.0024% DCV accuracy",
-      "Graphical display with trend chart",
-      "1000 reading/s digitize rate",
-      "Built-in statistics and histogram functions",
-      "USB and Ethernet connectivity"
     ],
     price: "Request Quote"
   },

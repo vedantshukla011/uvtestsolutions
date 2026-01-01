@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import tempSensorImage from "@/assets/products/temperature-sensor.jpg";
 
 const products = [
+  // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "FLUKE 1523/1524 Reference Thermometer",
     brand: "FLUKE CALIBRATION",
@@ -28,6 +29,21 @@ const products = [
     ],
     price: "Request Quote"
   },
+  {
+    name: "Type K Thermocouple Probes",
+    brand: "FLUKE",
+    image: tempSensorImage,
+    description: "Versatile Type K thermocouple probes designed for general purpose temperature measurements.",
+    features: [
+      "Temperature range: -40°C to 260°C",
+      "Fast response time",
+      "Ruggedized design",
+      "Compatible with all FLUKE thermometers",
+      "Various probe tip configurations"
+    ],
+    price: "Request Quote"
+  },
+  // Other brands
   {
     name: "testo 735 Precision Thermometer",
     brand: "TESTO",
@@ -53,20 +69,6 @@ const products = [
       "Audible alarm function",
       "Waterproof housing IP65",
       "HACCP compliant"
-    ],
-    price: "Request Quote"
-  },
-  {
-    name: "Type K Thermocouple Probes",
-    brand: "FLUKE",
-    image: tempSensorImage,
-    description: "Versatile Type K thermocouple probes designed for general purpose temperature measurements.",
-    features: [
-      "Temperature range: -40°C to 260°C",
-      "Fast response time",
-      "Ruggedized design",
-      "Compatible with all FLUKE thermometers",
-      "Various probe tip configurations"
     ],
     price: "Request Quote"
   },

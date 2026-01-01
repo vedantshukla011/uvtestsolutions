@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import powerSupplyImage from "@/assets/products/power-supply.jpg";
 
 const products = [
+  // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "E36300 Series Triple Output Power Supply",
     brand: "KEYSIGHT",
@@ -42,6 +43,7 @@ const products = [
     ],
     price: "Request Quote"
   },
+  // Other brands
   {
     name: "DP800 Series Programmable Linear DC Power Supply",
     brand: "RIGOL",
