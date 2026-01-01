@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Shield, Award, Users, TrendingUp } from "lucide-react";
+import founderImage from "@/assets/founder.jpg";
 
 const About = () => {
   return (
@@ -84,8 +85,12 @@ const About = () => {
               </h2>
               <div className="bg-card p-8 rounded-lg border border-border/50 shadow-lg">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                    <Users className="w-12 h-12 text-primary" />
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-primary/20">
+                    <img 
+                      src={founderImage} 
+                      alt="Vinod Shukla - Founder" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-2xl font-bold mb-2 text-foreground">
                     Vinod Shukla
