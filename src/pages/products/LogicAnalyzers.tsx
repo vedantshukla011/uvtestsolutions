@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import logicAnalyzerImage from "@/assets/products/logic-analyzer.jpg";
 
 const products = [
+  // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "16860A Series Logic Analyzer",
     brand: "KEYSIGHT",
@@ -23,19 +24,20 @@ const products = [
     price: "Request Quote"
   },
   {
-    name: "MSO8000 Series Mixed Signal Oscilloscope",
-    brand: "RIGOL",
-    image: logicAnalyzerImage,
-    description: "Professional mixed signal oscilloscope combining analog and digital analysis.",
-    features: ["4 analog + 16 digital channels", "Up to 2 GHz analog bandwidth", "10 GSa/s sample rate", "500 Mpts memory depth", "Advanced serial decode"],
-    price: "Request Quote"
-  },
-  {
     name: "MSOX6004A Mixed Signal Oscilloscope",
     brand: "KEYSIGHT",
     image: logicAnalyzerImage,
     description: "Industry-leading mixed signal oscilloscope with FlexChannel technology.",
     features: ["Up to 6 GHz bandwidth", "Flexible 4-8 analog channels", "16 digital channels per scope", "Zone touch triggering", "Advanced jitter analysis"],
+    price: "Request Quote"
+  },
+  // Other brands
+  {
+    name: "MSO8000 Series Mixed Signal Oscilloscope",
+    brand: "RIGOL",
+    image: logicAnalyzerImage,
+    description: "Professional mixed signal oscilloscope combining analog and digital analysis.",
+    features: ["4 analog + 16 digital channels", "Up to 2 GHz analog bandwidth", "10 GSa/s sample rate", "500 Mpts memory depth", "Advanced serial decode"],
     price: "Request Quote"
   },
   {

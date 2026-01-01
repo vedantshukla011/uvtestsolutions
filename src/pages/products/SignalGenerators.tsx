@@ -14,20 +14,7 @@ import { Link } from "react-router-dom";
 import signalGenImage from "@/assets/products/signal-generator.jpg";
 
 const products = [
-  {
-    name: "AFG31000 Series Arbitrary Function Generator",
-    brand: "TEKTRONIX",
-    image: signalGenImage,
-    description: "Advanced arbitrary function generator with touchscreen interface and exceptional signal fidelity up to 250 MHz.",
-    features: [
-      "25 MHz, 150 MHz, or 250 MHz models available",
-      "1 GS/s sample rate with 14-bit vertical resolution",
-      "128 Mpts arbitrary waveform memory",
-      "Dual-channel independent or synchronized operation",
-      "Large 9-inch capacitive touchscreen display"
-    ],
-    price: "Request Quote"
-  },
+  // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "33600A Series Waveform Generator",
     brand: "KEYSIGHT",
@@ -42,6 +29,21 @@ const products = [
     ],
     price: "Request Quote"
   },
+  {
+    name: "AFG31000 Series Arbitrary Function Generator",
+    brand: "TEKTRONIX",
+    image: signalGenImage,
+    description: "Advanced arbitrary function generator with touchscreen interface and exceptional signal fidelity up to 250 MHz.",
+    features: [
+      "25 MHz, 150 MHz, or 250 MHz models available",
+      "1 GS/s sample rate with 14-bit vertical resolution",
+      "128 Mpts arbitrary waveform memory",
+      "Dual-channel independent or synchronized operation",
+      "Large 9-inch capacitive touchscreen display"
+    ],
+    price: "Request Quote"
+  },
+  // Other brands
   {
     name: "DG900 Pro Series Waveform Generator",
     brand: "RIGOL",

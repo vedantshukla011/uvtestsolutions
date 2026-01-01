@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import signalGeneratorImage from "@/assets/products/signal-generator.jpg";
 
 const products = [
+  // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first - Keysight already at top
   {
     name: "N9000B CXA Signal Analyzer",
     brand: "KEYSIGHT",
@@ -22,6 +23,7 @@ const products = [
     features: ["9 kHz to 26.5 GHz frequency range", "±0.3 dB amplitude accuracy", "PowerSuite one-button measurements", "Advanced triggering capabilities", "10.1-inch multi-touch display"],
     price: "Request Quote"
   },
+  // Other brands
   {
     name: "DSA815-TG Spectrum Analyzer",
     brand: "RIGOL",

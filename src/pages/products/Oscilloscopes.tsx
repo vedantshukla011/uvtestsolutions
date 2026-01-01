@@ -14,20 +14,7 @@ import { Link } from "react-router-dom";
 import oscilloscopeImage from "@/assets/products/oscilloscope-tektronix.jpg";
 
 const products = [
-  {
-    name: "MDO3000 Series Mixed Domain Oscilloscope",
-    brand: "TEKTRONIX",
-    image: oscilloscopeImage,
-    description: "Industry-leading mixed domain oscilloscope combining analog, digital, and RF analysis capabilities in a single instrument.",
-    features: [
-      "Up to 1 GHz bandwidth with 4 analog channels",
-      "5 GS/s sample rate with 10 M record length",
-      "Integrated spectrum analyzer (9 kHz to 3 GHz)",
-      "Advanced triggering and protocol decode",
-      "10.4-inch capacitive touchscreen display"
-    ],
-    price: "Request Quote"
-  },
+  // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "InfiniiVision 4000 X-Series Oscilloscope",
     brand: "KEYSIGHT",
@@ -42,6 +29,21 @@ const products = [
     ],
     price: "Request Quote"
   },
+  {
+    name: "MDO3000 Series Mixed Domain Oscilloscope",
+    brand: "TEKTRONIX",
+    image: oscilloscopeImage,
+    description: "Industry-leading mixed domain oscilloscope combining analog, digital, and RF analysis capabilities in a single instrument.",
+    features: [
+      "Up to 1 GHz bandwidth with 4 analog channels",
+      "5 GS/s sample rate with 10 M record length",
+      "Integrated spectrum analyzer (9 kHz to 3 GHz)",
+      "Advanced triggering and protocol decode",
+      "10.4-inch capacitive touchscreen display"
+    ],
+    price: "Request Quote"
+  },
+  // Other brands
   {
     name: "DHO4000 Series Digital Oscilloscope",
     brand: "RIGOL",
