@@ -70,6 +70,7 @@ const products = [
 ];
 
 const catalogs = [
+  { name: "Fluke Product Catalog", file: "/catalogs/fluke-catalog.pdf" },
   { name: "Digital Multimeter Catalog", file: "/catalogs/digital-multimeter-catalog.pdf" },
   { name: "Oscilloscopes Catalog", file: "/catalogs/oscilloscopes-catalog.pdf" },
   { name: "Network Analyzer Catalog", file: "/catalogs/network-analyzer-catalog.pdf" },
