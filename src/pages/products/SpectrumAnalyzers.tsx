@@ -11,14 +11,18 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import signalGeneratorImage from "@/assets/products/signal-generator.jpg";
+
+import spectrumKeysight from "@/assets/products/spectrum-keysight.jpg";
+import spectrumRigol from "@/assets/products/spectrum-rigol.jpg";
+import spectrumSiglent from "@/assets/products/spectrum-siglent.jpg";
+import spectrumGwinstek from "@/assets/products/spectrum-gwinstek.jpg";
 
 const products = [
   // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first - Keysight already at top
   {
     name: "N9000B CXA Signal Analyzer",
     brand: "KEYSIGHT",
-    image: signalGeneratorImage,
+    image: spectrumKeysight,
     description: "Entry-level signal analyzer with excellent performance for general-purpose spectrum analysis.",
     features: ["9 kHz to 26.5 GHz frequency range", "±0.3 dB amplitude accuracy", "PowerSuite one-button measurements", "Advanced triggering capabilities", "10.1-inch multi-touch display"],
     price: "Request Quote"
@@ -27,7 +31,7 @@ const products = [
   {
     name: "DSA815-TG Spectrum Analyzer",
     brand: "RIGOL",
-    image: signalGeneratorImage,
+    image: spectrumRigol,
     description: "Cost-effective spectrum analyzer with tracking generator for EMC pre-compliance.",
     features: ["9 kHz to 1.5 GHz frequency range", "Built-in tracking generator", "-135 dBm displayed average noise level", "Advanced EMI filter and detector", "8-inch WVGA LCD display"],
     price: "Request Quote"
@@ -35,7 +39,7 @@ const products = [
   {
     name: "RSA5065 Real-Time Spectrum Analyzer",
     brand: "RIGOL",
-    image: signalGeneratorImage,
+    image: spectrumRigol,
     description: "Professional real-time spectrum analyzer with advanced signal capture.",
     features: ["9 kHz to 6.5 GHz frequency range", "Real-time bandwidth up to 40 MHz", "Density display for visualization", "EMI pre-compliance measurements", "10.1-inch multi-touch display"],
     price: "Request Quote"
@@ -43,7 +47,7 @@ const products = [
   {
     name: "SSA3000X Plus Spectrum Analyzer",
     brand: "SIGLENT",
-    image: signalGeneratorImage,
+    image: spectrumSiglent,
     description: "High-performance spectrum analyzer with advanced measurement capabilities.",
     features: ["9 kHz to 3.2 GHz frequency range", "-161 dBm/Hz DANL", "10 Hz minimum RBW", "Advanced EMI measurement", "10.1-inch touchscreen"],
     price: "Request Quote"
@@ -51,7 +55,7 @@ const products = [
   {
     name: "GSP-9300 Spectrum Analyzer",
     brand: "GW INSTEK",
-    image: signalGeneratorImage,
+    image: spectrumGwinstek,
     description: "Portable spectrum analyzer for field testing and laboratory applications.",
     features: ["9 kHz to 3 GHz frequency range", "-130 dBm sensitivity", "Tracking generator option", "EMI pre-compliance mode", "7-inch TFT display"],
     price: "Request Quote"

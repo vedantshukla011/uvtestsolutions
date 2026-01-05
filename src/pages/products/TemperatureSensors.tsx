@@ -11,14 +11,19 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import tempSensorImage from "@/assets/products/temperature-sensor.jpg";
+
+import tempFlukeRef from "@/assets/products/temp-fluke-ref.jpg";
+import tempFlukeProbe from "@/assets/products/temp-fluke-probe.jpg";
+import tempTesto from "@/assets/products/temp-testo.jpg";
+import tempIrSensor from "@/assets/products/temp-ir-sensor.jpg";
+import tempHtc from "@/assets/products/temp-htc.jpg";
 
 const products = [
   // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "FLUKE 1523/1524 Reference Thermometer",
     brand: "FLUKE CALIBRATION",
-    image: tempSensorImage,
+    image: tempFlukeRef,
     description: "Precision reference thermometer providing laboratory accuracy for industrial and field calibration applications.",
     features: [
       "± 0.03°C accuracy with PRTs",
@@ -32,7 +37,7 @@ const products = [
   {
     name: "Type K Thermocouple Probes",
     brand: "FLUKE",
-    image: tempSensorImage,
+    image: tempFlukeProbe,
     description: "Versatile Type K thermocouple probes designed for general purpose temperature measurements.",
     features: [
       "Temperature range: -40°C to 260°C",
@@ -47,7 +52,7 @@ const products = [
   {
     name: "testo 735 Precision Thermometer",
     brand: "TESTO",
-    image: tempSensorImage,
+    image: tempTesto,
     description: "High-precision multichannel thermometer for laboratory and industrial temperature measurement.",
     features: [
       "3-channel measurement capability",
@@ -61,7 +66,7 @@ const products = [
   {
     name: "testo 926 Temperature Measuring Instrument",
     brand: "TESTO",
-    image: tempSensorImage,
+    image: tempTesto,
     description: "Fast-response temperature measuring instrument ideal for food industry applications.",
     features: [
       "Response time < 3 seconds",
@@ -75,7 +80,7 @@ const products = [
   {
     name: "IR Temperature Sensor Module",
     brand: "OPTRIS",
-    image: tempSensorImage,
+    image: tempIrSensor,
     description: "Non-contact infrared temperature sensor for accurate measurements in challenging applications.",
     features: [
       "Measurement range: -40°C to 1030°C",
@@ -89,7 +94,7 @@ const products = [
   {
     name: "DT-8869H IR Thermometer",
     brand: "HTC",
-    image: tempSensorImage,
+    image: tempHtc,
     description: "Professional infrared thermometer with high temperature measurement capability.",
     features: [
       "Temperature range: -50°C to 1850°C",

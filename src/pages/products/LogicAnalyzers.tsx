@@ -11,14 +11,18 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import logicAnalyzerImage from "@/assets/products/logic-analyzer.jpg";
+
+import logicKeysight from "@/assets/products/logic-keysight.jpg";
+import logicRigol from "@/assets/products/logic-rigol.jpg";
+import logicHantek from "@/assets/products/logic-hantek.jpg";
+import logicOwon from "@/assets/products/logic-owon.jpg";
 
 const products = [
   // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "16860A Series Logic Analyzer",
     brand: "KEYSIGHT",
-    image: logicAnalyzerImage,
+    image: logicKeysight,
     description: "High-performance portable logic analyzer with deep memory for debugging complex digital systems.",
     features: ["Up to 204 channels at 250 MHz", "4M sample depth per channel", "400 ps timing resolution", "Advanced triggering capabilities", "Eye scan and jitter analysis"],
     price: "Request Quote"
@@ -26,7 +30,7 @@ const products = [
   {
     name: "MSOX6004A Mixed Signal Oscilloscope",
     brand: "KEYSIGHT",
-    image: logicAnalyzerImage,
+    image: logicKeysight,
     description: "Industry-leading mixed signal oscilloscope with FlexChannel technology.",
     features: ["Up to 6 GHz bandwidth", "Flexible 4-8 analog channels", "16 digital channels per scope", "Zone touch triggering", "Advanced jitter analysis"],
     price: "Request Quote"
@@ -35,7 +39,7 @@ const products = [
   {
     name: "MSO8000 Series Mixed Signal Oscilloscope",
     brand: "RIGOL",
-    image: logicAnalyzerImage,
+    image: logicRigol,
     description: "Professional mixed signal oscilloscope combining analog and digital analysis.",
     features: ["4 analog + 16 digital channels", "Up to 2 GHz analog bandwidth", "10 GSa/s sample rate", "500 Mpts memory depth", "Advanced serial decode"],
     price: "Request Quote"
@@ -43,7 +47,7 @@ const products = [
   {
     name: "DSO5000 Logic Analyzer Module",
     brand: "HANTEK",
-    image: logicAnalyzerImage,
+    image: logicHantek,
     description: "USB-based logic analyzer for digital signal debugging and protocol analysis.",
     features: ["16 digital channels", "200 MHz sampling rate", "USB 2.0 connectivity", "Protocol decode support", "Free PC software"],
     price: "Request Quote"
@@ -51,7 +55,7 @@ const products = [
   {
     name: "LA5000 Logic Analyzer",
     brand: "OWON",
-    image: logicAnalyzerImage,
+    image: logicOwon,
     description: "Compact logic analyzer for embedded systems development and debugging.",
     features: ["34 channels available", "500 MHz timing analysis", "128M sample memory", "I2C, SPI, UART decode", "USB interface"],
     price: "Request Quote"
