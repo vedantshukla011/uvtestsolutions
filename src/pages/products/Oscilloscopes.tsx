@@ -11,14 +11,21 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
-import oscilloscopeImage from "@/assets/products/oscilloscope-tektronix.jpg";
+
+import oscilloscopeKeysight from "@/assets/products/oscilloscope-keysight.jpg";
+import oscilloscopeTektronix from "@/assets/products/oscilloscope-tektronix-mdo.jpg";
+import oscilloscopeRigol from "@/assets/products/oscilloscope-rigol.jpg";
+import oscilloscopeSiglent from "@/assets/products/oscilloscope-siglent.jpg";
+import oscilloscopeHantek from "@/assets/products/oscilloscope-hantek.jpg";
+import oscilloscopeOwon from "@/assets/products/oscilloscope-owon.jpg";
+import oscilloscopeGwinstek from "@/assets/products/oscilloscope-gwinstek.jpg";
 
 const products = [
   // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "InfiniiVision 4000 X-Series Oscilloscope",
     brand: "KEYSIGHT",
-    image: oscilloscopeImage,
+    image: oscilloscopeKeysight,
     description: "High-performance oscilloscope delivering exceptional signal integrity and the industry's lowest noise floor.",
     features: [
       "200 MHz to 1.5 GHz bandwidth options",
@@ -32,7 +39,7 @@ const products = [
   {
     name: "MDO3000 Series Mixed Domain Oscilloscope",
     brand: "TEKTRONIX",
-    image: oscilloscopeImage,
+    image: oscilloscopeTektronix,
     description: "Industry-leading mixed domain oscilloscope combining analog, digital, and RF analysis capabilities in a single instrument.",
     features: [
       "Up to 1 GHz bandwidth with 4 analog channels",
@@ -47,7 +54,7 @@ const products = [
   {
     name: "DHO4000 Series Digital Oscilloscope",
     brand: "RIGOL",
-    image: oscilloscopeImage,
+    image: oscilloscopeRigol,
     description: "High-bandwidth digital oscilloscope with UltraVision III architecture for advanced debugging and analysis.",
     features: [
       "200 MHz to 800 MHz bandwidth options",
@@ -61,7 +68,7 @@ const products = [
   {
     name: "DHO800/900 Series Digital Oscilloscope",
     brand: "RIGOL",
-    image: oscilloscopeImage,
+    image: oscilloscopeRigol,
     description: "Entry-level digital oscilloscope with 12-bit ADC resolution perfect for education and basic R&D applications.",
     features: [
       "70 MHz to 200 MHz bandwidth",
@@ -75,7 +82,7 @@ const products = [
   {
     name: "SDS6000 Pro Digital Oscilloscope",
     brand: "SIGLENT",
-    image: oscilloscopeImage,
+    image: oscilloscopeSiglent,
     description: "Professional-grade oscilloscope with exceptional performance for demanding measurement applications.",
     features: [
       "1 GHz to 2 GHz bandwidth",
@@ -89,7 +96,7 @@ const products = [
   {
     name: "SDS2000X Plus Oscilloscope",
     brand: "SIGLENT",
-    image: oscilloscopeImage,
+    image: oscilloscopeSiglent,
     description: "High-performance 4-channel digital oscilloscope with advanced features for professional applications.",
     features: [
       "100 MHz to 350 MHz bandwidth",
@@ -103,7 +110,7 @@ const products = [
   {
     name: "DSO5000 Series Digital Oscilloscope",
     brand: "HANTEK",
-    image: oscilloscopeImage,
+    image: oscilloscopeHantek,
     description: "Cost-effective digital storage oscilloscope ideal for education and basic electronics testing.",
     features: [
       "60 MHz to 200 MHz bandwidth",
@@ -117,7 +124,7 @@ const products = [
   {
     name: "DSO2000 Series Portable Oscilloscope",
     brand: "HANTEK",
-    image: oscilloscopeImage,
+    image: oscilloscopeHantek,
     description: "Compact portable oscilloscope with excellent performance for field service applications.",
     features: [
       "70 MHz to 150 MHz bandwidth",
@@ -131,7 +138,7 @@ const products = [
   {
     name: "SDS-E Series Digital Oscilloscope",
     brand: "OWON",
-    image: oscilloscopeImage,
+    image: oscilloscopeOwon,
     description: "Entry-level digital oscilloscope with essential features for education and hobbyist applications.",
     features: [
       "50 MHz to 100 MHz bandwidth",
@@ -145,7 +152,7 @@ const products = [
   {
     name: "XDS Series Digital Oscilloscope",
     brand: "OWON",
-    image: oscilloscopeImage,
+    image: oscilloscopeOwon,
     description: "Advanced digital oscilloscope with WiFi connectivity and touchscreen interface.",
     features: [
       "100 MHz to 200 MHz bandwidth",
@@ -159,7 +166,7 @@ const products = [
   {
     name: "GDS-2000E Series Oscilloscope",
     brand: "GW INSTEK",
-    image: oscilloscopeImage,
+    image: oscilloscopeGwinstek,
     description: "Feature-rich digital storage oscilloscope for R&D and production testing environments.",
     features: [
       "100 MHz to 200 MHz bandwidth",
@@ -173,7 +180,7 @@ const products = [
   {
     name: "GDS-3000 Series Oscilloscope",
     brand: "GW INSTEK",
-    image: oscilloscopeImage,
+    image: oscilloscopeGwinstek,
     description: "High-performance oscilloscope with advanced triggering and analysis capabilities.",
     features: [
       "150 MHz to 500 MHz bandwidth",

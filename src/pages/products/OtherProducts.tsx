@@ -6,64 +6,68 @@ import { ChevronRight, Download, FileText } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import vernierCaliperImg from "@/assets/products/multimeter-fluke.jpg";
-import airPurifierImg from "@/assets/products/power-supply.jpg";
-import electricalComponentImg from "@/assets/products/logic-analyzer.jpg";
+import caliperMitutoyo from "@/assets/products/caliper-mitutoyo.jpg";
+import caliperInsize from "@/assets/products/caliper-insize.jpg";
+import solderingHakko from "@/assets/products/soldering-hakko.jpg";
+import solderingBakon from "@/assets/products/soldering-bakon.jpg";
+import eduKit from "@/assets/products/edu-kit.jpg";
+import embeddedBoard from "@/assets/products/embedded-board.jpg";
+import micrometerMitutoyo from "@/assets/products/micrometer-mitutoyo.jpg";
 
 const products = [
   {
     name: "Digital Vernier Caliper 150mm",
     brand: "MITUTOYO",
-    image: vernierCaliperImg,
+    image: caliperMitutoyo,
     description: "High-precision digital caliper with 150mm measuring range and data output capability.",
     features: ["0.01mm resolution", "IP67 dust/water protection", "Data output function", "Carbide-tipped jaws"],
   },
   {
     name: "Dial Vernier Caliper 200mm",
     brand: "INSIZE",
-    image: vernierCaliperImg,
+    image: caliperInsize,
     description: "Professional dial caliper with 200mm range for industrial applications.",
     features: ["0.02mm accuracy", "Hardened stainless steel", "Shock-resistant dial", "Thumb roller adjustment"],
   },
   {
     name: "FX-888D Soldering Station",
     brand: "HAKKO",
-    image: electricalComponentImg,
+    image: solderingHakko,
     description: "Professional digital soldering station with rapid heat recovery.",
     features: ["70W power output", "Digital temperature control", "Quick heat-up time", "ESD safe design"],
   },
   {
     name: "BK936D+ Soldering Station",
     brand: "BAKON",
-    image: electricalComponentImg,
+    image: solderingBakon,
     description: "Compact soldering station with precise temperature control for electronics work.",
     features: ["60W power output", "200-480°C range", "LCD temperature display", "Sleep function"],
   },
   {
     name: "Educational Lab Kit",
     brand: "SCIENTECH",
-    image: electricalComponentImg,
+    image: eduKit,
     description: "Comprehensive electronics training kit for educational institutions.",
     features: ["Multiple experiment modules", "Complete with manual", "Student-friendly design", "Durable construction"],
   },
   {
     name: "Embedded Development Board",
     brand: "EMBUILT",
-    image: electricalComponentImg,
+    image: embeddedBoard,
     description: "Professional embedded systems development platform for R&D applications.",
     features: ["ARM processor based", "Multiple I/O interfaces", "USB programming", "Complete SDK included"],
   },
   {
     name: "Scientific Trainer Kit",
     brand: "JOMA",
-    image: electricalComponentImg,
+    image: eduKit,
     description: "Laboratory trainer kit for electronics and electrical engineering education.",
     features: ["Multiple experiment setups", "Comprehensive manual", "Modular design", "Industrial grade components"],
   },
   {
     name: "Digital Micrometer 0-25mm",
     brand: "MITUTOYO",
-    image: vernierCaliperImg,
+    image: micrometerMitutoyo,
     description: "High-precision digital micrometer with electronic display and data output.",
     features: ["0.001mm resolution", "SPC data output", "Ratchet thimble", "Carbide measuring faces"],
   }
