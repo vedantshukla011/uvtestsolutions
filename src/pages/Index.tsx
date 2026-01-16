@@ -7,7 +7,6 @@ import ProductCategories from "@/components/ProductCategories";
 import Features from "@/components/Features";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
-import FestivalPopup from "@/components/FestivalPopup";
 
 const Index = () => {
   const location = useLocation();
@@ -25,7 +24,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <FestivalPopup />
       <Header />
       <main>
         <Hero />
