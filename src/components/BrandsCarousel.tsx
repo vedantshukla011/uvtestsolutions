@@ -23,6 +23,8 @@ import bakonLogo from "@/assets/brands/bakon.png";
 import scientechLogo from "@/assets/brands/scientech.png";
 import jomaLogo from "@/assets/brands/joma.png";
 import embuiltLogo from "@/assets/brands/embuilt.png";
+import rionLogo from "@/assets/brands/rion.gif";
+import vaisalaLogo from "@/assets/brands/vaisala.svg";
 
 const brands = [
   { name: "Keysight Technologies", logo: keysightLogo },
@@ -48,6 +50,8 @@ const brands = [
   { name: "Scientech", logo: scientechLogo },
   { name: "JOMA", logo: jomaLogo },
   { name: "EMbuilt", logo: embuiltLogo },
+  { name: "Rion", logo: rionLogo },
+  { name: "Vaisala", logo: vaisalaLogo },
 ];
 
 const BrandsCarousel = () => {
