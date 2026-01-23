@@ -53,6 +53,12 @@ const categories = [
     description: "Vernier calipers, industrial air purifiers, electrical components, and more",
     link: "/products/other-products"
   },
+  {
+    icon: Zap,
+    title: "ESD Lab Solutions",
+    description: "Customized ESD Lab built as per your requirement",
+    link: "/products/esd-lab-solutions"
+  },
 ];
 
 const ProductCategories = () => {
