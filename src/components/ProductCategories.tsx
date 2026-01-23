@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 
 const categories = [
   {
+    icon: Zap,
+    title: "ESD Lab Solutions",
+    description: "Customized ESD Lab built as per your requirement",
+    link: "/products/esd-lab-solutions"
+  },
+  {
     icon: Activity,
     title: "Oscilloscopes",
     description: "High-performance digital and analog oscilloscopes for precise waveform analysis",
@@ -52,12 +58,6 @@ const categories = [
     title: "Other Products",
     description: "Vernier calipers, industrial air purifiers, electrical components, and more",
     link: "/products/other-products"
-  },
-  {
-    icon: Zap,
-    title: "ESD Lab Solutions",
-    description: "Customized ESD Lab built as per your requirement",
-    link: "/products/esd-lab-solutions"
   },
 ];
 
