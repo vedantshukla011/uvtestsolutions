@@ -23,9 +23,6 @@ const ProductCard = ({ name, brand, image, description, features, price, inStock
           alt={`${brand} ${name}`}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <span className="absolute bottom-2 left-2 right-2 text-[10px] text-muted-foreground/70 bg-background/80 px-2 py-1 rounded text-center">
-          *Image for representation only
-        </span>
       </div>
 
       <CardHeader>
