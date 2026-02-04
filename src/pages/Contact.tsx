@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import ContactForm from "@/components/ContactForm";
 import ContactInfo from "@/components/ContactInfo";
 import { Mail, Clock } from "lucide-react";
@@ -16,6 +17,12 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Contact Us - Get Quote for Test Equipment"
+        description="Request a quote for oscilloscopes, multimeters, and electronic measuring instruments. 24-hour response guarantee. Contact UV Test Solutions today."
+        canonical="/contact"
+        keywords="buy oscilloscopes India, multimeter quote, test equipment price, electronic instruments contact"
+      />
       <Header />
       
       {/* Hero Section */}

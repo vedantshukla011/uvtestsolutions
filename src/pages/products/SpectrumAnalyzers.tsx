@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import ProductCard from "@/components/ProductCard";
 import { Radio } from "lucide-react";
 import {
@@ -65,6 +66,12 @@ const products = [
 const SpectrumAnalyzers = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Spectrum Analyzers - RF & Signal Analyzers India"
+        description="Buy spectrum analyzers from Keysight, Rigol, Siglent, GW Instek. RF signal analyzers, EMC pre-compliance, real-time spectrum analysis. Best prices in India."
+        canonical="/products/spectrum-analyzers"
+        keywords="spectrum analyzer India, RF analyzer, signal analyzer, Keysight CXA, Rigol RSA, EMC analyzer"
+      />
       <Header />
       
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/5 via-accent/5 to-background overflow-hidden">

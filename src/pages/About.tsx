@@ -1,11 +1,18 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Shield, Award, Users, TrendingUp } from "lucide-react";
 import founderImage from "@/assets/founder.jpg";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="About Us - UV Test Solutions"
+        description="Learn about UV Test Solutions - 15+ years of expertise in electronic measuring instruments. ISO 9001 certified company serving manufacturing, R&D, and educational sectors across India."
+        canonical="/about"
+        keywords="UV Test Solutions, electronic instruments company, test equipment supplier India, measuring instruments dealer"
+      />
       <Header />
       <main>
         {/* Breadcrumb */}

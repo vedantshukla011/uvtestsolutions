@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Zap, CheckCircle, Settings, Shield, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -52,6 +53,12 @@ const solutions = [
 const ESDLabSolutions = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="ESD Lab Solutions - Turnkey ESD Protection Systems"
+        description="Complete ESD lab solutions: flooring, workstations, ionizers, grounding systems. ANSI/ESD S20.20 compliant turnkey installation in India."
+        canonical="/products/esd-lab-solutions"
+        keywords="ESD lab India, ESD flooring, ESD workbench, ionizer, grounding system, ESD protection"
+      />
       <Header />
       
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/5 via-accent/5 to-background overflow-hidden">

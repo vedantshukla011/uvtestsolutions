@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import ProductCard from "@/components/ProductCard";
 import { Activity } from "lucide-react";
 import {
@@ -196,6 +197,12 @@ const products = [
 const Oscilloscopes = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Oscilloscopes - Buy Digital & Mixed Signal Oscilloscopes"
+        description="Buy oscilloscopes from Keysight, Tektronix, Rigol, Siglent, Hantek, OWON, GW Instek. Digital storage oscilloscopes, mixed signal, up to 2 GHz bandwidth. Best prices in India."
+        canonical="/products/oscilloscopes"
+        keywords="oscilloscopes India, digital oscilloscope, Keysight oscilloscope, Tektronix MDO, Rigol DHO, Siglent SDS, buy oscilloscope"
+      />
       <Header />
       
       {/* Hero Section */}

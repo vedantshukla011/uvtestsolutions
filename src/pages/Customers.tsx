@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { ChevronRight, Building2, GraduationCap, Factory, Cpu } from "lucide-react";
 
@@ -89,6 +90,12 @@ const getCategoryColor = (category: string) => {
 const Customers = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Our Customers - UV Test Solutions"
+        description="Trusted by Hero MotoCorp, LG, Orient Electric, Amity University, and 25+ leading organizations. See why industry leaders choose UV Test Solutions for precision instruments."
+        canonical="/customers"
+        keywords="UV Test Solutions customers, test equipment clients, electronic instruments buyers India"
+      />
       <Header />
 
       <main className="pt-16">
