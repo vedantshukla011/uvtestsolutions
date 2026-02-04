@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import ProductCard from "@/components/ProductCard";
 import { Cpu } from "lucide-react";
 import {
@@ -65,6 +66,12 @@ const products = [
 const LogicAnalyzers = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Logic Analyzers - Mixed Signal Oscilloscopes India"
+        description="Buy logic analyzers from Keysight, Rigol, Hantek, OWON. Mixed signal oscilloscopes with digital channels for embedded debugging. Best prices in India."
+        canonical="/products/logic-analyzers"
+        keywords="logic analyzer India, mixed signal oscilloscope, digital analyzer, Keysight MSO, protocol analyzer"
+      />
       <Header />
       
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/5 via-accent/5 to-background overflow-hidden">

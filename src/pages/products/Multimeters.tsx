@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import ProductCard from "@/components/ProductCard";
 import { Gauge } from "lucide-react";
 import {
@@ -198,6 +199,12 @@ const products = [
 const Multimeters = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Multimeters - Digital & Bench Multimeters India"
+        description="Buy digital multimeters from Keysight, Fluke 87V, Fluke 117, Tektronix, Rigol, Siglent. Handheld & bench DMMs with high accuracy. Best prices in India."
+        canonical="/products/multimeters"
+        keywords="digital multimeter India, Fluke multimeter, Keysight DMM, bench multimeter, handheld DMM, buy multimeter"
+      />
       <Header />
       
       {/* Hero Section */}

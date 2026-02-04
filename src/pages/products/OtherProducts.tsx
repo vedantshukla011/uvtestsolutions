@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import ProductCard from "@/components/ProductCard";
 import { Link } from "react-router-dom";
 import { ChevronRight, Download, FileText } from "lucide-react";
@@ -88,6 +89,12 @@ const catalogs = [
 const OtherProducts = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Other Products - Calipers, Soldering, Lab Equipment"
+        description="Buy precision instruments: Mitutoyo calipers, Hakko soldering stations, educational lab kits, embedded boards. Quality products at best prices in India."
+        canonical="/products/other-products"
+        keywords="Mitutoyo caliper India, Hakko soldering, lab equipment, educational kit, embedded board"
+      />
       <Header />
       <main>
         <section className="relative py-16 bg-gradient-to-br from-primary/5 via-background to-accent/5">

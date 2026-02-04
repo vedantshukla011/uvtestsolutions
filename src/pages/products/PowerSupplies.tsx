@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import ProductCard from "@/components/ProductCard";
 import { Zap } from "lucide-react";
 import {
@@ -195,6 +196,12 @@ const products = [
 const PowerSupplies = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Power Supplies - Programmable DC Power Supplies"
+        description="Buy programmable DC power supplies from Keysight, Rigol, Siglent, ITECH, GW Instek, OWON. Single & multi-output PSUs. Best prices in India."
+        canonical="/products/power-supplies"
+        keywords="DC power supply India, programmable power supply, bench power supply, Keysight E36, Rigol DP, ITECH power supply"
+      />
       <Header />
       
       {/* Hero Section */}

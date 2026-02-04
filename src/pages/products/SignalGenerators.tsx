@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import ProductCard from "@/components/ProductCard";
 import { Radio } from "lucide-react";
 import {
@@ -182,6 +183,12 @@ const products = [
 const SignalGenerators = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Signal Generators - Arbitrary & Function Generators"
+        description="Buy signal generators from Keysight, Tektronix, Rigol, Siglent, GW Instek. Arbitrary waveform, function generators up to 250 MHz. Best prices in India."
+        canonical="/products/signal-generators"
+        keywords="signal generator India, function generator, arbitrary waveform generator, Keysight 33600A, Tektronix AFG, Rigol DG"
+      />
       <Header />
       
       {/* Hero Section */}

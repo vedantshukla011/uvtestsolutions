@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import ProductCard from "@/components/ProductCard";
 import { Thermometer } from "lucide-react";
 import {
@@ -110,6 +111,12 @@ const products = [
 const TemperatureSensors = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title="Temperature Sensors - Thermometers & IR Sensors"
+        description="Buy temperature measuring instruments from Fluke, Testo, HTC. Reference thermometers, thermocouple probes, IR sensors. Best prices in India."
+        canonical="/products/temperature-sensors"
+        keywords="temperature sensor India, Fluke thermometer, thermocouple probe, IR temperature sensor, Testo thermal"
+      />
       <Header />
       
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/5 via-accent/5 to-background overflow-hidden">
