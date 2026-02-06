@@ -13,19 +13,14 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import psuKeysight from "@/assets/products/psu-keysight.jpg";
-import psuRigol from "@/assets/products/psu-rigol.jpg";
-import psuSiglent from "@/assets/products/psu-siglent.jpg";
-import psuItech from "@/assets/products/psu-itech.jpg";
-import psuGwinstek from "@/assets/products/psu-gwinstek.jpg";
-import psuOwon from "@/assets/products/psu-owon.jpg";
+import genericPlaceholder from "@/assets/products/generic-placeholder.jpg";
 
 const products = [
   // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "E36300 Series Triple Output Power Supply",
     brand: "KEYSIGHT",
-    image: psuKeysight,
+    image: genericPlaceholder,
     description: "Versatile triple-output programmable DC power supply delivering clean power with exceptional performance.",
     features: [
       "Three independent isolated outputs",
@@ -39,7 +34,7 @@ const products = [
   {
     name: "E36200 Series Autoranging DC Power Supply",
     brand: "KEYSIGHT",
-    image: psuKeysight,
+    image: genericPlaceholder,
     description: "Single output autoranging power supply with advanced protection features and fast transient response.",
     features: [
       "Autoranging output up to 200W",
@@ -54,7 +49,7 @@ const products = [
   {
     name: "DP800 Series Programmable Linear DC Power Supply",
     brand: "RIGOL",
-    image: psuRigol,
+    image: genericPlaceholder,
     description: "Multi-channel programmable power supply combining excellent performance with innovative features.",
     features: [
       "Three independent isolated channels",
@@ -68,7 +63,7 @@ const products = [
   {
     name: "DP2000 Series High Precision Power Supply",
     brand: "RIGOL",
-    image: psuRigol,
+    image: genericPlaceholder,
     description: "High-precision linear DC power supply with ultra-low noise for sensitive electronic applications.",
     features: [
       "Dual channel isolated outputs",
@@ -82,7 +77,7 @@ const products = [
   {
     name: "SPD3000X Series Programmable DC Power Supply",
     brand: "SIGLENT",
-    image: psuSiglent,
+    image: genericPlaceholder,
     description: "Linear DC power supply with ultra-low ripple and noise for sensitive electronic measurements.",
     features: [
       "Triple-channel output configuration",
@@ -96,7 +91,7 @@ const products = [
   {
     name: "SPD1000X Series Single Channel Power Supply",
     brand: "SIGLENT",
-    image: psuSiglent,
+    image: genericPlaceholder,
     description: "Cost-effective single channel power supply with excellent regulation and protection features.",
     features: [
       "Single channel output up to 360W",
@@ -110,7 +105,7 @@ const products = [
   {
     name: "IT6000 Series High Power DC Power Supply",
     brand: "ITECH",
-    image: psuItech,
+    image: genericPlaceholder,
     description: "High power programmable DC power supply for industrial and automotive testing applications.",
     features: [
       "Up to 144 kW output power",
@@ -124,7 +119,7 @@ const products = [
   {
     name: "IT6500 Series Wide Range DC Power Supply",
     brand: "ITECH",
-    image: psuItech,
+    image: genericPlaceholder,
     description: "Wide-range programmable DC power supply with auto-ranging technology for versatile applications.",
     features: [
       "Up to 6000W output power",
@@ -138,7 +133,7 @@ const products = [
   {
     name: "PSW Series Programmable Switching Power Supply",
     brand: "GW INSTEK",
-    image: psuGwinstek,
+    image: genericPlaceholder,
     description: "High-efficiency switching power supply with compact design for benchtop and system integration.",
     features: [
       "Up to 1080W output power",
@@ -152,7 +147,7 @@ const products = [
   {
     name: "GPD-4303S Programmable Linear DC Power Supply",
     brand: "GW INSTEK",
-    image: psuGwinstek,
+    image: genericPlaceholder,
     description: "Four-channel programmable linear power supply for comprehensive power supply needs.",
     features: [
       "Four independent output channels",
@@ -166,7 +161,7 @@ const products = [
   {
     name: "ODP Series Programmable DC Power Supply",
     brand: "OWON",
-    image: psuOwon,
+    image: genericPlaceholder,
     description: "Compact programmable power supply with multiple channels for education and R&D applications.",
     features: [
       "Triple output channels",
@@ -180,7 +175,7 @@ const products = [
   {
     name: "UTP1000 Series DC Power Supply",
     brand: "UNI-T",
-    image: psuRigol,
+    image: genericPlaceholder,
     description: "Professional DC power supply with precise voltage and current control for laboratory use.",
     features: [
       "Dual channel output",

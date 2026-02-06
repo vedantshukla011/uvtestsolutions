@@ -13,20 +13,14 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import siggenKeysight from "@/assets/products/siggen-keysight.jpg";
-import siggenTektronix from "@/assets/products/siggen-tektronix.jpg";
-import siggenRigol from "@/assets/products/siggen-rigol.jpg";
-import siggenSiglent from "@/assets/products/siggen-siglent.jpg";
-import siggenOwon from "@/assets/products/siggen-owon.jpg";
-import siggenGwinstek from "@/assets/products/siggen-gwinstek.jpg";
-import siggenItech from "@/assets/products/siggen-itech.jpg";
+import genericPlaceholder from "@/assets/products/generic-placeholder.jpg";
 
 const products = [
   // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "33600A Series Waveform Generator",
     brand: "KEYSIGHT",
-    image: siggenKeysight,
+    image: genericPlaceholder,
     description: "Trueform technology delivers unmatched capabilities for generating a full range of signals for your most demanding measurements.",
     features: [
       "80 MHz or 120 MHz bandwidth options",
@@ -40,7 +34,7 @@ const products = [
   {
     name: "AFG31000 Series Arbitrary Function Generator",
     brand: "TEKTRONIX",
-    image: siggenTektronix,
+    image: genericPlaceholder,
     description: "Advanced arbitrary function generator with touchscreen interface and exceptional signal fidelity up to 250 MHz.",
     features: [
       "25 MHz, 150 MHz, or 250 MHz models available",
@@ -55,7 +49,7 @@ const products = [
   {
     name: "DG900 Pro Series Waveform Generator",
     brand: "RIGOL",
-    image: siggenRigol,
+    image: genericPlaceholder,
     description: "Professional dual-channel function/arbitrary waveform generator with superior signal quality.",
     features: [
       "25 MHz to 70 MHz bandwidth options",
@@ -69,7 +63,7 @@ const products = [
   {
     name: "DG5000 Series Function/Arbitrary Waveform Generator",
     brand: "RIGOL",
-    image: siggenRigol,
+    image: genericPlaceholder,
     description: "High-performance dual-channel generator with advanced capabilities for demanding applications.",
     features: [
       "100 MHz, 200 MHz, or 350 MHz bandwidth",
@@ -83,7 +77,7 @@ const products = [
   {
     name: "SDG6000X Series Arbitrary Waveform Generator",
     brand: "SIGLENT",
-    image: siggenSiglent,
+    image: genericPlaceholder,
     description: "High-performance dual-channel AWG with excellent signal quality and comprehensive modulation functions.",
     features: [
       "500 MHz maximum frequency with low jitter",
@@ -97,7 +91,7 @@ const products = [
   {
     name: "SDG2000X Plus Waveform Generator",
     brand: "SIGLENT",
-    image: siggenSiglent,
+    image: genericPlaceholder,
     description: "Dual-channel function/arbitrary waveform generator with excellent signal fidelity.",
     features: [
       "120 MHz maximum frequency",
@@ -111,7 +105,7 @@ const products = [
   {
     name: "AG Series Arbitrary Waveform Generator",
     brand: "OWON",
-    image: siggenOwon,
+    image: genericPlaceholder,
     description: "Versatile arbitrary waveform generator for education and general-purpose signal generation.",
     features: [
       "25 MHz to 60 MHz bandwidth",
@@ -125,7 +119,7 @@ const products = [
   {
     name: "AFG-2000 Series Function Generator",
     brand: "GW INSTEK",
-    image: siggenGwinstek,
+    image: genericPlaceholder,
     description: "Professional function generator with comprehensive modulation and sweep capabilities.",
     features: [
       "12 MHz to 25 MHz bandwidth options",
@@ -139,7 +133,7 @@ const products = [
   {
     name: "MFG-2000 Series Multi-Channel Function Generator",
     brand: "GW INSTEK",
-    image: siggenGwinstek,
+    image: genericPlaceholder,
     description: "Multi-channel function generator with advanced features for complex signal generation.",
     features: [
       "60 MHz maximum frequency",
@@ -153,7 +147,7 @@ const products = [
   {
     name: "IT-115 Function Generator",
     brand: "ITECH",
-    image: siggenItech,
+    image: genericPlaceholder,
     description: "Compact function generator with essential features for basic signal generation needs.",
     features: [
       "15 MHz maximum frequency",
@@ -167,7 +161,7 @@ const products = [
   {
     name: "UTG1000 Series Function Generator",
     brand: "UNI-T",
-    image: siggenRigol,
+    image: genericPlaceholder,
     description: "Dual-channel function generator with arbitrary waveform capability for versatile applications.",
     features: [
       "40 MHz to 80 MHz bandwidth",
