@@ -13,22 +13,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
 
-import multimeterKeysight from "@/assets/products/multimeter-keysight.jpg";
-import multimeterKeysightBench from "@/assets/products/multimeter-keysight-bench.jpg";
 import multimeterFluke87v from "@/assets/products/multimeter-fluke-87v.jpg";
 import multimeterFluke117 from "@/assets/products/multimeter-fluke-117.jpg";
-import multimeterTektronix from "@/assets/products/multimeter-tektronix.jpg";
-import multimeterRigol from "@/assets/products/multimeter-rigol.jpg";
 import multimeterSiglent from "@/assets/products/multimeter-siglent.jpg";
-import multimeterUnit from "@/assets/products/multimeter-unit.jpg";
-import multimeterGwinstek from "@/assets/products/multimeter-gwinstek.jpg";
+import genericPlaceholder from "@/assets/products/generic-placeholder.jpg";
 
 const products = [
   // Priority brands: KEYSIGHT, FLUKE, TEKTRONIX first
   {
     name: "U1272A Handheld Digital Multimeter",
     brand: "KEYSIGHT",
-    image: multimeterKeysight,
+    image: genericPlaceholder,
     description: "Professional handheld DMM with dual display, data logging, and PC connectivity for comprehensive measurements.",
     features: [
       "60,000 count resolution with 0.025% basic DCV accuracy",
@@ -42,7 +37,7 @@ const products = [
   {
     name: "34465A Digital Multimeter 6½ Digit",
     brand: "KEYSIGHT",
-    image: multimeterKeysightBench,
+    image: genericPlaceholder,
     description: "Truevolt series DMM with graphical display and industry-leading accuracy for benchtop measurements.",
     features: [
       "6½ digit resolution with 0.0016% DCV accuracy",
@@ -84,7 +79,7 @@ const products = [
   {
     name: "DMM4050 6½ Digit Precision Multimeter",
     brand: "TEKTRONIX",
-    image: multimeterTektronix,
+    image: genericPlaceholder,
     description: "Precision benchtop DMM combining exceptional measurement accuracy with comprehensive analysis capabilities.",
     features: [
       "6½ digit resolution with 0.0024% DCV accuracy",
@@ -99,7 +94,7 @@ const products = [
   {
     name: "DM3068 Digital Multimeter",
     brand: "RIGOL",
-    image: multimeterRigol,
+    image: genericPlaceholder,
     description: "6½ digit precision benchtop DMM with dual measurement display and comprehensive measurement functions.",
     features: [
       "6½ digit resolution with 0.0035% DCV accuracy",
@@ -127,7 +122,7 @@ const products = [
   {
     name: "UT61E+ True RMS Multimeter",
     brand: "UNI-T",
-    image: multimeterUnit,
+    image: genericPlaceholder,
     description: "Professional True RMS digital multimeter with high accuracy and comprehensive measurement functions.",
     features: [
       "22000 count display resolution",
@@ -141,7 +136,7 @@ const products = [
   {
     name: "UT139C Digital Multimeter",
     brand: "UNI-T",
-    image: multimeterUnit,
+    image: genericPlaceholder,
     description: "Compact True RMS multimeter ideal for field technicians and electronics professionals.",
     features: [
       "6000 count auto-ranging display",
@@ -155,7 +150,7 @@ const products = [
   {
     name: "GDM-8261A Digital Multimeter",
     brand: "GW INSTEK",
-    image: multimeterGwinstek,
+    image: genericPlaceholder,
     description: "Dual measurement display DMM with high precision for R&D and production testing applications.",
     features: [
       "6½ digit resolution with 0.0035% DCV accuracy",
@@ -169,7 +164,7 @@ const products = [
   {
     name: "DT-9989 Professional Multimeter",
     brand: "HTC",
-    image: multimeterUnit,
+    image: genericPlaceholder,
     description: "Professional digital multimeter with thermal imaging capability for comprehensive electrical analysis.",
     features: [
       "Built-in thermal imaging camera",
@@ -183,7 +178,7 @@ const products = [
   {
     name: "Rish Multi 18S Multimeter",
     brand: "RISHABH",
-    image: multimeterUnit,
+    image: genericPlaceholder,
     description: "Professional grade digital multimeter designed for industrial and laboratory applications.",
     features: [
       "True RMS AC/DC measurements",
