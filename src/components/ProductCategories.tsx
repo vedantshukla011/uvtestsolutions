@@ -55,6 +55,12 @@ const categories = [
   },
   {
     icon: Wrench,
+    title: "Probes",
+    description: "Active, Passive, Differential & Current probes for oscilloscopes and measurement instruments",
+    link: "/products/probes"
+  },
+  {
+    icon: Wrench,
     title: "Other Products",
     description: "Vernier calipers, industrial air purifiers, electrical components, and more",
     link: "/products/other-products"
