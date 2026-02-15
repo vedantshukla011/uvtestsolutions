@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Activity, Gauge, Radio, Thermometer, Zap, Cpu, Wrench, Waves } from "lucide-react";
+import { Activity, Gauge, Radio, Thermometer, Zap, Cpu, Wrench, Waves, Cable } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -22,6 +22,12 @@ const categories = [
     title: "Multimeters",
     description: "Professional-grade digital multimeters for accurate voltage, current, and resistance measurements",
     link: "/products/multimeters"
+  },
+  {
+    icon: Cable,
+    title: "Probes",
+    description: "Active, Passive, Differential & Current probes for oscilloscopes and measurement instruments",
+    link: "/products/probes"
   },
   {
     icon: Radio,
@@ -52,12 +58,6 @@ const categories = [
     title: "Spectrum Analyzers",
     description: "RF and signal analysis solutions for wireless testing and EMC compliance",
     link: "/products/spectrum-analyzers"
-  },
-  {
-    icon: Wrench,
-    title: "Probes",
-    description: "Active, Passive, Differential & Current probes for oscilloscopes and measurement instruments",
-    link: "/products/probes"
   },
   {
     icon: Wrench,
