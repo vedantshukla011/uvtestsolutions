@@ -17,6 +17,7 @@ import LogicAnalyzers from "./pages/products/LogicAnalyzers";
 import SpectrumAnalyzers from "./pages/products/SpectrumAnalyzers";
 import OtherProducts from "./pages/products/OtherProducts";
 import ESDLabSolutions from "./pages/products/ESDLabSolutions";
+import Probes from "./pages/products/Probes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/products/spectrum-analyzers" element={<SpectrumAnalyzers />} />
           <Route path="/products/other-products" element={<OtherProducts />} />
           <Route path="/products/esd-lab-solutions" element={<ESDLabSolutions />} />
+          <Route path="/products/probes" element={<Probes />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
