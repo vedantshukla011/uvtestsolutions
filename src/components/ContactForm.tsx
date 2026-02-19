@@ -5,14 +5,25 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Send } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 
 const ContactForm = () => {
+  const [searchParams] = useSearchParams();
+  const prefillProduct = searchParams.get("product");
+
   const [selectedProducts, setSelectedProducts] = useState<string[]>([]);
   const [industry, setIndustry] = useState("");
   const [timeline, setTimeline] = useState("");
   const [city, setCity] = useState("");
   const [budgetRange, setBudgetRange] = useState("");
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    if (prefillProduct) {
+      setMessage(`I am interested in the ${prefillProduct}. Please provide a quote and more details.`);
+    }
+  }, [prefillProduct]);
 
   const productOptions = [
     { id: "oscilloscopes", label: "Oscilloscopes" },
@@ -204,13 +215,15 @@ const ContactForm = () => {
 
         {/* Message */}
         <div className="space-y-2">
-          <Label htmlFor="message">Message / Requirements *</Label>
+        <Label htmlFor="message">Message / Requirements *</Label>
           <Textarea
             id="message"
             name="message"
             placeholder="Tell us about your specific measurement requirements, technical specifications, or any questions you have..."
             className="min-h-[120px]"
             required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </div>
 
