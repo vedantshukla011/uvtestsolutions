@@ -1,0 +1,232 @@
+<%@ include file="/applicationtop.jsp" %>
+<vel:velocity strictaccess="false">
+<style type="text/css">
+  
+  	#accountPage {
+		clear: both;
+		display: table;
+		width: 95%;
+		max-width: 1000px;
+		margin: 0 auto;
+  		}
+  
+  	#accountPageBread {
+		padding: 1.333em 0;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: .75em;
+		font-weight: 300;
+		color:#666;
+  		}
+  
+  	.accountHeading {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 2.5em;
+		font-weight: 100;
+		line-height: 1.25;
+		color: #333;
+		margin: 0 0 .333em;
+  		}
+  
+  	.accountPages {
+		clear: both;
+		float: left;
+		display: block;
+		width: 33%;
+		background-color: #eee;
+		margin-top: .666em;
+  		}
+  
+  	.accountPageTab {
+		display: block;
+		width: 100%;
+		position: relative;
+		float: left;
+		border-top: 1px solid #d2d2d2;
+  		}
+  
+  	.accountPageTab:first-child { border-top: none; }
+  
+  	a.accountPageLink {
+		display: block;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 1.25em;
+		font-weight: 300;
+		line-height: 1.4;
+		color: #333;
+		text-decoration: none;
+		padding: .666em 0 .666em 1.888em;
+  		}
+  
+  	a.accountPageLink:hover, a.activePageLink { color: #0084C9; }
+  
+  	.accountSubPage {
+		width: 61%;
+		float: right;
+		margin-top: .666em;
+  		}
+  
+  	.accountSubHeading {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 1.875em;
+		font-weight: 100;
+		line-height: 1.25;
+		color: #333;
+		margin: 0 0 .666em;
+  		}
+  
+  	.inputSection {
+		width: 100%;
+		margin-bottom: .666em;
+  		}
+  
+  	.inputSection p {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 1em;
+		font-weight: 300;
+		line-height: 1.4;
+		color: #333;
+		margin-bottom: .25em;
+  		}
+  
+  	.inputEnter {
+		display: block;
+		width: 100%;
+		max-width: 20em;
+		height: 2.25em;
+		vertical-align: middle;
+		padding: .25em .75em;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: 300;
+		font-size: 1em;
+		color: #333;
+		border: 2px solid #d2d2d2;
+		background-color: transparent;
+  		}
+  
+  	.inputEnter:focus { border: 2px solid #0084C9; }
+  
+  	.signupSection {
+		display: table;
+		position: relative;
+		width: 100%;
+		max-width: 20em;
+  		}
+  
+  	.emailCheck {
+		position: absolute;
+		top: 4px;
+		left: 0;
+  		}
+  
+  	.checkText {
+		float: right;
+		color: #666;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: .875em;
+		font-weight: 300;
+		line-height: 1.4;
+		padding-left: 2em;
+  		}
+  
+  	.saveChangesButton {
+		display: block;
+		width: 100%;
+		max-width: 20em;
+		background-color: #ffb900;
+		color: #333;
+		font-family: 'Roboto', Arial, sans-serif;
+		font-size: 1em;
+		font-weight: 400;
+		line-height: 1.1;
+		padding: .75em 0;
+		border: none;
+		cursor: pointer;
+		margin-top: 1.33em;
+  		}
+  
+  	.saveChangesButton:hover {
+		background-color: #ff8c00;
+		color: #fff;
+  		}
+  
+  	.saveChangesButton:active {
+		position: relative;
+		top: 2px;
+  		}
+  
+  	@media only screen and (max-width : 48em) {
+	
+		#accountPageBread, .accountHeading { display: none; }
+	
+		.accountPages { width: 100%; }
+	
+		.accountSubPage { float: left; width: 100%; }
+	
+  	}
+  
+</style>
+	<div id="accountPage">
+	  	<div id="accountPageBread">
+        	<a class="bread" href="/">Home</a> 
+			<span class="breadCarrots">&gt;</span>
+		  	My Account
+  		</div>
+  		<h1 class="accountHeading">
+			My account
+  		</h1>
+	  	<div class="accountPages">
+		  	<div class="accountPageTab">
+				<a href="/account-profile" class="accountPageLink activePageLink">
+					Account profile  
+		  		</a>
+			</div>
+		  	<div class="accountPageTab">
+			  <a href="/address-book" class="accountPageLink">
+				Address book  
+		  		</a>
+			</div>
+		  	<div class="accountPageTab">
+			  	<a href="/order-history" class="accountPageLink">
+				Order history
+		  		</a>
+		  	</div>
+		  	<div class="accountPageTab">
+			  	<a href="/quotes-and-carts" class="accountPageLink">
+				Quotes &amp; saved carts
+		  		</a>
+		  	</div>
+	  	</div>
+	  	<div class="accountSubPage">
+			<h3 class="accountSubHeading">
+				Account profile
+		  	</h3> 
+		  	<div class="inputSection">
+			  	<p>First name</p>
+				<input type="text" name="firstname" maxlength="150" class="inputEnter" value="John">  
+			</div>
+			<div class="inputSection">
+			  	<p>Last name</p>
+				<input type="text" name="lastname" maxlength="150" class="inputEnter" value="Doe">  
+			</div>
+			<div class="inputSection">
+			  	<p>Email address</p>
+				<input type="text" name="emailaddress" maxlength="150" class="inputEnter" value="helterskelter@thebeatles.com">  
+			</div>
+			<div class="inputSection">
+			  	<p>Password</p>
+				<input type="password" name="password" maxlength="150" class="inputEnter" placeholder="password">  
+			</div>
+			<div class="inputSection">
+			  	<p>Confirm password</p>
+				<input type="password" name="confirmpassword" maxlength="150" class="inputEnter" placeholder="confirm password">  
+			</div>
+			<div class="signupSection">
+				<input class="emailCheck" type="checkbox" name="emailSignup" checked="checked">
+		  		<div class="checkText">
+					I would like to receive exclusive tech tips, special promotions, and information about new arrivals. 
+				</div>
+			</div>
+		  	<input type="submit" value="Save changes" class="saveChangesButton">
+	  	</div>
+	</div>
+</vel:velocity>

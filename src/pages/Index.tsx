@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import AdPopup from "@/components/AdPopup";
 import BrandsCarousel from "@/components/BrandsCarousel";
 import ProductCategories from "@/components/ProductCategories";
 import Features from "@/components/Features";
@@ -25,6 +26,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <AdPopup />
       <SEO
         title="UV Test Solutions - Electronic Measuring Instruments India"
         description="India's leading supplier of precision electronic measuring instruments. Oscilloscopes, multimeters, signal generators from Keysight, Fluke, Tektronix, Rigol. ISO 9001 certified."
