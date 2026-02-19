@@ -54,7 +54,7 @@ const ProductCard = ({ name, brand, image, description, features, price, inStock
         </div>
         
         <div className="flex gap-2">
-          <Link to="/contact" className="flex-1">
+          <Link to={`/contact?product=${encodeURIComponent(`${brand} ${name}`)}`} className="flex-1">
             <Button className="w-full" variant="default">
               Request Quote
             </Button>

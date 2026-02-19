@@ -101,7 +101,7 @@ const AdPopup = () => {
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
-              <Link to="/contact" onClick={handleClose} className="flex-1">
+              <Link to="/contact?product=ITECH%20IT8512BG%2B%20DC%20Electronic%20Load" onClick={handleClose} className="flex-1">
                 <Button variant="hero" size="lg" className="w-full group">
                   Request a Quote
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
