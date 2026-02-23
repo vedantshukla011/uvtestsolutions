@@ -51,6 +51,8 @@ const additionalCustomers = [
   { name: "HYM Drive Systems Pvt Ltd", category: "manufacturing" },
   { name: "Euronics", category: "technology" },
   { name: "Livguard", category: "manufacturing" },
+  { name: "V-Guard", category: "manufacturing" },
+  { name: "ElectroWynk", category: "technology" },
   { name: "Amar Ujala", category: "corporate" },
   { name: "Uttaranchal University", category: "education" },
   { name: "ABESEC Ghaziabad", category: "education" },
