@@ -26,7 +26,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <HoliGreetingPopup />
       <AdPopup />
       <SEO
         title="UV Test Solutions - Electronic Measuring Instruments India"
