@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import AdPopup from "@/components/AdPopup";
-import HoliGreetingPopup from "@/components/HoliGreetingPopup";
 import BrandsCarousel from "@/components/BrandsCarousel";
 import ProductCategories from "@/components/ProductCategories";
 import Features from "@/components/Features";
