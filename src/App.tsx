@@ -18,6 +18,7 @@ import SpectrumAnalyzers from "./pages/products/SpectrumAnalyzers";
 import OtherProducts from "./pages/products/OtherProducts";
 import ESDLabSolutions from "./pages/products/ESDLabSolutions";
 import Probes from "./pages/products/Probes";
+import ProductsAtGeM from "./pages/ProductsAtGeM";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
