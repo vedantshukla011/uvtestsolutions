@@ -123,43 +123,28 @@ const Header = () => {
               )}
             </div>
 
+            <Link to="/about">
+              <Button variant="ghost" size="sm" className="text-sm font-medium">
+                About Us
+              </Button>
+            </Link>
+            <Link to="/customers">
+              <Button variant="ghost" size="sm" className="text-sm font-medium">
+                Our Customers
+              </Button>
+            </Link>
+            <Link to="/products-at-gem">
+              <Button variant="ghost" size="sm" className="text-sm font-medium">
+                Products@GeM
+              </Button>
+            </Link>
+
             {/* CTA Button */}
             <Link to="/contact">
               <Button variant="default" size="sm">
                 Get Quote
               </Button>
             </Link>
-
-            {/* Hamburger Menu */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48 bg-background">
-                <DropdownMenuItem asChild>
-                  <Link to="/about" className="cursor-pointer">
-                    About Us
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/customers" className="cursor-pointer">
-                    Our Customers
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/products-at-gem" className="cursor-pointer">
-                    Products@GeM
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/contact" className="cursor-pointer">
-                    Contact Us
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
           </div>
 
           {/* Mobile Navigation */}
