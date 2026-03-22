@@ -149,11 +149,6 @@ const Header = () => {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link to="/products" className="cursor-pointer">
-                    Products
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
                   <Link to="/products-at-gem" className="cursor-pointer">
                     Products@GeM
                   </Link>
