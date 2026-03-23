@@ -7,10 +7,13 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Send } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
+import { useQuoteCart } from "@/contexts/QuoteCartContext";
 
 const ContactForm = () => {
   const [searchParams] = useSearchParams();
   const prefillProduct = searchParams.get("product");
+  const prefillProducts = searchParams.get("products");
+  const { items: cartItems, clearItems } = useQuoteCart();
 
   const [selectedProducts, setSelectedProducts] = useState<string[]>([]);
   const [industry, setIndustry] = useState("");
@@ -20,10 +23,16 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    if (prefillProduct) {
+    const productsFromUrl = prefillProducts ? prefillProducts.split("||") : [];
+    const allProducts = [...new Set([...cartItems, ...productsFromUrl])];
+    
+    if (allProducts.length > 0) {
+      setMessage(`I am interested in the following products:\n${allProducts.map((p, i) => `${i + 1}. ${p}`).join("\n")}\n\nPlease provide a quote and more details.`);
+      clearItems();
+    } else if (prefillProduct) {
       setMessage(`I am interested in the ${prefillProduct}. Please provide a quote and more details.`);
     }
-  }, [prefillProduct]);
+  }, [prefillProduct, prefillProducts]);
 
   const productOptions = [
     { id: "oscilloscopes", label: "Oscilloscopes" },
