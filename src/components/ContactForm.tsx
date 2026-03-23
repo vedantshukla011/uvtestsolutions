@@ -7,6 +7,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Send } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
+import { useQuoteCart } from "@/contexts/QuoteCartContext";
 
 const ContactForm = () => {
   const [searchParams] = useSearchParams();
