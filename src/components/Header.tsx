@@ -100,7 +100,7 @@ const Header = () => {
                         {activeCat.subcategories.map((sub, idx) => (
                           <Link
                             key={idx}
-                            to={`/contact?product=${encodeURIComponent(sub)}`}
+                            to={`/products?category=${activeCat.id}&subcategory=${encodeURIComponent(sub)}`}
                             onClick={() => setProductsOpen(false)}
                             className="text-sm py-1.5 text-foreground hover:text-accent transition-colors truncate"
                           >
