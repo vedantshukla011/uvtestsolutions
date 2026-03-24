@@ -6,8 +6,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Link, useLocation } from "react-router-dom";
-import { Activity, Flame, Ruler, Zap, Wrench, Package, ChevronRight, Search, ArrowLeft, Plus, Check } from "lucide-react";
+import { Activity, Flame, Ruler, Zap, Wrench, Package, ChevronRight, Search, ArrowLeft, Plus, Check, ExternalLink } from "lucide-react";
+
+const openGoogleImages = (name: string) => {
+  window.open(`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(name)}`, "_blank");
+};
 
 const iconMap: Record<string, React.ElementType> = {
   Activity, Flame, Ruler, Zap, Wrench, Package,
@@ -58,6 +63,7 @@ const Products = () => {
     : currentCategory.subcategories;
 
   return (
+    <TooltipProvider delayDuration={200}>
     <div className="min-h-screen bg-background">
       <SEO
         title="Products - Complete Range of Tools & Instruments"
@@ -105,10 +111,23 @@ const Products = () => {
                         inCart ? "border-accent bg-accent/5" : "border-border/50 hover:border-accent/50 hover:shadow-sm bg-card"
                       }`}
                     >
-                      <div className="min-w-0 flex-1">
-                        <p className="text-sm font-medium text-foreground truncate">{product.name}</p>
-                        <p className="text-xs text-muted-foreground">{subcategory}</p>
-                      </div>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <div
+                            className="min-w-0 flex-1 cursor-pointer group/name"
+                            onClick={() => openGoogleImages(product.name)}
+                          >
+                            <p className="text-sm font-medium text-foreground truncate group-hover/name:text-accent transition-colors">
+                              {product.name}
+                              <ExternalLink className="inline-block ml-1 h-3 w-3 opacity-0 group-hover/name:opacity-100 transition-opacity" />
+                            </p>
+                            <p className="text-xs text-muted-foreground">{subcategory}</p>
+                          </div>
+                        </TooltipTrigger>
+                        <TooltipContent side="top" className="max-w-xs">
+                          <p>{product.name}</p>
+                        </TooltipContent>
+                      </Tooltip>
                       <button
                         onClick={() => toggleItem(product.name)}
                         className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
@@ -197,13 +216,24 @@ const Products = () => {
                         return (
                           <div
                             key={idx}
-                            className={`flex items-center justify-between gap-3 p-4 rounded-lg border transition-all duration-200 ${
+                            className={`group flex items-center justify-between gap-3 p-4 rounded-lg border transition-all duration-200 ${
                               inCart ? "border-accent bg-accent/5 shadow-sm" : "border-border/50 hover:border-accent/50 hover:shadow-sm bg-card"
                             }`}
                           >
-                            <span className="text-sm font-medium text-foreground truncate flex-1">
-                              {product.name}
-                            </span>
+                            <Tooltip>
+                              <TooltipTrigger asChild>
+                                <span
+                                  className="text-sm font-medium text-foreground truncate flex-1 cursor-pointer hover:text-accent transition-colors"
+                                  onClick={() => openGoogleImages(product.name)}
+                                >
+                                  {product.name}
+                                  <ExternalLink className="inline-block ml-1 h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                </span>
+                              </TooltipTrigger>
+                              <TooltipContent side="top" className="max-w-xs">
+                                <p>{product.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
                             <button
                               onClick={() => toggleItem(product.name)}
                               className={`shrink-0 w-9 h-9 rounded-full flex items-center justify-center transition-all ${
@@ -273,6 +303,7 @@ const Products = () => {
       </main>
       <Footer />
     </div>
+    </TooltipProvider>
   );
 };
 
