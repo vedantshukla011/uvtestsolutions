@@ -12,7 +12,7 @@ const Footer = () => {
               UV TEST SOLUTIONS
             </h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              Leading provider of precision electronic measuring instruments for industrial and laboratory applications.
+              Leading Indian supplier of test and measuring instruments.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
