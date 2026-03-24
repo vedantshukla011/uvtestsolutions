@@ -303,6 +303,7 @@ const Products = () => {
       </main>
       <Footer />
     </div>
+    </TooltipProvider>
   );
 };
 
