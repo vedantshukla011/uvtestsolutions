@@ -219,9 +219,20 @@ const Products = () => {
                               inCart ? "border-accent bg-accent/5 shadow-sm" : "border-border/50 hover:border-accent/50 hover:shadow-sm bg-card"
                             }`}
                           >
-                            <span className="text-sm font-medium text-foreground truncate flex-1">
-                              {product.name}
-                            </span>
+                            <Tooltip>
+                              <TooltipTrigger asChild>
+                                <span
+                                  className="text-sm font-medium text-foreground truncate flex-1 cursor-pointer hover:text-accent transition-colors"
+                                  onClick={() => openGoogleImages(product.name)}
+                                >
+                                  {product.name}
+                                  <ExternalLink className="inline-block ml-1 h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                </span>
+                              </TooltipTrigger>
+                              <TooltipContent side="top" className="max-w-xs">
+                                <p>{product.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
                             <button
                               onClick={() => toggleItem(product.name)}
                               className={`shrink-0 w-9 h-9 rounded-full flex items-center justify-center transition-all ${
