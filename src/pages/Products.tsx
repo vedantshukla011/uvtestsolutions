@@ -216,7 +216,7 @@ const Products = () => {
                         return (
                           <div
                             key={idx}
-                            className={`flex items-center justify-between gap-3 p-4 rounded-lg border transition-all duration-200 ${
+                            className={`group flex items-center justify-between gap-3 p-4 rounded-lg border transition-all duration-200 ${
                               inCart ? "border-accent bg-accent/5 shadow-sm" : "border-border/50 hover:border-accent/50 hover:shadow-sm bg-card"
                             }`}
                           >
