@@ -6,8 +6,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Link, useLocation } from "react-router-dom";
-import { Activity, Flame, Ruler, Zap, Wrench, Package, ChevronRight, Search, ArrowLeft, Plus, Check } from "lucide-react";
+import { Activity, Flame, Ruler, Zap, Wrench, Package, ChevronRight, Search, ArrowLeft, Plus, Check, ExternalLink } from "lucide-react";
+
+const openGoogleImages = (name: string) => {
+  window.open(`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(name)}`, "_blank");
+};
 
 const iconMap: Record<string, React.ElementType> = {
   Activity, Flame, Ruler, Zap, Wrench, Package,
