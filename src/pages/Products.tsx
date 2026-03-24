@@ -63,6 +63,7 @@ const Products = () => {
     : currentCategory.subcategories;
 
   return (
+    <TooltipProvider delayDuration={200}>
     <div className="min-h-screen bg-background">
       <SEO
         title="Products - Complete Range of Tools & Instruments"
