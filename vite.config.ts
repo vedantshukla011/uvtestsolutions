@@ -24,6 +24,7 @@ export default defineConfig(({ mode }) => ({
     mode === "development" && componentTagger(),
     mode === "production" &&
       vitePrerender({
+        staticDir: path.resolve(__dirname, "dist"),
         routes,
         renderer: "puppeteer",
         captureAfterDocumentEvent: "prerender-ready",
