@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_NUMBER = "919643295120";
+const WHATSAPP_NUMBER = "919654109754";
 const DEFAULT_MESSAGE = "Hi, I'm interested in your test & measuring instruments. Can you help me?";
 
 const WhatsAppButton = () => {
