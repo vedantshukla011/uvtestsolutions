@@ -1,0 +1,92 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { Link } from "react-router-dom";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
+
+const blogPosts = [
+  {
+    slug: "esd-protection-guide",
+    title: "The Complete Guide to ESD Protection Products",
+    description:
+      "A comprehensive reference covering all 120 ESD protection and test equipment products — from personnel grounding essentials to advanced monitoring systems — aligned with every major international ESD standard.",
+    date: "2026-03-25",
+    readTime: "25 min read",
+    tags: ["ESD", "ANSI/ESD S20.20", "IEC 61340-5-1", "Electronics Manufacturing"],
+  },
+];
+
+const Blog = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      <SEO
+        title="Blogs | UV Test Solutions"
+        description="Read expert articles on test & measuring instruments, ESD protection, soldering, and more from UV Test Solutions — leading Indian supplier."
+      />
+      <Header />
+      <main className="pt-24 pb-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Our Blog
+              </span>
+            </h1>
+            <p className="text-muted-foreground text-lg">
+              Expert insights on test instruments, ESD protection, and industry best practices.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto grid gap-6">
+            {blogPosts.map((post) => (
+              <Link
+                key={post.slug}
+                to={`/blog/${post.slug}`}
+                className="group block bg-card border border-border rounded-xl p-6 md:p-8 hover:border-accent/50 hover:shadow-lg transition-all"
+              >
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {post.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs font-medium px-2.5 py-1 rounded-md bg-accent/10 text-accent"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <h2 className="text-xl md:text-2xl font-bold text-foreground group-hover:text-accent transition-colors mb-2">
+                  {post.title}
+                </h2>
+                <p className="text-muted-foreground mb-4 line-clamp-2">
+                  {post.description}
+                </p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-3.5 h-3.5" />
+                      {new Date(post.date).toLocaleDateString("en-IN", {
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric",
+                      })}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5" />
+                      {post.readTime}
+                    </span>
+                  </div>
+                  <span className="text-accent font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read Article <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Blog;
