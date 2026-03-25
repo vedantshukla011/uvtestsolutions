@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => ({
       vitePrerender({
         routes,
         renderer: "puppeteer",
-        renderAfterDocumentEvent: "prerender-ready",
+        captureAfterDocumentEvent: "prerender-ready",
       }),
   ].filter(Boolean),
   resolve: {
