@@ -25,6 +25,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <WhatsAppButton />
           <QuoteCartFloat />
           <Routes>
             <Route path="/" element={<Index />} />
