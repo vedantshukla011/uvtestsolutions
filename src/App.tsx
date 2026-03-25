@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QuoteCartProvider } from "@/contexts/QuoteCartContext";
 import ScrollToTop from "./components/ScrollToTop";
 import QuoteCartFloat from "./components/QuoteCartFloat";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -24,6 +25,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <WhatsAppButton />
           <QuoteCartFloat />
           <Routes>
             <Route path="/" element={<Index />} />
