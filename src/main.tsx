@@ -8,3 +8,6 @@ createRoot(document.getElementById("root")!).render(
     <App />
   </HelmetProvider>
 );
+
+// Signal pre-renderer that the page is ready
+document.dispatchEvent(new Event("prerender-ready"));
