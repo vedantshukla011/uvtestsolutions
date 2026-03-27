@@ -23,6 +23,7 @@ export const productCategories: ProductCategory[] = [
       "Earth Resistance Tester",
       "Test Probes & Leads",
       "Power Supply",
+      "DC Power Supplies",
       "Component Testing",
       "Tachometer",
       "Environment Tester",
