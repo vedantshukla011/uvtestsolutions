@@ -6,6 +6,15 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "dc-power-supplies-guide",
+    title: "The Ultimate Guide to DC Power Supplies",
+    description:
+      "Complete guide to DC Power Supplies — types, applications, key features, market trends in India, and how to choose the right one for industrial and lab use.",
+    date: "2026-03-27",
+    readTime: "8 min read",
+    tags: ["DC Power Supply", "Lab Equipment", "Industrial Testing", "Buyer Guide"],
+  },
+  {
     slug: "esd-protection-guide",
     title: "The Complete Guide to ESD Protection Products",
     description:

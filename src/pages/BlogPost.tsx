@@ -6,6 +6,12 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blogMeta: Record<string, { title: string; description: string; file: string }> = {
+  "dc-power-supplies-guide": {
+    title: "DC Power Supplies: Types, Applications & Buying Guide | UV Test Solutions",
+    description:
+      "Complete guide to DC Power Supplies — types, applications, features, and how to choose the right one for industrial and lab use in India.",
+    file: "/blogs/dc-power-supplies-guide.html",
+  },
   "esd-protection-guide": {
     title: "The Complete Guide to ESD Protection Products | UV Test Solutions",
     description:
