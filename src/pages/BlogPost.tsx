@@ -6,6 +6,12 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blogMeta: Record<string, { title: string; description: string; file: string }> = {
+  "cheap-electrical-screwdrivers-india": {
+    title: "Cheap Electrical Screwdrivers in India | Best Budget Electric Screwdrivers 2026",
+    description:
+      "Buy cheap electrical screwdrivers in India. Explore budget & industrial electric screwdrivers from Bakon, TGK, Kilews, Bosch & Stanley. Best prices available.",
+    file: "/blogs/cheap-electrical-screwdrivers-india.html",
+  },
   "dc-power-supplies-guide": {
     title: "DC Power Supplies: Types, Applications & Buying Guide | UV Test Solutions",
     description:

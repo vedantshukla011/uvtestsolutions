@@ -6,6 +6,15 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "cheap-electrical-screwdrivers-india",
+    title: "Cheap Electrical Screwdrivers in India (2026 Guide)",
+    description:
+      "Buy cheap electrical screwdrivers in India. Explore budget & industrial electric screwdrivers from Bakon, TGK, Kilews, Bosch & Stanley with best prices.",
+    date: "2026-03-28",
+    readTime: "5 min read",
+    tags: ["Electric Screwdriver", "Budget Tools", "Industrial Tools", "India"],
+  },
+  {
     slug: "dc-power-supplies-guide",
     title: "The Ultimate Guide to DC Power Supplies",
     description:
