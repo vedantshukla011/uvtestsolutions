@@ -6,6 +6,15 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "digital-multimeter-guide",
+    title: "Digital Multimeter: Complete Guide, Uses & Buying Tips (2026)",
+    description:
+      "Learn everything about Digital Multimeters (DMM) — uses, features, True RMS, applications, and how to buy the best multimeter in India at the best price.",
+    date: "2026-04-03",
+    readTime: "7 min read",
+    tags: ["Digital Multimeter", "DMM", "True RMS", "Test Equipment"],
+  },
+  {
     slug: "arbitrary-function-generator-guide",
     title: "Arbitrary Function Generator: Complete Guide & Buying Tips (2026)",
     description:
