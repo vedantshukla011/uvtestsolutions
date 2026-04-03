@@ -6,6 +6,15 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "arbitrary-function-generator-guide",
+    title: "Arbitrary Function Generator: Complete Guide & Buying Tips (2026)",
+    description:
+      "Explore Arbitrary Function Generators (AFG) — types, features, applications, and how to buy the best function generator in India at the best price.",
+    date: "2026-04-03",
+    readTime: "7 min read",
+    tags: ["Function Generator", "AFG", "Waveform Generator", "Test Equipment"],
+  },
+  {
     slug: "cheap-electrical-screwdrivers-india",
     title: "Cheap Electrical Screwdrivers in India (2026 Guide)",
     description:

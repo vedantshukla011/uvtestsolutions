@@ -6,6 +6,12 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blogMeta: Record<string, { title: string; description: string; file: string }> = {
+  "arbitrary-function-generator-guide": {
+    title: "Arbitrary Function Generator: Complete Guide & Buying Tips 2026 | UV Test Solutions",
+    description:
+      "Explore Arbitrary Function Generators (AFG), their applications, features, and buying guide. Find the best function generator price in India.",
+    file: "/blogs/arbitrary-function-generator-guide.html",
+  },
   "cheap-electrical-screwdrivers-india": {
     title: "Cheap Electrical Screwdrivers in India | Best Budget Electric Screwdrivers 2026",
     description:
