@@ -6,6 +6,12 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blogMeta: Record<string, { title: string; description: string; file: string }> = {
+  "digital-multimeter-guide": {
+    title: "Digital Multimeter: Complete Guide, Uses, Features & Buying Tips 2026 | UV Test Solutions",
+    description:
+      "Learn everything about Digital Multimeters (DMM), including uses, features, applications, and buying tips. Find the best multimeter price in India.",
+    file: "/blogs/digital-multimeter-guide.html",
+  },
   "arbitrary-function-generator-guide": {
     title: "Arbitrary Function Generator: Complete Guide & Buying Tips 2026 | UV Test Solutions",
     description:
