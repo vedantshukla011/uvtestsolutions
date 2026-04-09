@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import AdPopup from "@/components/AdPopup";
 import BrandsCarousel from "@/components/BrandsCarousel";
 import ProductCategories from "@/components/ProductCategories";
+import HighestSellingProducts from "@/components/HighestSellingProducts";
 import Features from "@/components/Features";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
