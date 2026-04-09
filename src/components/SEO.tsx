@@ -7,6 +7,7 @@ interface SEOProps {
   type?: "website" | "article" | "product";
   image?: string;
   keywords?: string;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const SEO = ({
@@ -16,6 +17,7 @@ const SEO = ({
   type = "website",
   image = "https://www.uvtestsolutions.com/favicon.jpg",
   keywords,
+  jsonLd,
 }: SEOProps) => {
   const siteTitle = "UV Test Solutions";
   const fullTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
@@ -43,6 +45,13 @@ const SEO = ({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+
+      {/* JSON-LD Structured Data */}
+      {jsonLd && (
+        <script type="application/ld+json">
+          {JSON.stringify(Array.isArray(jsonLd) ? jsonLd : jsonLd)}
+        </script>
+      )}
     </Helmet>
   );
 };
