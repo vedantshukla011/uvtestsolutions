@@ -10,6 +10,7 @@ import Features from "@/components/Features";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { getHomepageJsonLd } from "@/lib/seoData";
 
 const Index = () => {
   const location = useLocation();
@@ -32,7 +33,8 @@ const Index = () => {
         title="UV Test Solutions - Leading Indian Supplier of Test & Measuring Instruments"
         description="Leading Indian supplier of test and measuring instruments. Oscilloscopes, multimeters, signal generators, soldering stations, power tools & more from top global brands."
         canonical="/"
-        keywords="test and measuring instruments India, oscilloscopes, multimeters, signal generators, soldering stations, power tools, hand tools, Keysight, Fluke, Tektronix, Rigol, Siglent"
+        keywords="test and measuring instruments India, oscilloscopes, multimeters, signal generators, soldering stations, power tools, hand tools, Keysight, Fluke, Tektronix, Rigol, Siglent, buy test equipment online India, electronic instruments dealer"
+        jsonLd={getHomepageJsonLd()}
       />
       <Header />
       <main>

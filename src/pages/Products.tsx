@@ -5,6 +5,7 @@ import { useQuoteCart } from "@/contexts/QuoteCartContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import { getProductsPageJsonLd, getSubcategoryJsonLd } from "@/lib/seoData";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Link, useLocation } from "react-router-dom";
@@ -66,10 +67,20 @@ const Products = () => {
     <TooltipProvider delayDuration={200}>
     <div className="min-h-screen bg-background">
       <SEO
-        title="Products - Complete Range of Tools & Instruments"
-        description="Browse our complete product range: Testing & Diagnostics, Soldering Solutions, Precision Measuring, Power Tools, Hand Tools, and more."
+        title={activeSubcategory ? `${activeSubcategory} - Buy Online India` : `Products - Complete Range of Tools & Instruments`}
+        description={activeSubcategory 
+          ? `Buy ${activeSubcategory} online in India from UV Test Solutions. Wide range of ${activeSubcategory.toLowerCase()} from top brands at competitive prices. Request a quote today.`
+          : "Browse our complete product range: Testing & Diagnostics, Soldering Solutions, Precision Measuring, Power Tools, Hand Tools, and more. 3900+ products from top global brands."
+        }
         canonical="/products"
-        keywords="test equipment, soldering, precision measuring, power tools, hand tools, industrial tools India"
+        keywords={activeSubcategory 
+          ? `${activeSubcategory} India, buy ${activeSubcategory.toLowerCase()} online, ${activeSubcategory.toLowerCase()} price India, ${currentCategory.name}`
+          : "test equipment India, soldering station, oscilloscope, multimeter, precision measuring tools, power tools, hand tools, industrial tools India, buy test instruments online"
+        }
+        jsonLd={activeSubcategory && subProducts
+          ? getSubcategoryJsonLd(currentCategory.name, activeSubcategory, subProducts.products)
+          : getProductsPageJsonLd()
+        }
       />
       <Header />
       <main className="pt-16">
