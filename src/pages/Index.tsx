@@ -39,6 +39,7 @@ const Index = () => {
         <Hero />
         <BrandsCarousel />
         <ProductCategories />
+        <HighestSellingProducts />
         <Features />
         <CTASection />
       </main>
