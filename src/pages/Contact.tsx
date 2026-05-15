@@ -15,15 +15,44 @@ import {
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const localBusinessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "UV Test Solutions",
+    image: "https://uvtestsolutions.lovable.app/favicon.jpg",
+    url: "https://uvtestsolutions.lovable.app/contact",
+    email: "vinod.shukla@uvtestsolutions.com",
+    telephone: "+91-9654109754",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "B-6/6 Rajendra Nagar",
+      addressLocality: "Ghaziabad",
+      addressRegion: "Uttar Pradesh",
+      postalCode: "201001",
+      addressCountry: "IN",
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        opens: "09:30",
+        closes: "18:30",
+      },
+    ],
+    priceRange: "₹₹",
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="Contact Us - Get Quote for Test Equipment"
-        description="Request a quote for oscilloscopes, multimeters, and electronic measuring instruments. 24-hour response guarantee. Contact UV Test Solutions today."
+        title="Contact UV Test Solutions — Get a Quote"
+        description="Request a quote for oscilloscopes, multimeters and electronic measuring instruments. 24-hour response. Contact UV Test Solutions today."
         canonical="/contact"
         keywords="buy oscilloscopes India, multimeter quote, test equipment price, electronic instruments contact"
+        jsonLd={localBusinessJsonLd}
       />
       <Header />
+
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/5 via-accent/5 to-background overflow-hidden">
