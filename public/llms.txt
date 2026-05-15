@@ -1,0 +1,27 @@
+# UV Test Solutions
+
+> Leading Indian supplier of test and measuring instruments — oscilloscopes, multimeters, signal generators, soldering stations, power tools and hand tools — from top global brands.
+
+UV Test Solutions distributes precision electronic test, measurement and production equipment across India. We supply industry, R&D labs, educational institutions and government buyers (including via GeM) with instruments from brands like Keysight, Fluke, Tektronix, Rigol, Siglent, Hantek, Bakon, Kilews and more.
+
+## Pages
+
+- [Home](/): Overview of products, brands and best-selling instruments.
+- [About](/about): Company background, mission and capabilities.
+- [Products](/products): Full catalog across testing & diagnostics, soldering, precision measuring, power tools and hand tools.
+- [Products at GeM](/products-at-gem): Instruments available to government buyers via the GeM portal.
+- [Customers](/customers): Industries and key customers we serve.
+- [Contact](/contact): Request a quote, sales and support — vinod.shukla@uvtestsolutions.com, +91 9654109754.
+- [Blog](/blog): Buying guides and how-tos for test & measurement equipment.
+
+## Blog
+
+- [Digital Multimeter Guide](/blog/digital-multimeter-guide): Uses, features and buying tips for DMMs.
+- [Arbitrary Function Generator Guide](/blog/arbitrary-function-generator-guide): AFG applications, features and pricing in India.
+- [DC Power Supplies Guide](/blog/dc-power-supplies-guide): Types, applications and selection criteria.
+- [ESD Protection Guide](/blog/esd-protection-guide): Personnel grounding, workstation gear, packaging and monitoring.
+- [Cheap Electrical Screwdrivers in India](/blog/cheap-electrical-screwdrivers-india): Budget electric screwdrivers from Bakon, TGK, Kilews and others.
+
+## Optional
+
+- [Sitemap](/sitemap.xml): Full list of indexable URLs.

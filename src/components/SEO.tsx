@@ -15,13 +15,16 @@ const SEO = ({
   description,
   canonical,
   type = "website",
-  image = "https://www.uvtestsolutions.com/favicon.jpg",
+  image = "https://uvtestsolutions.lovable.app/favicon.jpg",
   keywords,
   jsonLd,
 }: SEOProps) => {
   const siteTitle = "UV Test Solutions";
-  const fullTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
-  const baseUrl = "https://www.uvtestsolutions.com";
+  // Avoid duplicating brand suffix when the title already includes it or is too long
+  const includesBrand = title.toLowerCase().includes(siteTitle.toLowerCase());
+  const fullTitle =
+    includesBrand || title.length > 50 ? title : `${title} | ${siteTitle}`;
+  const baseUrl = "https://uvtestsolutions.lovable.app";
   const canonicalUrl = canonical ? `${baseUrl}${canonical}` : undefined;
 
   return (

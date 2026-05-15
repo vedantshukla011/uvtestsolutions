@@ -30,8 +30,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <AdPopup />
       <SEO
-        title="UV Test Solutions - Leading Indian Supplier of Test & Measuring Instruments"
-        description="Leading Indian supplier of test and measuring instruments. Oscilloscopes, multimeters, signal generators, soldering stations, power tools & more from top global brands."
+        title="UV Test Solutions | Test & Measuring Instruments India"
+        description="Indian supplier of oscilloscopes, multimeters, signal generators, soldering stations and power tools from top global brands. Get a quote today."
         canonical="/"
         keywords="test and measuring instruments India, oscilloscopes, multimeters, signal generators, soldering stations, power tools, hand tools, Keysight, Fluke, Tektronix, Rigol, Siglent, buy test equipment online India, electronic instruments dealer"
         jsonLd={getHomepageJsonLd()}
