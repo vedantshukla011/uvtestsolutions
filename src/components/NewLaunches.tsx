@@ -12,6 +12,7 @@ export const newLaunches = [
       "150W / 30A / 150V programmable DC electronic load with 10µS full-range current rising time and 500KHz synchronized sampling. Ideal for testing switching power supplies, LED drivers, ATE systems, fuses, batteries and adapters.",
     image: productImage,
     datasheet: "/datasheets/jartul-jt6311a.pdf",
+    href: "/products/jartul-jt6311a",
     highlights: [
       "150W / 150V / 30A range",
       "10µS full-range current rise time",
