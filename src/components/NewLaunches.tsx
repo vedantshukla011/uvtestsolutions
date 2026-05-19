@@ -1,4 +1,5 @@
-import { Download, Plus, Check, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Download, Plus, Check, Sparkles, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useQuoteCart } from "@/contexts/QuoteCartContext";
 import productImage from "@/assets/products/jartul-jt6311a.png";
@@ -11,6 +12,7 @@ export const newLaunches = [
       "150W / 30A / 150V programmable DC electronic load with 10µS full-range current rising time and 500KHz synchronized sampling. Ideal for testing switching power supplies, LED drivers, ATE systems, fuses, batteries and adapters.",
     image: productImage,
     datasheet: "/datasheets/jartul-jt6311a.pdf",
+    href: "/products/jartul-jt6311a",
     highlights: [
       "150W / 150V / 30A range",
       "10µS full-range current rise time",
@@ -45,7 +47,7 @@ const NewLaunches = () => {
                 key={product.model}
                 className="grid md:grid-cols-2 gap-8 p-6 md:p-8 rounded-2xl border-2 border-accent/20 bg-card shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="relative aspect-[4/3] bg-muted/30 rounded-xl overflow-hidden">
+                <Link to={product.href} className="relative aspect-[4/3] bg-muted/30 rounded-xl overflow-hidden group/img">
                   <span className="absolute top-3 left-3 z-10 px-3 py-1 rounded-full bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wide">
                     New
                   </span>
@@ -53,14 +55,18 @@ const NewLaunches = () => {
                     src={product.image}
                     alt={`${product.name} - programmable DC electronic load`}
                     loading="lazy"
-                    className="w-full h-full object-contain p-4"
+                    className="w-full h-full object-contain p-4 group-hover/img:scale-105 transition-transform"
                   />
-                </div>
+                </Link>
                 <div className="flex flex-col">
                   <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">
                     Model {product.model}
                   </p>
-                  <h3 className="text-2xl font-bold mb-3">{product.name}</h3>
+                  <h3 className="text-2xl font-bold mb-3">
+                    <Link to={product.href} className="hover:text-accent transition-colors">
+                      {product.name}
+                    </Link>
+                  </h3>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     {product.brief}
                   </p>
@@ -73,13 +79,18 @@ const NewLaunches = () => {
                     ))}
                   </ul>
                   <div className="flex flex-wrap gap-3 mt-auto">
+                    <Button asChild className="gap-2">
+                      <Link to={product.href}>
+                        View Details <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </Button>
                     <Button
                       onClick={() => toggleItem(product.name)}
-                      variant={inCart ? "secondary" : "default"}
+                      variant={inCart ? "secondary" : "outline"}
                       className="gap-2"
                     >
                       {inCart ? (
-                        <><Check className="h-4 w-4" /> Added to Quote</>
+                        <><Check className="h-4 w-4" /> Added</>
                       ) : (
                         <><Plus className="h-4 w-4" /> Request Quote</>
                       )}
@@ -91,7 +102,7 @@ const NewLaunches = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Download className="h-4 w-4" /> Download Datasheet
+                        <Download className="h-4 w-4" /> Datasheet
                       </a>
                     </Button>
                   </div>

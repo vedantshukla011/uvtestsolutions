@@ -15,6 +15,7 @@ import Products from "./pages/Products";
 import ProductsAtGeM from "./pages/ProductsAtGeM";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import JartulJT6311A from "./pages/JartulJT6311A";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/products-at-gem" element={<ProductsAtGeM />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/products/jartul-jt6311a" element={<JartulJT6311A />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
