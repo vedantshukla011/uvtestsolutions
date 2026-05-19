@@ -6,6 +6,7 @@ import AdPopup from "@/components/AdPopup";
 import BrandsCarousel from "@/components/BrandsCarousel";
 import ProductCategories from "@/components/ProductCategories";
 import HighestSellingProducts from "@/components/HighestSellingProducts";
+import NewLaunches, { newLaunches } from "@/components/NewLaunches";
 import Features from "@/components/Features";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -39,6 +40,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <NewLaunches />
         <BrandsCarousel />
         <ProductCategories />
         <HighestSellingProducts />
