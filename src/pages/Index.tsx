@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import AdPopup from "@/components/AdPopup";
+
 import BrandsCarousel from "@/components/BrandsCarousel";
 import ProductCategories from "@/components/ProductCategories";
 import HighestSellingProducts from "@/components/HighestSellingProducts";
@@ -29,7 +29,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <AdPopup />
+      
       <SEO
         title="UV Test Solutions | Test & Measuring Instruments India"
         description="Indian supplier of oscilloscopes, multimeters, signal generators, DC electronic loads, soldering stations and power tools from top global brands. Get a quote today."
