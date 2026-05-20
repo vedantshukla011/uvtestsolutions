@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
+  <!-- ===== Main Pages ===== -->
   <url>
     <loc>https://uvtestsolutions.lovable.app/</loc>
     <changefreq>weekly</changefreq>
@@ -32,26 +32,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://uvtestsolutions.lovable.app/buy-online</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://uvtestsolutions.lovable.app/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Buy Online -->
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/buy-online</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- New Launches -->
+  <!-- ===== Featured Product Landing Pages ===== -->
   <url>
     <loc>https://uvtestsolutions.lovable.app/products/jartul-jt6311a</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/#new-launches</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -61,9 +54,7 @@
     <priority>0.6</priority>
   </url>
 
-
-
-  <!-- Blog Posts -->
+  <!-- ===== Blog Posts ===== -->
   <url>
     <loc>https://uvtestsolutions.lovable.app/blog/esd-protection-guide</loc>
     <changefreq>monthly</changefreq>
@@ -90,7 +81,7 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Product Categories -->
+  <!-- ===== Product Categories ===== -->
   <url>
     <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics</loc>
     <changefreq>weekly</changefreq>
@@ -122,113 +113,123 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Key Subcategories - Testing & Diagnostics -->
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Oscilloscope</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Multimeter</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Function+Generator</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Power+Supply</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=DC+Power+Supplies</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Spectrum+Analyzer</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Clamp+Meter</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Thermal+Imager</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Insulation+Tester</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Component+Testing</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <!-- ===== Subcategories — Testing & Diagnostics ===== -->
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Multimeter</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Panel+Meter+%26+Controller</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Clamp+Meter</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Sound+Meter+%26+Lux+Meter</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Temperature+Meter</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Electrical+Tester</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Insulation+Tester</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Oscilloscope</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Function+Generator</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Earth+Resistance+Tester</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Test+Probes+%26+Leads</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Power+Supply</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=DC+Power+Supplies</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Component+Testing</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Tachometer</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Environment+Tester</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Automotive+Diagnostic+Meters</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Battery+Testers</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Water+Testing+Meters</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=DC+Electronic+Load+Tester</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Hipot+Tester</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Power+Analyzer</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Spectrum+Analyzer</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Thermal+Imager</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=testing-diagnostics&amp;subcategory=Network+%26+Cable+Tester</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 
-  <!-- Key Subcategories - Soldering -->
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Soldering+Station</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Solder+Wire</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=ESD+Supplies</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Fume+Extractors</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <!-- ===== Subcategories — Soldering Solutions ===== -->
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Soldering+Station</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Soldering+Bits</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Soldering+Elements</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Soldering+Iron</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Solder+Paste+%28Flux%29</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Solder+Pot</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Soldering+Accessories</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Solder+Wire</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Soldering+Spares</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=ESD+Supplies</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Microscope+%26+Magnifier</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Ionizer</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Fume+Extractors</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Precision+Tweezer</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=soldering-solutions&amp;subcategory=Kapton+Tape</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 
-  <!-- Key Subcategories - Precision Measuring -->
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Vernier+Caliper</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Precision+Micrometer</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <!-- ===== Subcategories — Precision Measuring ===== -->
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Measuring+%26+Marking+Tools</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Vernier+Caliper</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Precision+Micrometer</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Depth+Gauge</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Pin+Gauge+Set</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Force+Gauge</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Rulers</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Protractors</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Spirit+Levels+%26+Inclinometers</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Feeler+Gauges</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Magnetic+Stand</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Dial+Indicator</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Digital+Indicator</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Thickness+Gauge</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Bore+Gauge</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Pitch+%26+Radius+Gauge</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Inspection+Mirror</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Outside+Micrometer</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Depth+Micrometer</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=precision-measuring&amp;subcategory=Durometer</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 
-  <!-- Key Subcategories - Power Tools -->
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Electrical+Screwdriver</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Drill+Machines</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <!-- ===== Subcategories — Power Tools ===== -->
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Pneumatic+Tools</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Hot+Air+Gun</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Electrical+Screwdriver+Bits</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Drill+Machines</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Power+Grinders</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Routers+%26+Trimmers</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Sander+%2F+Polisher</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Power+Cutters</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Planer</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Drilling+Bits</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Holesaw</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Cutting+Blades+%26+Accessories</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Electrical+Screwdriver</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Impact+Socket</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Rotary+Tool</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=power-tools&amp;subcategory=Torque+Tester</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 
-  <!-- Key Subcategories - Hand Tools -->
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Crimping+Tools</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Tool+Kit</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <!-- ===== Subcategories — Hand Tools ===== -->
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Hammer</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Spanner+%26+Wrench</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Allen+Key</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Crimping+Tools</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Screwdriver</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Sockets</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Knives+%26+Blades</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Industrial+Lubrication</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Tool+Storage+%26+Organizer</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Cable+Management</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Riveters</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Tool+Kit</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Network+%26+Telecom+Tools</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Pliers%2C+Cutters+%26+Strippers</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=hand-tools&amp;subcategory=Wrenches+%26+Torque+Tools</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <!-- ===== Subcategories — Miscellaneous ===== -->
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Battery</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Glue+Guns+%26+Adhesives</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Power+Extension</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Pressure+Washer</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Vacuum+Cleaner</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Air+Blowers</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Cable+Ties</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Car+%26+Bike+Care</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Pressure+Washer+Accessories</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Garden+Tools+%26+Brush+Cutters</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=AC+Axial+Fan</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=AV+Cables</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Leads+%26+Connectors</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=DIY+Learning+%26+Robot+Kits</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Drone+Kit</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Heat+Shrink+Sleeves</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://uvtestsolutions.lovable.app/products?category=miscellaneous&amp;subcategory=Industrial+Tape+Dispensers</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
 </urlset>
