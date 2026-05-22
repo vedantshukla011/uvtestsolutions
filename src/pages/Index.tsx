@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 
 import BrandsCarousel from "@/components/BrandsCarousel";
 import ProductCategories from "@/components/ProductCategories";
-import HighestSellingProducts from "@/components/HighestSellingProducts";
+import ATESolutions from "@/components/ATESolutions";
 import NewLaunches, { newLaunches } from "@/components/NewLaunches";
 import Features from "@/components/Features";
 import CTASection from "@/components/CTASection";
@@ -64,7 +64,7 @@ const Index = () => {
         <NewLaunches />
         <BrandsCarousel />
         <ProductCategories />
-        <HighestSellingProducts />
+        <ATESolutions />
         <Features />
         <CTASection />
       </main>
