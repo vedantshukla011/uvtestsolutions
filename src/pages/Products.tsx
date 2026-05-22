@@ -67,10 +67,10 @@ const Products = () => {
     <TooltipProvider delayDuration={200}>
     <div className="min-h-screen bg-background">
       <SEO
-        title={activeSubcategory ? `${activeSubcategory} - Buy Online India` : `Products - Complete Range of Tools & Instruments`}
+        title={activeSubcategory ? `${activeSubcategory} - Buy Online India` : `Products - Test & Measuring Instruments`}
         description={activeSubcategory 
-          ? `Buy ${activeSubcategory} online in India from UV Test Solutions. Wide range of ${activeSubcategory.toLowerCase()} from top brands at competitive prices. Request a quote today.`
-          : "Browse our complete product range: Testing & Diagnostics, Soldering Solutions, Precision Measuring, Power Tools, Hand Tools, and more. 3900+ products from top global brands."
+          ? `Buy ${activeSubcategory} online in India from UV Test Solutions — top brands at competitive prices. Request a quote today.`
+          : "Testing & Diagnostics, Soldering, Precision Measuring, Power Tools & Hand Tools — 3900+ products from top global brands at UV Test Solutions."
         }
         canonical="/products"
         keywords={activeSubcategory 

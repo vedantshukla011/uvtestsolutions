@@ -10,8 +10,8 @@ const BuyOnline = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEO
-        title="Buy Online | Digital Catalog — UV Test Solutions"
-        description="Browse and buy test & measuring instruments online from UV Test Solutions' digital catalog — oscilloscopes, multimeters, DC loads, soldering stations and more."
+        title="Buy Online | UV Test Solutions"
+        description="Browse & buy test & measuring instruments online from UV Test Solutions — oscilloscopes, multimeters, DC loads, soldering stations and more."
         canonical="/buy-online"
         keywords="buy test instruments online India, digital catalog, oscilloscopes online, multimeters online, DC electronic load online, UV Test Solutions catalog"
       />

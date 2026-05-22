@@ -69,7 +69,7 @@ const JartulJT6311A = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Jartul JT6311A 150W DC Electronic Load | Buy in India"
-        description="Buy Jartul JT6311A programmable DC electronic load (150W/150V/30A) in India. 10µS rise time, 500KHz sampling. Ideal for SMPS, LED drivers, ATE, batteries. Download datasheet & request quote."
+        description="Jartul JT6311A programmable DC electronic load (150W/150V/30A) — 10µS rise time, 500KHz sampling. For SMPS, LED drivers, ATE & batteries."
         canonical="/products/jartul-jt6311a"
         type="product"
         keywords="Jartul JT6311A, DC electronic load 150W, programmable electronic load India, 150V 30A electronic load, SMPS tester, LED driver tester, ATE electronic load, battery discharge tester, buy Jartul India"

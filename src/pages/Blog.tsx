@@ -57,7 +57,8 @@ const Blog = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Blogs | UV Test Solutions"
-        description="Read expert articles on test & measuring instruments, ESD protection, soldering, and more from UV Test Solutions — leading Indian supplier."
+        description="Expert articles on test & measuring instruments, ESD protection, soldering and more from UV Test Solutions — India's leading supplier."
+        canonical="/blog"
       />
       <Header />
       <main className="pt-24 pb-16">
