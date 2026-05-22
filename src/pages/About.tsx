@@ -9,7 +9,7 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="About Us - UV Test Solutions"
-        description="Learn about UV Test Solutions - 15+ years of expertise in electronic measuring instruments. ISO 9001 certified company serving manufacturing, R&D, and educational sectors across India."
+        description="UV Test Solutions — 15+ years supplying electronic measuring instruments. ISO 9001 certified, serving manufacturing, R&D and education across India."
         canonical="/about"
         keywords="UV Test Solutions, electronic instruments company, test equipment supplier India, measuring instruments dealer"
       />

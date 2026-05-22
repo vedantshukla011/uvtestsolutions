@@ -94,7 +94,7 @@ const Customers = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Our Customers - UV Test Solutions"
-        description="Trusted by Hero MotoCorp, LG, Orient Electric, Amity University, and 25+ leading organizations. See why industry leaders choose UV Test Solutions for precision instruments."
+        description="Trusted by Hero MotoCorp, LG, Orient Electric, Amity University & 25+ leading Indian organizations choosing UV Test Solutions for precision instruments."
         canonical="/customers"
         keywords="UV Test Solutions customers, test equipment clients, electronic instruments buyers India"
       />

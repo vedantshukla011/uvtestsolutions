@@ -34,8 +34,9 @@ const ProductsAtGeM = () => {
   return (
     <>
       <SEO
-        title="Products on GeM | UV Test Solutions - Registered GeM Supplier"
-        description="UV Test Solutions is a registered supplier on Government e-Marketplace (GeM). Browse our range of precision electronic instruments available for government procurement."
+        title="Products on GeM | UV Test Solutions"
+        description="Registered GeM supplier. Browse precision electronic instruments from UV Test Solutions available for government procurement on the Government e-Marketplace."
+        canonical="/products-at-gem"
         keywords="GeM supplier, Government e-Marketplace, electronic instruments GeM, UV Test Solutions GeM, government procurement"
       />
       <Header />
