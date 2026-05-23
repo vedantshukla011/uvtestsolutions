@@ -32,7 +32,7 @@ const Index = () => {
       
       <SEO
         title="UV Test Solutions | Test & Measuring Instruments India"
-        description="Indian supplier of oscilloscopes, multimeters, signal generators, DC electronic loads, soldering stations and power tools from top global brands. Get a quote today."
+        description="India's trusted supplier of oscilloscopes, multimeters, DC loads, soldering stations & power tools from top global brands."
         canonical="/"
         keywords="test and measuring instruments India, oscilloscopes, multimeters, DC electronic load, Jartul JT6311A, programmable electronic load 150W, signal generators, soldering stations, power tools, hand tools, Keysight, Fluke, Tektronix, Rigol, Siglent, buy test equipment online India, electronic instruments dealer"
         jsonLd={[
