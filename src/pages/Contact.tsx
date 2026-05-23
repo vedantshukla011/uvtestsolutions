@@ -19,8 +19,8 @@ const Contact = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "UV Test Solutions",
-    image: "https://uvtestsolutions.lovable.app/favicon.jpg",
-    url: "https://uvtestsolutions.lovable.app/contact",
+    image: "https://www.uvtestsolutions.com/favicon.jpg",
+    url: "https://www.uvtestsolutions.com/contact",
     email: "vinod.shukla@uvtestsolutions.com",
     telephone: "+91-9654109754",
     address: {

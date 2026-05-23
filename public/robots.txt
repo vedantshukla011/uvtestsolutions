@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://uvtestsolutions.lovable.app/sitemap.xml
+Sitemap: https://www.uvtestsolutions.com/sitemap.xml

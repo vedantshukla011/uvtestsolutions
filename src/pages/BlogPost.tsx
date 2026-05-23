@@ -58,10 +58,10 @@ const BlogPost = () => {
       name: "UV Test Solutions",
       logo: {
         "@type": "ImageObject",
-        url: "https://uvtestsolutions.lovable.app/favicon.jpg",
+        url: "https://www.uvtestsolutions.com/favicon.jpg",
       },
     },
-    mainEntityOfPage: `https://uvtestsolutions.lovable.app/blog/${slug}`,
+    mainEntityOfPage: `https://www.uvtestsolutions.com/blog/${slug}`,
   };
 
   return (

@@ -15,7 +15,7 @@ const SEO = ({
   description,
   canonical,
   type = "website",
-  image = "https://uvtestsolutions.lovable.app/favicon.jpg",
+  image = "https://www.uvtestsolutions.com/favicon.jpg",
   keywords,
   jsonLd,
 }: SEOProps) => {
@@ -24,7 +24,7 @@ const SEO = ({
   const includesBrand = title.toLowerCase().includes(siteTitle.toLowerCase());
   const fullTitle =
     includesBrand || title.length > 50 ? title : `${title} | ${siteTitle}`;
-  const baseUrl = "https://uvtestsolutions.lovable.app";
+  const baseUrl = "https://www.uvtestsolutions.com";
   const canonicalUrl = canonical ? `${baseUrl}${canonical}` : undefined;
 
   return (
