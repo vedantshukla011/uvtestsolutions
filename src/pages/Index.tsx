@@ -45,14 +45,14 @@ const Index = () => {
             "sku": newLaunches[0].model,
             "category": "DC Electronic Load",
             "description": newLaunches[0].brief,
-            "image": "https://uvtestsolutions.lovable.app/assets/jartul-jt6311a.png",
+            "image": "https://www.uvtestsolutions.com/assets/jartul-jt6311a.png",
             "releaseDate": "2026-05",
             "brand": { "@type": "Brand", "name": "Jartul" },
             "offers": {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
               "priceCurrency": "INR",
-              "url": "https://uvtestsolutions.lovable.app/#new-launches",
+              "url": "https://www.uvtestsolutions.com/#new-launches",
               "seller": { "@type": "Organization", "name": "UV Test Solutions" }
             }
           }

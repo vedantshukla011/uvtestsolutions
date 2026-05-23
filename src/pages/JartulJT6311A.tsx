@@ -43,14 +43,14 @@ const JartulJT6311A = () => {
     category: "DC Electronic Load",
     description:
       "150W / 30A / 150V programmable DC electronic load with 10µS full-range current rising time and 500KHz synchronized sampling. Ideal for switching power supplies, LED drivers, ATE, fuses and battery testing.",
-    image: "https://uvtestsolutions.lovable.app/assets/jartul-jt6311a.png",
+    image: "https://www.uvtestsolutions.com/assets/jartul-jt6311a.png",
     brand: { "@type": "Brand", name: "Jartul" },
     releaseDate: "2026-05",
     offers: {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
       priceCurrency: "INR",
-      url: "https://uvtestsolutions.lovable.app/products/jartul-jt6311a",
+      url: "https://www.uvtestsolutions.com/products/jartul-jt6311a",
       seller: { "@type": "Organization", name: "UV Test Solutions" },
     },
   };
@@ -59,9 +59,9 @@ const JartulJT6311A = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://uvtestsolutions.lovable.app/" },
-      { "@type": "ListItem", position: 2, name: "Products", item: "https://uvtestsolutions.lovable.app/products" },
-      { "@type": "ListItem", position: 3, name: "Jartul JT6311A", item: "https://uvtestsolutions.lovable.app/products/jartul-jt6311a" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.uvtestsolutions.com/" },
+      { "@type": "ListItem", position: 2, name: "Products", item: "https://www.uvtestsolutions.com/products" },
+      { "@type": "ListItem", position: 3, name: "Jartul JT6311A", item: "https://www.uvtestsolutions.com/products/jartul-jt6311a" },
     ],
   };
 
