@@ -16,6 +16,8 @@ import ProductsAtGeM from "./pages/ProductsAtGeM";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import JartulJT6311A from "./pages/JartulJT6311A";
+import MetrelMI3108 from "./pages/MetrelMI3108";
+import MetrelMI3132 from "./pages/MetrelMI3132";
 import BuyOnline from "./pages/BuyOnline";
 import NotFound from "./pages/NotFound";
 
@@ -41,6 +43,8 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/products/jartul-jt6311a" element={<JartulJT6311A />} />
+            <Route path="/products/metrel-mi3108-eurotestpv" element={<MetrelMI3108 />} />
+            <Route path="/products/metrel-mi3132-evtester" element={<MetrelMI3132 />} />
             <Route path="/buy-online" element={<BuyOnline />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
