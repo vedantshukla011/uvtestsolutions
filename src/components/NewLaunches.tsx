@@ -107,6 +107,11 @@ const NewLaunches = () => {
                   <span className="absolute top-3 left-3 z-10 px-3 py-1 rounded-full bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wide">
                     New
                   </span>
+                  {(product as { exclusive?: boolean }).exclusive && (
+                    <span className="absolute top-3 right-3 z-10 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wide">
+                      <Star className="h-3 w-3" /> Exclusive
+                    </span>
+                  )}
                   <img
                     src={product.image}
                     alt={`${product.name} - ${product.brand} test instrument`}
