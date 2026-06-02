@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { Download, Plus, Check, Sparkles, ArrowRight } from "lucide-react";
+import { Download, Plus, Check, Sparkles, ArrowRight, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useQuoteCart } from "@/contexts/QuoteCartContext";
 import jartulImage from "@/assets/products/jartul-jt6311a.png";
 import metrelPvImage from "@/assets/products/metrel-mi3108-eurotestpv.jpg";
 import metrelEvImage from "@/assets/products/metrel-mi3132-evtester.jpg";
+import orionPhaseSyncImage from "@/assets/products/orion-phase-sync.jpg";
 
 export const newLaunches = [
   {
@@ -56,6 +57,24 @@ export const newLaunches = [
       "Compliant with UN ECE R100 & ISO 6469-3",
       "4.3″ colour touchscreen, AUTO SEQUENCE",
       "CAT III 1000 V, Li-Ion battery powered",
+    ],
+  },
+  {
+    name: "Orion EE Phase Sync — IEC 62271-215:2021 Phase Comparator",
+    model: "Phase Sync",
+    brand: "Orion EE",
+    exclusive: true,
+    brief:
+      "Class A capacitive phase comparator for medium voltage equipment with IEC 62271-215:2021 measuring points. LCD + LED indication of phase coincidence, voltage presence and frequency. Type-C rechargeable Li-ion battery. Available exclusively in India at UV Test Solutions.",
+    image: orionPhaseSyncImage,
+    datasheet: "/datasheets/orion-phase-sync.pdf",
+    href: "/products/orion-phase-sync",
+    highlights: [
+      "IEC 62271-215:2021 Class A compliant",
+      "Phase, voltage presence & frequency on LCD",
+      "Single-earth simultaneous connected operation",
+      "50/60 Hz, threshold 10%–45% Un",
+      "Type-C rechargeable, IP 2X / IK 07, 250 g",
     ],
   },
 ];

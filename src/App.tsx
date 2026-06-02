@@ -18,6 +18,7 @@ import BlogPost from "./pages/BlogPost";
 import JartulJT6311A from "./pages/JartulJT6311A";
 import MetrelMI3108 from "./pages/MetrelMI3108";
 import MetrelMI3132 from "./pages/MetrelMI3132";
+import OrionPhaseSync from "./pages/OrionPhaseSync";
 import BuyOnline from "./pages/BuyOnline";
 import NotFound from "./pages/NotFound";
 
@@ -45,6 +46,7 @@ const App = () => (
             <Route path="/products/jartul-jt6311a" element={<JartulJT6311A />} />
             <Route path="/products/metrel-mi3108-eurotestpv" element={<MetrelMI3108 />} />
             <Route path="/products/metrel-mi3132-evtester" element={<MetrelMI3132 />} />
+            <Route path="/products/orion-phase-sync" element={<OrionPhaseSync />} />
             <Route path="/buy-online" element={<BuyOnline />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
