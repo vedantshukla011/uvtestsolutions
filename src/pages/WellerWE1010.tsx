@@ -72,11 +72,11 @@ const WellerWE1010 = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Weller WE 1010 70W Digital Soldering Station (WEP 70 + PH 70) | UV Test Solutions"
-        description="Buy Weller WE 1010 70W digital soldering station with WEP 70 iron & PH 70 rest at ₹15,500 + GST. ESD safe, 100–450°C, UL/CE certified. Authorised India dealer."
+        title="Weller WE 1010 70W Digital Soldering Station (ESD Safe, WEP 70 + PH 70) — Buy in India | UV Test Solutions"
+        description="Buy the Weller WE 1010 70W ESD safe digital soldering station with WEP 70 iron & PH 70 safety rest at ₹15,500 + GST. Best professional benchtop soldering station for electronics repair, SMT & through-hole assembly. Digital LCD, 100–450°C, Weller ET tips, UL & CE certified. Authorised Weller dealer in India."
         canonical="/products/weller-we1010"
         type="product"
-        keywords="Weller WE 1010, Weller WE1010 price India, WEP 70 soldering iron, PH 70 safety rest, 70W digital soldering station, ESD safe soldering station, Weller ET tips, Weller India dealer, UV Test Solutions Weller"
+        keywords="Weller WE 1010, Weller WE1010 price India, WEP 70 soldering iron, PH 70 safety rest, 70W digital soldering station, ESD safe soldering station, professional benchtop soldering station, Weller ET tips, Weller WE Line India, best soldering station for electronics, SMT soldering station, through hole soldering, industrial soldering station, Weller soldering station price, electronics repair soldering station, Weller authorised dealer India, UL CE certified soldering station, digital LCD soldering station, heat resistant silicon cable soldering, production soldering station India, UV Test Solutions Weller"
         jsonLd={[productJsonLd, breadcrumb]}
       />
       <Header />
@@ -94,12 +94,12 @@ const WellerWE1010 = () => {
                 <img src={productImage} alt={PRODUCT_NAME} className="w-full h-full object-contain p-6" />
               </div>
               <div>
-                <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">Weller · WE Line · WE 1010</p>
+                <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">Weller · WE Line · WE 1010 · ESD Safe Digital Soldering Station</p>
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-                  Weller WE 1010 — 70W Digital Soldering Station
+                  Weller WE 1010 — 70W ESD Safe Digital Soldering Station for Professionals
                 </h1>
                 <p className="text-lg text-muted-foreground mb-4">
-                  1-channel soldering station with <strong>WEP 70 iron</strong> and <strong>PH 70 safety rest</strong>. The most powerful station in its class — <strong>40% more power</strong> than WES / WESD with a low total cost of ownership.
+                  Professional 1-channel benchtop soldering station with <strong>WEP 70 iron</strong> and <strong>PH 70 safety rest</strong>. The most powerful station in its class — <strong>40% more power</strong> than WES / WESD with a low total cost of ownership. Ideal for electronics repair, SMT assembly, through-hole soldering and production environments.
                 </p>
                 <div className="inline-flex items-baseline gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary mb-6">
                   <span className="text-2xl font-bold">{PRICE_DISPLAY}</span>
@@ -120,7 +120,7 @@ const WellerWE1010 = () => {
 
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold mb-8 text-center">Why the Weller WE 1010</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Why the Weller WE 1010 is India's Best Professional ESD Safe Soldering Station</h2>
             <div className="grid sm:grid-cols-2 gap-5">
               {features.map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="p-6 rounded-xl border border-border bg-card">
@@ -137,7 +137,7 @@ const WellerWE1010 = () => {
 
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-3xl font-bold mb-8 text-center">Key Specifications</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Weller WE 1010 Technical Specifications — 70W ESD Safe Digital Soldering Station</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {specs.map((s) => (
                 <div key={s.label} className="flex justify-between gap-4 p-4 rounded-lg border border-border bg-card">
@@ -151,9 +151,9 @@ const WellerWE1010 = () => {
 
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl text-center">
-            <h2 className="text-3xl font-bold mb-3">Order the Weller WE 1010 from UV Test Solutions</h2>
+            <h2 className="text-3xl font-bold mb-3">Buy Weller WE 1010 70W ESD Safe Digital Soldering Station in India</h2>
             <p className="text-muted-foreground mb-6">
-              Available at <strong>{PRICE_DISPLAY}</strong>. Add to your quote cart or contact our team for bulk pricing, ET tip selection and shipping across India.
+              Best price for the Weller WE 1010 professional benchtop soldering station at <strong>{PRICE_DISPLAY}</strong>. Add to your quote cart or contact our team for bulk pricing, ET tip selection and shipping across India. Authorised Weller dealer — genuine product with warranty.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Button size="lg" onClick={() => toggleItem(PRODUCT_NAME)} variant={inCart ? "secondary" : "default"} className="gap-2">
