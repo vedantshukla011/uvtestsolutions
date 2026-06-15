@@ -6,6 +6,7 @@ import jartulImage from "@/assets/products/jartul-jt6311a.png";
 import metrelPvImage from "@/assets/products/metrel-mi3108-eurotestpv.jpg";
 import metrelEvImage from "@/assets/products/metrel-mi3132-evtester.jpg";
 import orionPhaseSyncImage from "@/assets/products/orion-phase-sync.jpg";
+import wellerWe1010Image from "@/assets/products/weller-we1010.png";
 
 export const newLaunches = [
   {
@@ -75,6 +76,23 @@ export const newLaunches = [
       "Single-earth simultaneous connected operation",
       "50/60 Hz, threshold 10%–45% Un",
       "Type-C rechargeable, IP 2X / IK 07, 250 g",
+    ],
+  },
+  {
+    name: "Weller WE 1010 70W Digital Soldering Station (WEP 70 + PH 70)",
+    model: "WE 1010",
+    brand: "Weller",
+    price: "₹15,500 + GST",
+    brief:
+      "1-channel 70W digital soldering station with WEP 70 iron and PH 70 safety rest — the most powerful station in its class with 40% more power than WES / WESD. ESD safe, UL & CE certified, with heat-resistant silicon cable and toolless ET tip change.",
+    image: wellerWe1010Image,
+    href: "/products/weller-we1010",
+    highlights: [
+      "70 W, 230 V, 100 °C – 450 °C range",
+      "Digital LC display, standby & auto setback",
+      "ESD safe iron, heat-resistant silicon cable",
+      "Toolless tip change — Weller ET tips",
+      "Password-protected settings, UL & CE certified",
     ],
   },
 ];
