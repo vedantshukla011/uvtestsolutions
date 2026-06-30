@@ -20,6 +20,7 @@ import MetrelMI3108 from "./pages/MetrelMI3108";
 import MetrelMI3132 from "./pages/MetrelMI3132";
 import OrionPhaseSync from "./pages/OrionPhaseSync";
 import WellerWE1010 from "./pages/WellerWE1010";
+import EmcsosinSurgeGenerators from "./pages/EmcsosinSurgeGenerators";
 
 import NotFound from "./pages/NotFound";
 
@@ -49,6 +50,7 @@ const App = () => (
             <Route path="/products/metrel-mi3132-evtester" element={<MetrelMI3132 />} />
             <Route path="/products/orion-phase-sync" element={<OrionPhaseSync />} />
             <Route path="/products/weller-we1010" element={<WellerWE1010 />} />
+            <Route path="/products/emcsosin-surge-generators" element={<EmcsosinSurgeGenerators />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>

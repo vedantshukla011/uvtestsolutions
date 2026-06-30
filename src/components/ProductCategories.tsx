@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Activity, Flame, Ruler, Zap, Wrench, Package, ArrowRight } from "lucide-react";
+import { Activity, Flame, Ruler, Zap, Wrench, Package, ArrowRight, ShieldAlert } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { productCategories } from "@/data/productsData";
@@ -57,6 +57,33 @@ const ProductCategories = () => {
               </Card>
             );
           })}
+
+          {/* New product line: EMCSOSIN Surge Generators */}
+          <Card className="group hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-1 border-accent/40 bg-gradient-to-br from-accent/5 to-primary/5">
+            <CardHeader>
+              <div className="flex items-start justify-between mb-4">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                  <ShieldAlert className="w-6 h-6 text-accent" />
+                </div>
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-accent text-accent-foreground text-[10px] font-bold uppercase tracking-wide">New</span>
+              </div>
+              <CardTitle className="text-xl mb-2">EMCSOSIN Surge Generators</CardTitle>
+              <p className="text-sm text-muted-foreground">
+                IEC 61000-4-5 • Multi-Function • Three-Phase • Telecom • SPD
+              </p>
+            </CardHeader>
+            <CardContent>
+              <Link to="/products/emcsosin-surge-generators">
+                <Button
+                  variant="ghost"
+                  className="group/btn p-0 h-auto font-semibold text-primary hover:text-accent hover:bg-transparent"
+                >
+                  Explore EMC Surge Range
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="text-center">
