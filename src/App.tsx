@@ -20,7 +20,7 @@ import MetrelMI3108 from "./pages/MetrelMI3108";
 import MetrelMI3132 from "./pages/MetrelMI3132";
 import OrionPhaseSync from "./pages/OrionPhaseSync";
 import WellerWE1010 from "./pages/WellerWE1010";
-import BuyOnline from "./pages/BuyOnline";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -49,7 +49,7 @@ const App = () => (
             <Route path="/products/metrel-mi3132-evtester" element={<MetrelMI3132 />} />
             <Route path="/products/orion-phase-sync" element={<OrionPhaseSync />} />
             <Route path="/products/weller-we1010" element={<WellerWE1010 />} />
-            <Route path="/buy-online" element={<BuyOnline />} />
+            
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
