@@ -138,11 +138,6 @@ const Header = () => {
                 Products@GeM
               </Button>
             </Link>
-            <Link to="/buy-online">
-              <Button variant="ghost" size="sm" className="text-sm font-medium text-accent">
-                Buy Online
-              </Button>
-            </Link>
 
             {/* CTA Button */}
             <Link to="/contact">
@@ -179,11 +174,6 @@ const Header = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/products-at-gem" className="cursor-pointer">
                     Products@GeM
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/buy-online" className="cursor-pointer">
-                    Buy Online
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
