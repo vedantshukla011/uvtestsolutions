@@ -171,9 +171,9 @@ const EmcsosinSurgeGenerators = () => {
         <section id="products" className="py-20 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-3">Product Portfolio</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-3">EMC Surge Generator Portfolio</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                A complete EMCSOSIN range covering combination wave, three-phase, telecom and SPD surge testing.
+                A complete EMCSOSIN range of EMC test equipment covering combination wave generators, lightning surge generators, three-phase surge generators, telecom surge generators, high voltage surge generators and SPD surge testing machines.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
