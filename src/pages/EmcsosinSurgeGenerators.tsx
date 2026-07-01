@@ -47,7 +47,7 @@ const EmcsosinSurgeGenerators = () => {
     name: PRODUCT_NAME,
     category: "EMC Surge Immunity Test Equipment",
     description:
-      "EMCSOSIN surge generators for IEC 61000-4-5 lightning surge immunity testing. Multi-function, three-phase, telecom and SPD models up to 10 kV with programmable PC control. Available in India from UV Test Solutions.",
+      "EMCSOSIN surge generators for IEC 61000-4-5 lightning surge immunity testing. Multi-function, three-phase, telecom, high voltage and SPD surge generator models up to 10 kV with programmable PC control. Leading EMC test equipment and surge testing machine solutions available in India from UV Test Solutions.",
     brand: { "@type": "Brand", name: "EMCSOSIN" },
     offers: {
       "@type": "Offer",
@@ -72,7 +72,7 @@ const EmcsosinSurgeGenerators = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="EMCSOSIN Surge Generators (IEC 61000-4-5) — Buy in India | UV Test Solutions"
-        description="EMCSOSIN IEC 61000-4-5 surge generators up to 10 kV — multi-function, three-phase, telecom and SPD models. EMC surge immunity test systems available in India from UV Test Solutions."
+        description="EMCSOSIN IEC 61000-4-5 surge generators up to 10 kV — combination wave, lightning surge, telecom, high voltage, three-phase and SPD surge immunity test systems. Buy EMC test equipment in India from UV Test Solutions."
         canonical="/products/emcsosin-surge-generators"
         type="product"
         keywords="EMCSOSIN, Surge Generator, Lightning Surge Generator, EMC Test Equipment, IEC 61000-4-5, Surge Immunity, Combination Wave Generator, High Voltage Testing, EMC Compliance, Industrial Test Equipment, surge generator, surge generator india, emc surge generator, iec61000-4-5, lightning surge generator, combination wave generator, emc test equipment, surge immunity tester, surge testing machine, emcsosin, emcsosin india, surge simulator, telecom surge generator, high voltage surge generator, industrial emc testing, ev charger testing, automotive emc, electronic product testing, power electronics testing, laboratory testing equipment, UV Test Solutions"
@@ -191,7 +191,7 @@ const EmcsosinSurgeGenerators = () => {
                   >
                     <img
                       src={p.image}
-                      alt={`EMCSOSIN ${p.name}`}
+                      alt={`EMCSOSIN ${p.name} - EMC test equipment surge generator`}
                       loading="lazy"
                       className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                     />
