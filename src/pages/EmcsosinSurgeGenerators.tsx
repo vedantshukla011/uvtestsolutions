@@ -47,7 +47,7 @@ const EmcsosinSurgeGenerators = () => {
     name: PRODUCT_NAME,
     category: "EMC Surge Immunity Test Equipment",
     description:
-      "EMCSOSIN surge generators for IEC 61000-4-5 lightning surge immunity testing. Multi-function, three-phase, telecom and SPD models up to 10 kV with programmable PC control. Available in India from UV Test Solutions.",
+      "EMCSOSIN surge generators for IEC 61000-4-5 lightning surge immunity testing. Multi-function, three-phase, telecom, high voltage and SPD surge generator models up to 10 kV with programmable PC control. Leading EMC test equipment and surge testing machine solutions available in India from UV Test Solutions.",
     brand: { "@type": "Brand", name: "EMCSOSIN" },
     offers: {
       "@type": "Offer",
@@ -72,10 +72,10 @@ const EmcsosinSurgeGenerators = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="EMCSOSIN Surge Generators (IEC 61000-4-5) — Buy in India | UV Test Solutions"
-        description="EMCSOSIN IEC 61000-4-5 surge generators up to 10 kV — multi-function, three-phase, telecom and SPD models. EMC surge immunity test systems available in India from UV Test Solutions."
+        description="EMCSOSIN IEC 61000-4-5 surge generators up to 10 kV. Buy combination wave, telecom and SPD surge immunity test systems in India from UV Test Solutions."
         canonical="/products/emcsosin-surge-generators"
         type="product"
-        keywords="EMCSOSIN, surge generator, IEC 61000-4-5, lightning surge immunity, EMC test equipment India, combination wave generator, 10kV surge generator, three phase surge generator, telecom surge generator, SPD test, surge protection device tester, EMC laboratory equipment, UV Test Solutions"
+        keywords="EMCSOSIN, Surge Generator, Lightning Surge Generator, EMC Test Equipment, IEC 61000-4-5, Surge Immunity, Combination Wave Generator, High Voltage Testing, EMC Compliance, Industrial Test Equipment, surge generator, surge generator india, emc surge generator, iec61000-4-5, lightning surge generator, combination wave generator, emc test equipment, surge immunity tester, surge testing machine, emcsosin, emcsosin india, surge simulator, telecom surge generator, high voltage surge generator, industrial emc testing, ev charger testing, automotive emc, electronic product testing, power electronics testing, laboratory testing equipment, UV Test Solutions"
         jsonLd={[productJsonLd, breadcrumb]}
       />
       <Header />
@@ -98,8 +98,7 @@ const EmcsosinSurgeGenerators = () => {
               IEC 61000-4-5 Lightning Surge Immunity Test Systems
             </p>
             <p className="max-w-2xl text-base md:text-lg opacity-90 mb-8">
-              Advanced surge generators engineered for EMC laboratories, R&amp;D centres, electronics manufacturers
-              and certification facilities. Available in India from <strong>UV Test Solutions</strong>.
+              Advanced <strong>EMCSOSIN surge generators</strong> and <strong>surge immunity testers</strong> engineered for EMC laboratories, R&amp;D centres, electronics manufacturers, certification facilities and industrial test equipment users. From <strong>combination wave generators</strong> to <strong>telecom surge generators</strong> and <strong>high voltage surge simulators</strong>, get reliable <strong>lightning surge immunity</strong> testing for power electronics, automotive EMC, EV charger testing and electronic product testing in India from <strong>UV Test Solutions</strong>.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg" variant="secondary">
@@ -138,13 +137,43 @@ const EmcsosinSurgeGenerators = () => {
           </div>
         </section>
 
+        {/* APPLICATIONS */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-3">Applications &amp; Industries</h2>
+              <p className="text-muted-foreground max-w-3xl mx-auto">
+                EMCSOSIN surge generators and EMC test equipment are used across a wide range of laboratory testing equipment and industrial test equipment workflows in India.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { title: "Power Electronics Testing", desc: "Validate inverters, converters, power supplies and SMPS against IEC 61000-4-5 surge immunity requirements." },
+                { title: "Automotive EMC", desc: "Ensure vehicle electronics and subsystems withstand lightning surge and switching transient events." },
+                { title: "EV Charger Testing", desc: "Test AC/DC EV chargers, charging stations and on-board electronics for surge immunity and EMC compliance." },
+                { title: "Telecom & Data Lines", desc: "Use telecom surge generators and coupling networks to verify communication equipment and SPDs." },
+                { title: "High Voltage Testing", desc: "High voltage surge generators support direct lightning strike simulation and insulation coordination studies." },
+                { title: "Electronic Product Testing", desc: "Complete surge testing machine solutions for CE marking, BIS certification and laboratory testing equipment setups." },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="p-6 rounded-2xl border border-border bg-card hover:border-accent/40 hover:shadow-[var(--shadow-elegant)] transition-all"
+                >
+                  <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* PORTFOLIO */}
         <section id="products" className="py-20 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-3">Product Portfolio</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-3">EMC Surge Generator Portfolio</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                A complete EMCSOSIN range covering combination wave, three-phase, telecom and SPD surge testing.
+                A complete EMCSOSIN range of EMC test equipment covering combination wave generators, lightning surge generators, three-phase surge generators, telecom surge generators, high voltage surge generators and SPD surge testing machines.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -162,7 +191,7 @@ const EmcsosinSurgeGenerators = () => {
                   >
                     <img
                       src={p.image}
-                      alt={`EMCSOSIN ${p.name}`}
+                      alt={`EMCSOSIN ${p.name} - EMC test equipment surge generator`}
                       loading="lazy"
                       className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                     />
@@ -222,10 +251,9 @@ const EmcsosinSurgeGenerators = () => {
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="rounded-3xl bg-gradient-to-r from-primary to-accent p-10 md:p-14 text-center text-primary-foreground shadow-[var(--shadow-elegant)]">
-              <h2 className="text-3xl md:text-4xl font-bold mb-3">Need the Right Surge Generator?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-3">Need a Surge Generator in India?</h2>
               <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-                UV Test Solutions provides application support, demonstrations, installation assistance and
-                after-sales support across India.
+                UV Test Solutions is your trusted source for EMCSOSIN surge generators in India. We provide application support, demonstrations, installation assistance and after-sales support for industrial EMC testing, surge simulators and EMC test equipment across India.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <Button asChild size="lg" variant="secondary">
