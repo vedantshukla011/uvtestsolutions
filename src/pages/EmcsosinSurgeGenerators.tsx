@@ -98,8 +98,7 @@ const EmcsosinSurgeGenerators = () => {
               IEC 61000-4-5 Lightning Surge Immunity Test Systems
             </p>
             <p className="max-w-2xl text-base md:text-lg opacity-90 mb-8">
-              Advanced surge generators engineered for EMC laboratories, R&amp;D centres, electronics manufacturers
-              and certification facilities. Available in India from <strong>UV Test Solutions</strong>.
+              Advanced <strong>EMCSOSIN surge generators</strong> and <strong>surge immunity testers</strong> engineered for EMC laboratories, R&amp;D centres, electronics manufacturers, certification facilities and industrial test equipment users. From <strong>combination wave generators</strong> to <strong>telecom surge generators</strong> and <strong>high voltage surge simulators</strong>, get reliable <strong>lightning surge immunity</strong> testing for power electronics, automotive EMC, EV charger testing and electronic product testing in India from <strong>UV Test Solutions</strong>.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild size="lg" variant="secondary">
