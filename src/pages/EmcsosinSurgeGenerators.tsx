@@ -151,21 +151,45 @@ const EmcsosinSurgeGenerators = () => {
               {portfolio.map((p) => (
                 <div
                   key={p.name}
-                  className="p-6 rounded-2xl border border-border bg-card hover:border-accent/40 hover:shadow-[var(--shadow-elegant)] transition-all"
+                  className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden hover:border-accent/40 hover:shadow-[var(--shadow-elegant)] transition-all"
                 >
-                  <h3 className="font-semibold text-lg mb-2">{p.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{p.desc}</p>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    onClick={() => toggleItem(`EMCSOSIN ${p.name}`)}
-                    className="gap-2"
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`View ${p.name} details`}
+                    className="block aspect-[4/3] bg-white overflow-hidden"
                   >
-                    {isInCart(`EMCSOSIN ${p.name}`) ? <><Check className="h-4 w-4" /> Added</> : <><Plus className="h-4 w-4" /> Request Quote</>}
-                  </Button>
+                    <img
+                      src={p.image}
+                      alt={`EMCSOSIN ${p.name}`}
+                      loading="lazy"
+                      className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </a>
+                  <div className="p-5 flex flex-col flex-1">
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-lg mb-2 hover:text-accent transition-colors"
+                    >
+                      {p.name}
+                    </a>
+                    <p className="text-sm text-muted-foreground mb-4 flex-1">{p.desc}</p>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => toggleItem(`EMCSOSIN ${p.name}`)}
+                      className="gap-2 w-full"
+                    >
+                      {isInCart(`EMCSOSIN ${p.name}`) ? <><Check className="h-4 w-4" /> Added</> : <><Plus className="h-4 w-4" /> Request Quote</>}
+                    </Button>
+                  </div>
                 </div>
               ))}
             </div>
+
           </div>
         </section>
 
