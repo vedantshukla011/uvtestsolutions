@@ -137,6 +137,36 @@ const EmcsosinSurgeGenerators = () => {
           </div>
         </section>
 
+        {/* APPLICATIONS */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-3">Applications &amp; Industries</h2>
+              <p className="text-muted-foreground max-w-3xl mx-auto">
+                EMCSOSIN surge generators and EMC test equipment are used across a wide range of laboratory testing equipment and industrial test equipment workflows in India.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { title: "Power Electronics Testing", desc: "Validate inverters, converters, power supplies and SMPS against IEC 61000-4-5 surge immunity requirements." },
+                { title: "Automotive EMC", desc: "Ensure vehicle electronics and subsystems withstand lightning surge and switching transient events." },
+                { title: "EV Charger Testing", desc: "Test AC/DC EV chargers, charging stations and on-board electronics for surge immunity and EMC compliance." },
+                { title: "Telecom & Data Lines", desc: "Use telecom surge generators and coupling networks to verify communication equipment and SPDs." },
+                { title: "High Voltage Testing", desc: "High voltage surge generators support direct lightning strike simulation and insulation coordination studies." },
+                { title: "Electronic Product Testing", desc: "Complete surge testing machine solutions for CE marking, BIS certification and laboratory testing equipment setups." },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="p-6 rounded-2xl border border-border bg-card hover:border-accent/40 hover:shadow-[var(--shadow-elegant)] transition-all"
+                >
+                  <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* PORTFOLIO */}
         <section id="products" className="py-20 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
