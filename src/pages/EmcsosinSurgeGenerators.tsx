@@ -251,10 +251,9 @@ const EmcsosinSurgeGenerators = () => {
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <div className="rounded-3xl bg-gradient-to-r from-primary to-accent p-10 md:p-14 text-center text-primary-foreground shadow-[var(--shadow-elegant)]">
-              <h2 className="text-3xl md:text-4xl font-bold mb-3">Need the Right Surge Generator?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-3">Need a Surge Generator in India?</h2>
               <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-                UV Test Solutions provides application support, demonstrations, installation assistance and
-                after-sales support across India.
+                UV Test Solutions is your trusted source for EMCSOSIN surge generators in India. We provide application support, demonstrations, installation assistance and after-sales support for industrial EMC testing, surge simulators and EMC test equipment across India.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <Button asChild size="lg" variant="secondary">
