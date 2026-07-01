@@ -75,7 +75,7 @@ const EmcsosinSurgeGenerators = () => {
         description="EMCSOSIN IEC 61000-4-5 surge generators up to 10 kV — multi-function, three-phase, telecom and SPD models. EMC surge immunity test systems available in India from UV Test Solutions."
         canonical="/products/emcsosin-surge-generators"
         type="product"
-        keywords="EMCSOSIN, surge generator, IEC 61000-4-5, lightning surge immunity, EMC test equipment India, combination wave generator, 10kV surge generator, three phase surge generator, telecom surge generator, SPD test, surge protection device tester, EMC laboratory equipment, UV Test Solutions"
+        keywords="EMCSOSIN, Surge Generator, Lightning Surge Generator, EMC Test Equipment, IEC 61000-4-5, Surge Immunity, Combination Wave Generator, High Voltage Testing, EMC Compliance, Industrial Test Equipment, surge generator, surge generator india, emc surge generator, iec61000-4-5, lightning surge generator, combination wave generator, emc test equipment, surge immunity tester, surge testing machine, emcsosin, emcsosin india, surge simulator, telecom surge generator, high voltage surge generator, industrial emc testing, ev charger testing, automotive emc, electronic product testing, power electronics testing, laboratory testing equipment, UV Test Solutions"
         jsonLd={[productJsonLd, breadcrumb]}
       />
       <Header />
