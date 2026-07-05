@@ -123,6 +123,11 @@ const Header = () => {
               )}
             </div>
 
+            <Link to="/brands">
+              <Button variant="ghost" size="sm" className="text-sm font-medium">
+                Brands
+              </Button>
+            </Link>
             <Link to="/about">
               <Button variant="ghost" size="sm" className="text-sm font-medium">
                 About Us
@@ -161,6 +166,11 @@ const Header = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48 bg-background">
+                <DropdownMenuItem asChild>
+                  <Link to="/brands" className="cursor-pointer">
+                    Brands
+                  </Link>
+                </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/about" className="cursor-pointer">
                     About Us
