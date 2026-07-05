@@ -68,9 +68,11 @@ const BrandsCarousel = () => {
           style={{ scrollBehavior: "auto" }}
         >
           {duplicatedBrands.map((brand, index) => (
-            <div
+            <Link
               key={`${brand.name}-${index}`}
-              className="flex-shrink-0 flex flex-col items-center justify-center p-6 bg-background rounded-xl border border-border/50 hover:border-primary hover:shadow-xl hover:shadow-primary/20 hover:bg-primary/5 transition-all duration-300 min-w-[160px] md:min-w-[200px] group"
+              to={`/brands/${brand.slug}`}
+              aria-label={`View ${brand.name} products`}
+              className="flex-shrink-0 flex flex-col items-center justify-center p-6 bg-background rounded-xl border border-border/50 hover:border-primary hover:shadow-xl hover:shadow-primary/20 hover:bg-primary/5 transition-all duration-300 min-w-[160px] md:min-w-[200px] group cursor-pointer"
             >
               <div className="h-16 md:h-20 flex items-center justify-center mb-3">
                 <img
@@ -82,7 +84,7 @@ const BrandsCarousel = () => {
               <span className="text-sm text-muted-foreground font-medium text-center group-hover:text-foreground transition-colors">
                 {brand.name}
               </span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
