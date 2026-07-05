@@ -1,58 +1,10 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { brands as brandData } from "@/data/brandsData";
 
-import keysightLogo from "@/assets/brands/keysight.png";
-import tektronixLogo from "@/assets/brands/tektronix.png";
-import keithleyLogo from "@/assets/brands/keithley.png";
-import wellerLogo from "@/assets/brands/weller.png";
-import metrelLogo from "@/assets/brands/metrel.png";
-import flukeLogo from "@/assets/brands/fluke.png";
-import insizeLogo from "@/assets/brands/insize.png";
-import siglentLogo from "@/assets/brands/siglent.png";
-import mitutoyoLogo from "@/assets/brands/mitutoyo.png";
-import rigolLogo from "@/assets/brands/rigol.png";
-import unitLogo from "@/assets/brands/uni-t.png";
-import owonLogo from "@/assets/brands/owon.png";
-import hantekLogo from "@/assets/brands/hantek.png";
-import hakkoLogo from "@/assets/brands/hakko.png";
-import itechLogo from "@/assets/brands/itech.png";
-import gwinstekLogo from "@/assets/brands/gwinstek.png";
-import testoLogo from "@/assets/brands/testo.png";
-import htcLogo from "@/assets/brands/htc.png";
-import rishabhLogo from "@/assets/brands/rishabh.png";
-import bakonLogo from "@/assets/brands/bakon.png";
-import scientechLogo from "@/assets/brands/scientech.png";
-import jomaLogo from "@/assets/brands/joma.png";
-import embuiltLogo from "@/assets/brands/embuilt.png";
-import rionLogo from "@/assets/brands/rion.gif";
-import vaisalaLogo from "@/assets/brands/vaisala.svg";
+// Carousel uses the brand order from brandsData so every logo links to a real page.
+const brands = brandData.map((b) => ({ name: b.name, logo: b.logo, slug: b.slug }));
 
-const brands = [
-  { name: "Keysight Technologies", logo: keysightLogo },
-  { name: "Tektronix", logo: tektronixLogo },
-  { name: "Keithley", logo: keithleyLogo },
-  { name: "Weller", logo: wellerLogo },
-  { name: "Metrel", logo: metrelLogo },
-  { name: "Fluke", logo: flukeLogo },
-  { name: "Insize", logo: insizeLogo },
-  { name: "Siglent", logo: siglentLogo },
-  { name: "Mitutoyo", logo: mitutoyoLogo },
-  { name: "Rigol", logo: rigolLogo },
-  { name: "UNI-T", logo: unitLogo },
-  { name: "OWON", logo: owonLogo },
-  { name: "Hantek", logo: hantekLogo },
-  { name: "Hakko", logo: hakkoLogo },
-  { name: "ITECH", logo: itechLogo },
-  { name: "GW Instek", logo: gwinstekLogo },
-  { name: "Testo", logo: testoLogo },
-  { name: "HTC", logo: htcLogo },
-  { name: "Rishabh", logo: rishabhLogo },
-  { name: "Bakon", logo: bakonLogo },
-  { name: "Scientech", logo: scientechLogo },
-  { name: "JOMA", logo: jomaLogo },
-  { name: "EMbuilt", logo: embuiltLogo },
-  { name: "Rion", logo: rionLogo },
-  { name: "Vaisala", logo: vaisalaLogo },
-];
 
 const BrandsCarousel = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
