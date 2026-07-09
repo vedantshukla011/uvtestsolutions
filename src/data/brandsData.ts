@@ -290,10 +290,10 @@ export const brands: Brand[] = [
     ],
     models: [
       { id: "SDS1104X-E", title: "4-Ch 100 MHz Oscilloscope", desc: "Super phosphor scope with serial decode and 1 GSa/s.", tags: ["100 MHz", "4 channels", "SPO"] },
-      { id: "SDS2104X Plus", title: "200 MHz Touch Scope", desc: "10.1" capacitive touch scope with 200 MHz BW and 2 GSa/s.", tags: ["200 MHz", "Touch", "Decode"] },
+      { id: "SDS2104X Plus", title: "200 MHz Touch Scope", desc: "10.1-inch capacitive touch scope with 200 MHz BW and 2 GSa/s.", tags: ["200 MHz", "Touch", "Decode"] },
       { id: "SDG2042X", title: "40 MHz Arbitrary Waveform Generator", desc: "2-channel AWG with EasyPulse and 1.2 GSa/s.", tags: ["40 MHz", "2 channel", "AWG"] },
       { id: "SPD3303X-E", title: "Programmable DC Power Supply", desc: "Triple output linear DC PSU with 4-wire sense.", tags: ["3 channel", "Programmable", "Linear"] },
-      { id: "SSA3021X", title: "2.1 GHz Spectrum Analyzer", desc: "9 kHz–2.1 GHz spectrum analyzer with tracking generator option.", tags: ["2.1 GHz", "TG option", "10.1" LCD"] },
+      { id: "SSA3021X", title: "2.1 GHz Spectrum Analyzer", desc: "9 kHz–2.1 GHz spectrum analyzer with tracking generator option.", tags: ["2.1 GHz", "TG option", "10.1-inch LCD"] },
     ],
   },
   {
@@ -349,7 +349,7 @@ export const brands: Brand[] = [
       { title: "DC Electronic Loads", desc: "DL3000 series DC electronic loads." },
     ],
     models: [
-      { id: "DHO814", title: "100 MHz 12-bit Oscilloscope", desc: "Ultra-thin scope with 12-bit ADC and 7" touch display.", tags: ["100 MHz", "12-bit", "Touch"] },
+      { id: "DHO814", title: "100 MHz 12-bit Oscilloscope", desc: "Ultra-thin scope with 12-bit ADC and 7-inch touch display.", tags: ["100 MHz", "12-bit", "Touch"] },
       { id: "MSO5074", title: "70 MHz Mixed Signal Scope", desc: "4-analog + 16-digital channel MSO with 100 Mpts memory.", tags: ["70 MHz", "MSO", "100 Mpts"] },
       { id: "DG812", title: "10 MHz Arbitrary Waveform Generator", desc: "2-channel AWG with 16-bit vertical resolution.", tags: ["10 MHz", "2 channel", "16-bit"] },
       { id: "DSA815-TG", title: "1.5 GHz Spectrum Analyzer", desc: "Compact 1.5 GHz analyzer with tracking generator.", tags: ["1.5 GHz", "TG", "EMI option"] },
@@ -383,7 +383,7 @@ export const brands: Brand[] = [
       { id: "UT210E", title: "Mini AC/DC Clamp Meter", desc: "Pocket True-RMS clamp meter with NCV.", tags: ["AC/DC", "True RMS", "Pocket"] },
       { id: "UT501B", title: "Insulation Tester", desc: "Handheld 1 kV insulation resistance tester.", tags: ["1 kV", "Insulation", "Continuity"] },
       { id: "UTi260B", title: "Pocket Thermal Camera", desc: "Compact 256×192 thermal imager for electrical inspection.", tags: ["256×192", "Pocket", "USB-C"] },
-      { id: "UPO1102CS", title: "100 MHz Digital Oscilloscope", desc: "2-channel 1 GSa/s DSO with 8" display.", tags: ["100 MHz", "1 GSa/s", "8" LCD"] },
+      { id: "UPO1102CS", title: "100 MHz Digital Oscilloscope", desc: "2-channel 1 GSa/s DSO with 8-inch display.", tags: ["100 MHz", "1 GSa/s", "8-inch LCD"] },
     ],
   },
   {
@@ -410,7 +410,7 @@ export const brands: Brand[] = [
     ],
     models: [
       { id: "HDS242", title: "40 MHz Handheld Scope", desc: "Rugged 3-in-1 handheld oscilloscope, DMM and AWG.", tags: ["40 MHz", "3-in-1", "Handheld"] },
-      { id: "SDS1102", title: "100 MHz Digital Storage Scope", desc: "Compact 2-channel bench scope with 8" display.", tags: ["100 MHz", "1 GSa/s", "8" LCD"] },
+      { id: "SDS1102", title: "100 MHz Digital Storage Scope", desc: "Compact 2-channel bench scope with 8-inch display.", tags: ["100 MHz", "1 GSa/s", "8-inch LCD"] },
       { id: "XDS3202E", title: "200 MHz 12-bit Scope", desc: "12-bit vertical resolution bench scope with deep memory.", tags: ["200 MHz", "12-bit", "40 Mpts"] },
       { id: "AG1022", title: "25 MHz Arbitrary Waveform Generator", desc: "2-channel AWG with USB and Ethernet.", tags: ["25 MHz", "2 channel", "125 MSa/s"] },
       { id: "ODP3122", title: "Programmable DC PSU", desc: "2-channel programmable DC power supply.", tags: ["2 channel", "Programmable", "USB"] },
@@ -439,7 +439,7 @@ export const brands: Brand[] = [
       { title: "DC Electronic Loads", desc: "HDL series programmable DC loads." },
     ],
     models: [
-      { id: "DSO2C10", title: "100 MHz 2-Ch Bench Scope", desc: "Entry 100 MHz scope with 1 GSa/s and 7" display.", tags: ["100 MHz", "1 GSa/s", "7" LCD"] },
+      { id: "DSO2C10", title: "100 MHz 2-Ch Bench Scope", desc: "Entry 100 MHz scope with 1 GSa/s and 7-inch display.", tags: ["100 MHz", "1 GSa/s", "7-inch LCD"] },
       { id: "DSO5102P", title: "100 MHz Digital Storage Scope", desc: "Popular 2-channel bench scope with 40K memory.", tags: ["100 MHz", "1 GSa/s", "USB"] },
       { id: "6022BE", title: "USB PC Oscilloscope", desc: "2-channel 20 MHz USB scope for PC-based testing.", tags: ["USB", "20 MHz", "PC"] },
       { id: "1008C", title: "Automotive Diagnostic Scope Kit", desc: "8-channel USB automotive oscilloscope with vehicle probes.", tags: ["8 channel", "USB", "Automotive"] },
@@ -529,7 +529,7 @@ export const brands: Brand[] = [
       { title: "Function Generators", desc: "AFG/MFG series arbitrary/function generators." },
     ],
     models: [
-      { id: "GDS-1102B", title: "100 MHz Digital Oscilloscope", desc: "2-channel 1 GSa/s bench scope with 7" WVGA display.", tags: ["100 MHz", "1 GSa/s", "7" LCD"] },
+      { id: "GDS-1102B", title: "100 MHz Digital Oscilloscope", desc: "2-channel 1 GSa/s bench scope with 7-inch WVGA display.", tags: ["100 MHz", "1 GSa/s", "7-inch LCD"] },
       { id: "MDO-2202EX", title: "200 MHz Mixed Domain Scope", desc: "MDO with integrated spectrum analyzer, AWG and DMM.", tags: ["200 MHz", "MDO", "AWG+DMM"] },
       { id: "GPP-4323", title: "4-Channel Programmable DC PSU", desc: "195 W 4-channel linear programmable supply.", tags: ["4 channel", "Programmable", "Linear"] },
       { id: "GPT-9803", title: "Electrical Safety Analyzer", desc: "5 kVAC / 6 kVDC hipot with IR and GB tests.", tags: ["5 kVAC hipot", "IR", "Ground bond"] },
