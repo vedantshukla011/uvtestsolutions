@@ -340,6 +340,8 @@ export const brands: Brand[] = [
       { model: "SSA3032X Plus", category: "Spectrum Analyzer", description: "9 kHz–3.2 GHz", priceInr: 295000, image: "https://siglentna.com/wp-content/uploads/2017/09/SSA3000Xa.png" },
     ],
   },
+  {
+    slug: "mitutoyo",
     name: "Mitutoyo",
     logo: mitutoyoLogo,
     tagline: "The Japanese benchmark for precision metrology — since 1934.",
