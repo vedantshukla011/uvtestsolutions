@@ -169,6 +169,60 @@ const BrandDetail = () => {
           </section>
         )}
 
+        {/* Products with pricing */}
+        {brand.products && brand.products.length > 0 && (
+          <section className="py-16 bg-muted/20">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <SectionHead
+                title={`${brand.name.split(" ")[0]} Products & Indicative Pricing`}
+                count={`${brand.products.length} PRODUCTS`}
+              />
+              <p className="text-sm text-muted-foreground mb-6 -mt-2">
+                Prices are indicative in INR (ex-works, exclusive of GST). Contact us for the latest quote, applicable discounts and lead time.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {brand.products.map((p) => (
+                  <div
+                    key={p.model}
+                    className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:border-primary hover:shadow-md transition-all"
+                  >
+                    <div className="h-40 bg-white flex items-center justify-center p-3 border-b border-border">
+                      <img
+                        src={p.image}
+                        alt={`${brand.name} ${p.model} — ${p.description}`}
+                        loading="lazy"
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                    <div className="p-4 flex flex-col flex-1">
+                      <div className="font-mono text-[11px] text-muted-foreground tracking-wide uppercase mb-1">
+                        {p.category}
+                      </div>
+                      <h3 className="font-semibold text-base mb-1">{p.model}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                        {p.description}
+                      </p>
+                      <div className="flex items-center justify-between border-t border-border pt-3">
+                        <div>
+                          <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                            Price
+                          </div>
+                          <div className="text-base font-bold text-primary">
+                            ₹{p.priceInr.toLocaleString("en-IN")}
+                          </div>
+                        </div>
+                        <Button asChild size="sm" variant="outline">
+                          <Link to="/contact">Quote</Link>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CTA */}
         <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-14">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
