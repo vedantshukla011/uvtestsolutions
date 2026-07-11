@@ -34,6 +34,13 @@ export interface BrandModel {
   desc: string;
   tags: string[];
 }
+export interface BrandProduct {
+  model: string;
+  category: string;
+  description: string;
+  priceInr: number;
+  image: string;
+}
 export interface Brand {
   slug: string;
   name: string;
@@ -48,6 +55,7 @@ export interface Brand {
   about: string[];
   categories?: BrandCategory[];
   models?: BrandModel[];
+  products?: BrandProduct[];
 }
 
 export const brands: Brand[] = [
