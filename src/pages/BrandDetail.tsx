@@ -256,7 +256,7 @@ const BrandDetail = () => {
 
 const MetaItem = ({ label, value }: { label: string; value: string }) => (
   <div>
-    <div className="font-mono text-[11px] tracking-widest uppercase text-primary-foreground/60 mb-1">
+    <div className="font-mono text-[11px] tracking-widest uppercase text-primary-foreground/90 mb-1">
       {label}
     </div>
     <div className="text-sm font-semibold">{value}</div>
