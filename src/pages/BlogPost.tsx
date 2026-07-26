@@ -24,6 +24,12 @@ const blogMeta: Record<string, { title: string; description: string; file: strin
       "Buy cheap electrical screwdrivers in India. Budget & industrial picks from Bakon, TGK, Kilews, Bosch and Stanley at the best prices.",
     file: "/blogs/cheap-electrical-screwdrivers-india.html",
   },
+  "dc-power-supplies-complete-guide": {
+    title: "DC Power Supplies: Types, Applications & How to Choose",
+    description:
+      "Complete guide to DC Power Supplies — linear, switching, programmable, bidirectional, high-voltage & high-current with applications and buying tips.",
+    file: "/blogs/dc-power-supplies-complete-guide.html",
+  },
   "dc-power-supplies-guide": {
     title: "DC Power Supplies: Types, Applications & Buying Guide",
     description:
