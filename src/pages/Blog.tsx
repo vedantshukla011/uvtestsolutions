@@ -33,6 +33,15 @@ const blogPosts = [
     tags: ["Electric Screwdriver", "Budget Tools", "Industrial Tools", "India"],
   },
   {
+    slug: "dc-power-supplies-complete-guide",
+    title: "DC Power Supplies: Types, Applications & How to Choose (2026)",
+    description:
+      "Complete guide to DC Power Supplies — linear, switching, programmable, bidirectional, high-voltage & high-current models with applications and buying tips.",
+    date: "2026-07-26",
+    readTime: "9 min read",
+    tags: ["DC Power Supply", "Programmable", "SCPI", "Lab Equipment"],
+  },
+  {
     slug: "dc-power-supplies-guide",
     title: "The Ultimate Guide to DC Power Supplies",
     description:
