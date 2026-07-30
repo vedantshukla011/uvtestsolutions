@@ -192,16 +192,18 @@ const NewLaunches = () => {
                         <><Plus className="h-4 w-4" /> Request Quote</>
                       )}
                     </Button>
-                    <Button asChild variant="outline" className="gap-2">
-                      <a
-                        href={product.datasheet}
-                        download
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Download className="h-4 w-4" /> Datasheet
-                      </a>
-                    </Button>
+                    {product.datasheet && (
+                      <Button asChild variant="outline" className="gap-2">
+                        <a
+                          href={product.datasheet}
+                          download
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Download className="h-4 w-4" /> Datasheet
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </article>
