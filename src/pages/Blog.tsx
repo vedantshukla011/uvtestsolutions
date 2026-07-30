@@ -24,6 +24,15 @@ const blogPosts = [
     tags: ["Function Generator", "AFG", "Waveform Generator", "Test Equipment"],
   },
   {
+    slug: "guide-to-dc-electronic-loads",
+    title: "What is a DC Electronic Load? A Comprehensive Guide for Engineers",
+    description:
+      "Understand DC electronic loads — CC, CV, CP and CR operating modes, battery discharge and SMPS validation applications, and how to choose the right load.",
+    date: "2026-07-30",
+    readTime: "8 min read",
+    tags: ["Electronic Load", "Battery Testing", "SMPS", "Buyer Guide"],
+  },
+  {
     slug: "cheap-electrical-screwdrivers-india",
     title: "Cheap Electrical Screwdrivers in India (2026 Guide)",
     description:

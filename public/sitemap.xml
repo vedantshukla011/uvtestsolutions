@@ -106,6 +106,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.uvtestsolutions.com/blog/guide-to-dc-electronic-loads</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.uvtestsolutions.com/blog/dc-power-supplies-complete-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

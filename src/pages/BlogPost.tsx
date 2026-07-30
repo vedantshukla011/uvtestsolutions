@@ -24,6 +24,12 @@ const blogMeta: Record<string, { title: string; description: string; file: strin
       "Buy cheap electrical screwdrivers in India. Budget & industrial picks from Bakon, TGK, Kilews, Bosch and Stanley at the best prices.",
     file: "/blogs/cheap-electrical-screwdrivers-india.html",
   },
+  "guide-to-dc-electronic-loads": {
+    title: "What is a DC Electronic Load? Complete Guide for Engineers",
+    description:
+      "What is a DC electronic load? CC, CV, CP and CR modes explained, plus battery discharge and SMPS testing applications and selection criteria.",
+    file: "/blogs/guide-to-dc-electronic-loads.html",
+  },
   "dc-power-supplies-complete-guide": {
     title: "DC Power Supplies: Types, Applications & How to Choose",
     description:
