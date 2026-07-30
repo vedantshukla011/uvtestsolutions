@@ -55,6 +55,7 @@ const App = () => (
             <Route path="/products/metrel-mi3132-evtester" element={<MetrelMI3132 />} />
             <Route path="/products/orion-phase-sync" element={<OrionPhaseSync />} />
             <Route path="/products/weller-we1010" element={<WellerWE1010 />} />
+            <Route path="/products/hantek-ape11l1000-ac-power-source" element={<HantekAPE11L1000 />} />
             <Route path="/products/emcsosin-surge-generators" element={<EmcsosinSurgeGenerators />} />
             <Route path="/brands" element={<Brands />} />
             <Route path="/brands/:slug" element={<BrandDetail />} />
