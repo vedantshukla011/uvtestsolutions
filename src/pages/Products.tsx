@@ -141,6 +141,7 @@ const Products = () => {
                       </Tooltip>
                       <button
                         onClick={() => toggleItem(product.name)}
+                        aria-label={inCart ? `Remove ${product.name} from quote` : `Add ${product.name} to quote`}
                         className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
                           inCart
                             ? "bg-accent text-accent-foreground"
@@ -247,6 +248,7 @@ const Products = () => {
                             </Tooltip>
                             <button
                               onClick={() => toggleItem(product.name)}
+                              aria-label={inCart ? `Remove ${product.name} from quote` : `Add ${product.name} to quote`}
                               className={`shrink-0 w-9 h-9 rounded-full flex items-center justify-center transition-all ${
                                 inCart
                                   ? "bg-accent text-accent-foreground scale-105"

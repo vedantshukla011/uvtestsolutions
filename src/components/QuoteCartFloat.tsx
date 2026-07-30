@@ -19,10 +19,10 @@ const QuoteCartFloat = () => {
               Quote List ({items.length})
             </span>
             <div className="flex gap-1">
-              <Button variant="ghost" size="icon" className="h-7 w-7" onClick={clearItems}>
+              <Button variant="ghost" size="icon" className="h-7 w-7" onClick={clearItems} aria-label="Clear all items from quote list">
                 <Trash2 className="h-3.5 w-3.5" />
               </Button>
-              <Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => setExpanded(false)}>
+              <Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => setExpanded(false)} aria-label="Close quote list">
                 <X className="h-3.5 w-3.5" />
               </Button>
             </div>
@@ -31,7 +31,7 @@ const QuoteCartFloat = () => {
             {items.map((item) => (
               <div key={item} className="flex items-center justify-between gap-2 px-2 py-1.5 rounded-md hover:bg-muted/50 group">
                 <span className="text-xs text-foreground truncate flex-1">{item}</span>
-                <button onClick={() => removeItem(item)} className="text-muted-foreground hover:text-destructive shrink-0">
+                <button onClick={() => removeItem(item)} aria-label={`Remove ${item} from quote list`} className="text-muted-foreground hover:text-destructive shrink-0">
                   <X className="h-3 w-3" />
                 </button>
               </div>
@@ -49,6 +49,8 @@ const QuoteCartFloat = () => {
 
       <button
         onClick={() => setExpanded(!expanded)}
+        aria-label={`${expanded ? "Hide" : "Show"} quote list (${items.length} items)`}
+        aria-expanded={expanded}
         className="relative flex items-center justify-center w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all hover:scale-105"
       >
         <ShoppingCart className="h-5 w-5" />
