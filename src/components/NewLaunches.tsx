@@ -7,8 +7,26 @@ import metrelPvImage from "@/assets/products/metrel-mi3108-eurotestpv.jpg";
 import metrelEvImage from "@/assets/products/metrel-mi3132-evtester.jpg";
 import orionPhaseSyncImage from "@/assets/products/orion-phase-sync.jpg";
 import wellerWe1010Image from "@/assets/products/weller-we1010.png";
+import hantekApe11l1000Image from "@/assets/products/hantek-ape11l1000.jpg";
 
 export const newLaunches = [
+  {
+    name: "Hantek APE11L1000 AC Power Source (1KVA, 110V/220V)",
+    model: "APE11L1000",
+    brand: "Hantek",
+    brief:
+      "1KVA single-phase programmable AC power source with 110 V / 220 V rated voltage, 9.1 A / 4.5 A rated current and 0–300 V adjustable output. Built-in isolation transformer, 4.3-inch colour LCD with waveform recording and country-wise mains voltage simulation.",
+    image: hantekApe11l1000Image,
+    datasheet: "/datasheets/hantek-ape11l1000.pdf",
+    href: "/products/hantek-ape11l1000-ac-power-source",
+    highlights: [
+      "Output power 1KVA, rated 110V/220V",
+      "Rated current 9.1 A / 4.5 A",
+      "Output 0–300 V, 45–65 Hz + 100/120/200/240 Hz",
+      "4.3-inch colour LCD, 30-day waveform recording",
+      "Built-in isolation transformer, OVP/OCP/OTP/OPP",
+    ],
+  },
   {
     name: "Jartul JT6311A DC Electronic Load (150W/150V/30A)",
     model: "JT6311A",
@@ -174,16 +192,18 @@ const NewLaunches = () => {
                         <><Plus className="h-4 w-4" /> Request Quote</>
                       )}
                     </Button>
-                    <Button asChild variant="outline" className="gap-2">
-                      <a
-                        href={product.datasheet}
-                        download
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Download className="h-4 w-4" /> Datasheet
-                      </a>
-                    </Button>
+                    {product.datasheet && (
+                      <Button asChild variant="outline" className="gap-2">
+                        <a
+                          href={product.datasheet}
+                          download
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Download className="h-4 w-4" /> Datasheet
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </article>
