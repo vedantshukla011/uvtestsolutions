@@ -15,14 +15,14 @@ const Footer = () => {
               Leading Indian supplier of test and measuring instruments.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
-                <Linkedin className="w-4 h-4 text-accent" />
+              <a href="#" aria-label="UV Test Solutions on LinkedIn" className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
+                <Linkedin className="w-4 h-4 text-accent" aria-hidden="true" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
-                <Twitter className="w-4 h-4 text-accent" />
+              <a href="#" aria-label="UV Test Solutions on Twitter" className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
+                <Twitter className="w-4 h-4 text-accent" aria-hidden="true" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
-                <Facebook className="w-4 h-4 text-accent" />
+              <a href="#" aria-label="UV Test Solutions on Facebook" className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
+                <Facebook className="w-4 h-4 text-accent" aria-hidden="true" />
               </a>
             </div>
           </div>
