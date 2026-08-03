@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Download, Plus, Check, Sparkles, ArrowRight, Star } from "lucide-react";
+import { Download, Plus, Check, Sparkles, ArrowRight, Star, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useQuoteCart } from "@/contexts/QuoteCartContext";
 import jartulImage from "@/assets/products/jartul-jt6311a.png";
