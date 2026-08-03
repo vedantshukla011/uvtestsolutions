@@ -225,6 +225,19 @@ const NewLaunches = () => {
                         </a>
                       </Button>
                     )}
+                    {(product as { manual?: string }).manual && (
+                      <Button asChild variant="outline" className="gap-2">
+                        <a
+                          href={(product as { manual?: string }).manual}
+                          download
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FileText className="h-4 w-4" /> User Manual
+                        </a>
+                      </Button>
+                    )}
+
                   </div>
                 </div>
               </article>
