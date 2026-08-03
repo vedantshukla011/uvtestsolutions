@@ -43,16 +43,17 @@ const Index = () => {
             "name": newLaunches[0].name,
             "model": newLaunches[0].model,
             "sku": newLaunches[0].model,
-            "category": "DC Electronic Load",
+            "category": "LCR Meter",
             "description": newLaunches[0].brief,
-            "image": "https://www.uvtestsolutions.com/assets/jartul-jt6311a.png",
-            "releaseDate": "2026-05",
-            "brand": { "@type": "Brand", "name": "Jartul" },
+            "image": "https://www.uvtestsolutions.com/assets/unit-utr2830e.jpg",
+            "releaseDate": "2026-08",
+            "brand": { "@type": "Brand", "name": "UNI-T" },
             "offers": {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
               "priceCurrency": "INR",
-              "url": "https://www.uvtestsolutions.com/#new-launches",
+              "price": "66499",
+              "url": "https://www.uvtestsolutions.com/products/unit-utr2830e-lcr-meter",
               "seller": { "@type": "Organization", "name": "UV Test Solutions" }
             }
           }

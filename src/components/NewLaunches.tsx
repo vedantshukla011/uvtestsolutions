@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Download, Plus, Check, Sparkles, ArrowRight, Star } from "lucide-react";
+import { Download, Plus, Check, Sparkles, ArrowRight, Star, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useQuoteCart } from "@/contexts/QuoteCartContext";
 import jartulImage from "@/assets/products/jartul-jt6311a.png";
@@ -8,8 +8,28 @@ import metrelEvImage from "@/assets/products/metrel-mi3132-evtester.jpg";
 import orionPhaseSyncImage from "@/assets/products/orion-phase-sync.jpg";
 import wellerWe1010Image from "@/assets/products/weller-we1010.png";
 import hantekApe11l1000Image from "@/assets/products/hantek-ape11l1000.jpg";
+import unitUtr2830eImage from "@/assets/products/unit-utr2830e.jpg";
 
 export const newLaunches = [
+  {
+    name: "UNI-T UTR2830E LCR Meter (100 kHz Digital LCR Bridge)",
+    model: "UTR2830E",
+    brand: "UNI-T",
+    price: "₹66,499 incl. taxes",
+    brief:
+      "New generation 100 kHz digital LCR bridge with 0.05% LCRZ / 0.1% DCR accuracy, 6-bit display count and up to 80 readings per second. 4.3-inch TFT LCD with dual primary/secondary readout and RS232, HANDLER, LAN, USB Host & Device interfaces for production QA and automated testing.",
+    image: unitUtr2830eImage,
+    datasheet: "/datasheets/unit-utr2830e-datasheet.pdf",
+    manual: "/datasheets/unit-utr2830e-user-manual.pdf",
+    href: "/products/unit-utr2830e-lcr-meter",
+    highlights: [
+      "Max test frequency 100 kHz",
+      "Accuracy LCRZ 0.05%, DCR 0.1%",
+      "6-bit display count, 80 rdgs/s",
+      "4.3\" TFT LCD, dual parameter readout",
+      "RS232, HANDLER, LAN, USB Host/Device",
+    ],
+  },
   {
     name: "Hantek APE11L1000 AC Power Source (1KVA, 110V/220V)",
     model: "APE11L1000",
@@ -27,6 +47,7 @@ export const newLaunches = [
       "Built-in isolation transformer, OVP/OCP/OTP/OPP",
     ],
   },
+
   {
     name: "Jartul JT6311A DC Electronic Load (150W/150V/30A)",
     model: "JT6311A",
@@ -204,6 +225,19 @@ const NewLaunches = () => {
                         </a>
                       </Button>
                     )}
+                    {(product as { manual?: string }).manual && (
+                      <Button asChild variant="outline" className="gap-2">
+                        <a
+                          href={(product as { manual?: string }).manual}
+                          download
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FileText className="h-4 w-4" /> User Manual
+                        </a>
+                      </Button>
+                    )}
+
                   </div>
                 </div>
               </article>
