@@ -59,6 +59,7 @@ const App = () => (
             <Route path="/products/weller-we1010" element={<WellerWE1010 />} />
             <Route path="/products/hantek-ape11l1000-ac-power-source" element={<HantekAPE11L1000 />} />
             <Route path="/products/unit-utr2830e-lcr-meter" element={<UnitUTR2830E />} />
+            <Route path="/products/unit-uap1000a-ac-power-source" element={<UnitUAP1000A />} />
             <Route path="/products/emcsosin-surge-generators" element={<EmcsosinSurgeGenerators />} />
             <Route path="/brands" element={<Brands />} />
             <Route path="/brands/:slug" element={<BrandDetail />} />
