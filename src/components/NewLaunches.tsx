@@ -9,8 +9,26 @@ import orionPhaseSyncImage from "@/assets/products/orion-phase-sync.jpg";
 import wellerWe1010Image from "@/assets/products/weller-we1010.png";
 import hantekApe11l1000Image from "@/assets/products/hantek-ape11l1000.jpg";
 import unitUtr2830eImage from "@/assets/products/unit-utr2830e.jpg";
+import unitUap1000aImage from "@/assets/products/unit-uap1000a.jpg";
 
 export const newLaunches = [
+  {
+    name: "UNI-T UAP1000A AC Power Source (1000VA Programmable AC Source)",
+    model: "UAP1000A",
+    brand: "UNI-T",
+    brief:
+      "1000 VA single-phase programmable AC power source with dual voltage ranges (150 V / 300 V), current up to 8.4 A, 0.01 V / 0.001 A resolution and RS-232C remote control in a compact 3U chassis — built for mains simulation, appliance and adapter testing.",
+    image: unitUap1000aImage,
+    datasheet: "/datasheets/unit-uap1000a-datasheet.pdf",
+    href: "/products/unit-uap1000a-ac-power-source",
+    highlights: [
+      "Output capacity 1000 VA",
+      "Voltage range L: 150 V / H: 300 V",
+      "Current range L: 8.4 A / H: 4.2 A",
+      "Resolution 0.01 V / 0.001 A",
+      "RS-232C interface, 3U rack size",
+    ],
+  },
   {
     name: "UNI-T UTR2830E LCR Meter (100 kHz Digital LCR Bridge)",
     model: "UTR2830E",
