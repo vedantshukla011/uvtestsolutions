@@ -22,6 +22,7 @@ import OrionPhaseSync from "./pages/OrionPhaseSync";
 import WellerWE1010 from "./pages/WellerWE1010";
 import HantekAPE11L1000 from "./pages/HantekAPE11L1000";
 import UnitUTR2830E from "./pages/UnitUTR2830E";
+import UnitUAP1000A from "./pages/UnitUAP1000A";
 import EmcsosinSurgeGenerators from "./pages/EmcsosinSurgeGenerators";
 import Brands from "./pages/Brands";
 import BrandDetail from "./pages/BrandDetail";
