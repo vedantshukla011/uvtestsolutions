@@ -10,8 +10,26 @@ import wellerWe1010Image from "@/assets/products/weller-we1010.png";
 import hantekApe11l1000Image from "@/assets/products/hantek-ape11l1000.jpg";
 import unitUtr2830eImage from "@/assets/products/unit-utr2830e.jpg";
 import unitUap1000aImage from "@/assets/products/unit-uap1000a.jpg";
+import unitUtl8211plusImage from "@/assets/products/unit-utl8211plus.jpg";
 
 export const newLaunches = [
+  {
+    name: "UNI-T UTL8211+ High-Precision Compact DC Electronic Load (400W/150V/40A)",
+    model: "UTL8211+",
+    brand: "UNI-T",
+    brief:
+      "400 W single-channel programmable DC electronic load with 0–150 V input, up to 40 A sink current and 1 mV / 1 mA resolution. 4.8 MHz synchronous ADC sampling, 5 kHz dynamic testing, CC/CV/CR/CP modes, battery discharge & list modes, 2.8-inch true colour LCD and RS232 SCPI control.",
+    image: unitUtl8211plusImage,
+    datasheet: "/datasheets/unit-utl8211plus-datasheet.pdf",
+    href: "/products/unit-utl8211plus-dc-electronic-load",
+    highlights: [
+      "400 W / 150 V / 40 A single channel",
+      "1 mV / 1 mA measurement resolution",
+      "CC / CV / CR / CP + dynamic up to 5 kHz",
+      "4.8 MHz voltage-current synchronous ADC",
+      "RS232 with SCPI protocol & PC software",
+    ],
+  },
   {
     name: "UNI-T UAP1000A AC Power Source (1000VA Programmable AC Source)",
     model: "UAP1000A",
