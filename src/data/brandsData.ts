@@ -873,7 +873,7 @@ export const brands: Brand[] = [
       { title: "Oscilloscopes", desc: "DLM3000/DLM5000 series mixed-signal oscilloscopes." },
       { title: "Recorders & Data Loggers", desc: "GX/GP paperless recorders and DX/GM data acquisition systems." },
       { title: "Calibrators & Sources", desc: "CA series multifunction process calibrators and precision DC sources." },
-      { title: "Optical Test", desc": "AQ series OTDRs, optical spectrum analyzers and light sources." },
+      { title: "Optical Test", desc: "AQ series OTDRs, optical spectrum analyzers and light sources." },
     ],
     models: [
       { id: "WT5000", title: "Precision Power Analyzer", desc: "Modular 7-input power analyzer with 0.03% basic accuracy for EV, inverter and motor efficiency testing.", tags: ["0.03% accuracy", "7 inputs", "Harmonics"] },
