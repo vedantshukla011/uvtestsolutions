@@ -23,6 +23,7 @@ import jomaLogo from "@/assets/brands/joma.png";
 import embuiltLogo from "@/assets/brands/embuilt.png";
 import rionLogo from "@/assets/brands/rion.gif";
 import vaisalaLogo from "@/assets/brands/vaisala.svg";
+import yokogawaLogo from "@/assets/brands/yokogawa.svg";
 
 export interface BrandCategory {
   title: string;
@@ -848,6 +849,39 @@ export const brands: Brand[] = [
       { id: "DMP74", title: "Dew Point Transmitter", desc: "Industrial dew-point transmitter for compressed air & gases.", tags: ["Dew point", "Industrial", "Digital"] },
       { id: "GMP252", title: "CO₂ Probe", desc: "CARBOCAP CO₂ probe for demanding environments.", tags: ["CO₂", "CARBOCAP", "Industrial"] },
       { id: "WXT536", title: "Compact Weather Transmitter", desc: "All-in-one weather transmitter for six parameters.", tags: ["6-in-1", "Compact", "Weather"] },
+    ],
+  },
+  {
+    slug: "yokogawa",
+    name: "Yokogawa",
+    logo: yokogawaLogo,
+    tagline: "Japanese precision in measurement, control and industrial automation since 1915.",
+    origin: "Musashino, Tokyo, Japan",
+    founded: "1915",
+    specialty: "Power analyzers, oscilloscopes, recorders & calibrators",
+    parent: "Yokogawa Electric Corporation",
+    popularIn: "EV & power electronics, energy, process industries",
+    knownFor: "WT series precision power analyzers",
+    about: [
+      "Yokogawa Electric Corporation is a Japanese measurement, control and information company renowned for accuracy, reliability and long instrument life.",
+      "Its test & measurement portfolio includes the WT series precision power analyzers, ScopeCorder and DLM oscilloscopes, GX/GP paperless recorders, optical test equipment and CA series calibrators — widely used in EV, motor drive, inverter, renewable energy and process industries.",
+      "UV Test Solutions supplies Yokogawa test and measurement instruments across India with application support, calibration and after-sales service.",
+    ],
+    categories: [
+      { title: "Power Analyzers", desc: "WT1800E, WT3000E and WT5000 precision power analyzers for inverter, motor and EV efficiency testing." },
+      { title: "ScopeCorders", desc: "DL350 and DL950 combining oscilloscope speed with long-term data recording." },
+      { title: "Oscilloscopes", desc: "DLM3000/DLM5000 series mixed-signal oscilloscopes." },
+      { title: "Recorders & Data Loggers", desc: "GX/GP paperless recorders and DX/GM data acquisition systems." },
+      { title: "Calibrators & Sources", desc: "CA series multifunction process calibrators and precision DC sources." },
+      { title: "Optical Test", desc: "AQ series OTDRs, optical spectrum analyzers and light sources." },
+    ],
+    models: [
+      { id: "WT5000", title: "Precision Power Analyzer", desc: "Modular 7-input power analyzer with 0.03% basic accuracy for EV, inverter and motor efficiency testing.", tags: ["0.03% accuracy", "7 inputs", "Harmonics"] },
+      { id: "WT1800E", title: "High-Performance Power Analyzer", desc: "Up to 6-input power analyzer for three-phase power, harmonics and efficiency measurement.", tags: ["6 inputs", "±0.05%", "Efficiency"] },
+      { id: "DL950", title: "ScopeCorder", desc: "High-speed 8-slot ScopeCorder for simultaneous transient capture and long-term recording.", tags: ["Modular", "Long recording", "Isolated inputs"] },
+      { id: "DLM3054", title: "Mixed Signal Oscilloscope", desc: "500 MHz 4-channel MSO with 8-bit logic and deep memory for power electronics debug.", tags: ["500 MHz", "4+8 ch MSO", "Deep memory"] },
+      { id: "GX20", title: "Paperless Recorder", desc: "Touchscreen paperless recorder for up to 100 channels of process data.", tags: ["Touchscreen", "Up to 100 ch", "Ethernet"] },
+      { id: "CA700", title: "Pressure Calibrator", desc: "Handheld pressure calibrator for process instrumentation calibration.", tags: ["Pressure", "Handheld", "Loop power"] },
     ],
   },
 ];
