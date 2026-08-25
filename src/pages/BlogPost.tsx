@@ -70,7 +70,7 @@ const BlogPost = () => {
       name: "UV Test Solutions",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.uvtestsolutions.com/favicon.jpg",
+        url: "https://www.uvtestsolutions.com/logo.png",
       },
     },
     mainEntityOfPage: `https://www.uvtestsolutions.com/blog/${slug}`,

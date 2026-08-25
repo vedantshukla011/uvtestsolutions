@@ -15,7 +15,7 @@ const SEO = ({
   description,
   canonical,
   type = "website",
-  image = "https://www.uvtestsolutions.com/favicon.jpg",
+  image = "https://www.uvtestsolutions.com/logo.png",
   keywords,
   jsonLd,
 }: SEOProps) => {
