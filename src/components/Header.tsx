@@ -42,7 +42,14 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center gap-2">
+            <img
+              src="/favicon.jpg"
+              alt="UV Test Solutions logo"
+              width="40"
+              height="40"
+              className="h-10 w-auto rounded-lg"
+            />
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:opacity-80 transition-opacity">
               UV TEST SOLUTIONS
             </span>

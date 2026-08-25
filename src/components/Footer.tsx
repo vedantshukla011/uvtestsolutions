@@ -8,9 +8,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
-              UV TEST SOLUTIONS
-            </h3>
+            <div className="flex items-center gap-2 mb-4">
+              <img
+                src="/favicon.jpg"
+                alt="UV Test Solutions logo"
+                width="32"
+                height="32"
+                className="h-8 w-auto rounded-lg"
+              />
+              <h3 className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                UV TEST SOLUTIONS
+              </h3>
+            </div>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
               Leading Indian supplier of test and measuring instruments.
             </p>
