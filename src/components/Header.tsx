@@ -44,7 +44,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="/favicon.jpg"
+              src="/logo.png"
               alt="UV Test Solutions logo"
               width="40"
               height="40"
