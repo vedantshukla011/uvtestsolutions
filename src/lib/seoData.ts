@@ -8,7 +8,7 @@ export const organizationSchema = {
   "@type": "Organization",
   "name": "UV Test Solutions",
   "url": BASE_URL,
-  "logo": `${BASE_URL}/favicon.jpg`,
+  "logo": `${BASE_URL}/logo.png`,
   "description": "Leading Indian supplier of test and measuring instruments, oscilloscopes, multimeters, soldering stations, power tools and hand tools from top global brands.",
   "address": {
     "@type": "PostalAddress",
