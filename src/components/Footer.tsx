@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/favicon.jpg"
+                src="/logo.png"
                 alt="UV Test Solutions logo"
                 width="32"
                 height="32"
