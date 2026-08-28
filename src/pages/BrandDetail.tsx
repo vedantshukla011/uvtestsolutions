@@ -279,7 +279,43 @@ const BrandDetail = () => {
           </section>
         )}
 
+        {/* Related brands — internal linking */}
+        {relatedBrands.length > 0 && (
+          <section className="py-14 border-t border-border">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-2xl font-semibold mb-2">
+                Brands similar to {short} we also distribute
+              </h2>
+              <p className="text-muted-foreground mb-6 max-w-2xl">
+                Comparing options? These manufacturers cover overlapping instrument ranges in India.
+              </p>
+              <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 list-none p-0">
+                {relatedBrands.map((rb) => (
+                  <li key={rb.slug}>
+                    <Link
+                      to={`/brands/${rb.slug}`}
+                      title={`${rb.name} distributor in India`}
+                      className="h-full flex flex-col items-center justify-center gap-2 p-4 bg-card border border-border rounded-lg hover:border-primary transition-colors"
+                    >
+                      <img
+                        src={rb.logo}
+                        alt={`${rb.name} logo`}
+                        width={90}
+                        height={40}
+                        loading="lazy"
+                        className="max-h-10 max-w-[90px] object-contain"
+                      />
+                      <span className="text-xs text-center text-muted-foreground">{rb.name}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
         {/* CTA */}
+
         <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-14">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
             <div>
