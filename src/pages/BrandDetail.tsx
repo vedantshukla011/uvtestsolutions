@@ -3,7 +3,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { getBrandBySlug } from "@/data/brandsData";
+import { getBrandBySlug, brands as allBrands } from "@/data/brandsData";
+import {
+  brandTitle,
+  brandDescription,
+  brandKeywords,
+  getBrandDetailJsonLd,
+  getRelatedCategoryLinks,
+  getRelatedBrands,
+} from "@/lib/brandSeo";
 import { ArrowLeft, Mail, Package } from "lucide-react";
 
 const BrandDetail = () => {
@@ -12,31 +20,18 @@ const BrandDetail = () => {
 
   if (!brand) return <Navigate to="/brands" replace />;
 
+  const short = brand.name.split(" ")[0];
+  const categoryLinks = getRelatedCategoryLinks(brand);
+  const relatedBrands = getRelatedBrands(brand, allBrands);
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={`${brand.name} in India — Authorized Distributor | UV Test Solutions`}
-        description={`${brand.name} — ${brand.tagline} Supplied across India by UV Test Solutions with genuine warranty and after-sales support.`}
+        title={brandTitle(brand)}
+        description={brandDescription(brand)}
         canonical={`/brands/${brand.slug}`}
-        keywords={`${brand.name} India, ${brand.name} distributor India, ${brand.name} price India, ${brand.specialty}, buy ${brand.name} online India, UV Test Solutions`}
-        jsonLd={[
-          {
-            "@context": "https://schema.org",
-            "@type": "Brand",
-            name: brand.name,
-            logo: `https://www.uvtestsolutions.com${brand.logo}`,
-            description: brand.tagline,
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.uvtestsolutions.com/" },
-              { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.uvtestsolutions.com/brands" },
-              { "@type": "ListItem", position: 3, name: brand.name, item: `https://www.uvtestsolutions.com/brands/${brand.slug}` },
-            ],
-          },
-        ]}
+        keywords={brandKeywords(brand)}
+        jsonLd={getBrandDetailJsonLd(brand)}
       />
       <Header />
 
@@ -44,6 +39,24 @@ const BrandDetail = () => {
         {/* Hero */}
         <section className="relative overflow-hidden bg-gradient-to-br from-primary/95 via-primary to-primary/80 text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
+            <nav aria-label="Breadcrumb" className="mb-6">
+              <ol className="flex flex-wrap items-center gap-2 text-sm text-primary-foreground/80">
+                <li>
+                  <Link to="/" className="hover:text-primary-foreground">
+                    Home
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
+                <li>
+                  <Link to="/brands" className="hover:text-primary-foreground">
+                    Brands
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
+                <li className="text-primary-foreground font-medium">{brand.name}</li>
+              </ol>
+            </nav>
+
             <Link
               to="/brands"
               className="inline-flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground mb-6 transition-colors"
@@ -57,10 +70,14 @@ const BrandDetail = () => {
                   ── Authorized Distributor — India
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-                  {brand.name}
+                  {short} in India — Authorized Distributor &amp; Price List
                 </h1>
-                <p className="text-lg md:text-xl text-primary-foreground/85 max-w-2xl mb-8">
+                <p className="text-lg md:text-xl text-primary-foreground/85 max-w-2xl mb-4">
                   {brand.tagline}
+                </p>
+                <p className="text-primary-foreground/80 max-w-2xl mb-8">
+                  Buy genuine {brand.name} {brand.specialty.toLowerCase()} in India from UV Test
+                  Solutions — pan-India supply with warranty, calibration and application support.
                 </p>
                 <div className="flex flex-wrap gap-6 md:gap-10">
                   <MetaItem label="Origin" value={brand.origin} />
@@ -71,7 +88,9 @@ const BrandDetail = () => {
               <div className="bg-background/10 backdrop-blur border border-primary-foreground/20 rounded-xl p-8 flex items-center justify-center min-w-[220px] min-h-[180px]">
                 <img
                   src={brand.logo}
-                  alt={`${brand.name} logo`}
+                  alt={`${brand.name} logo — ${brand.specialty} distributor in India`}
+                  width={200}
+                  height={96}
                   className="max-h-24 max-w-[200px] object-contain"
                 />
               </div>
@@ -104,6 +123,43 @@ const BrandDetail = () => {
             </div>
           </div>
         </section>
+
+        {/* Buy in India / related product categories */}
+        <section className="py-12 border-t border-border">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-semibold mb-3">
+              Buying {short} in India — price, warranty and support
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mb-6 leading-relaxed">
+              UV Test Solutions supplies {brand.name} {brand.specialty.toLowerCase()} to customers
+              in Delhi NCR, Noida, Gurugram, Bengaluru, Pune, Chennai, Hyderabad and Ahmedabad —
+              with GST invoicing, manufacturer warranty, NABL-traceable calibration on request and
+              on-site application support. Share your model number or application and we will send
+              an {short} quote with current pricing and lead time.
+            </p>
+            {categoryLinks.length > 0 && (
+              <>
+                <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+                  Shop {short}-related product categories
+                </h3>
+                <ul className="flex flex-wrap gap-2 list-none p-0">
+                  {categoryLinks.map((l) => (
+                    <li key={l.href}>
+                      <Link
+                        to={l.href}
+                        className="inline-block text-sm px-3 py-1.5 rounded-full border border-border bg-card hover:border-primary hover:text-primary transition-colors"
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
+        </section>
+
+
 
         {/* Categories */}
         {brand.categories && brand.categories.length > 0 && (
@@ -223,7 +279,43 @@ const BrandDetail = () => {
           </section>
         )}
 
+        {/* Related brands — internal linking */}
+        {relatedBrands.length > 0 && (
+          <section className="py-14 border-t border-border">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-2xl font-semibold mb-2">
+                Brands similar to {short} we also distribute
+              </h2>
+              <p className="text-muted-foreground mb-6 max-w-2xl">
+                Comparing options? These manufacturers cover overlapping instrument ranges in India.
+              </p>
+              <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 list-none p-0">
+                {relatedBrands.map((rb) => (
+                  <li key={rb.slug}>
+                    <Link
+                      to={`/brands/${rb.slug}`}
+                      title={`${rb.name} distributor in India`}
+                      className="h-full flex flex-col items-center justify-center gap-2 p-4 bg-card border border-border rounded-lg hover:border-primary transition-colors"
+                    >
+                      <img
+                        src={rb.logo}
+                        alt={`${rb.name} logo`}
+                        width={90}
+                        height={40}
+                        loading="lazy"
+                        className="max-h-10 max-w-[90px] object-contain"
+                      />
+                      <span className="text-xs text-center text-muted-foreground">{rb.name}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
         {/* CTA */}
+
         <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-14">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
             <div>
