@@ -98,26 +98,6 @@ const BrandDetail = () => {
           </div>
         </section>
 
-                <p className="text-lg md:text-xl text-primary-foreground/85 max-w-2xl mb-8">
-                  {brand.tagline}
-                </p>
-                <div className="flex flex-wrap gap-6 md:gap-10">
-                  <MetaItem label="Origin" value={brand.origin} />
-                  <MetaItem label="Founded" value={brand.founded} />
-                  <MetaItem label="Specialty" value={brand.specialty} />
-                </div>
-              </div>
-              <div className="bg-background/10 backdrop-blur border border-primary-foreground/20 rounded-xl p-8 flex items-center justify-center min-w-[220px] min-h-[180px]">
-                <img
-                  src={brand.logo}
-                  alt={`${brand.name} logo`}
-                  className="max-h-24 max-w-[200px] object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* About + Fact card */}
         <section className="py-16 md:py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
