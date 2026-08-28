@@ -3,7 +3,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { getBrandBySlug } from "@/data/brandsData";
+import { getBrandBySlug, brands as allBrands } from "@/data/brandsData";
+import {
+  brandTitle,
+  brandDescription,
+  brandKeywords,
+  getBrandDetailJsonLd,
+  getRelatedCategoryLinks,
+  getRelatedBrands,
+} from "@/lib/brandSeo";
 import { ArrowLeft, Mail, Package } from "lucide-react";
 
 const BrandDetail = () => {
@@ -12,31 +20,18 @@ const BrandDetail = () => {
 
   if (!brand) return <Navigate to="/brands" replace />;
 
+  const short = brand.name.split(" ")[0];
+  const categoryLinks = getRelatedCategoryLinks(brand);
+  const relatedBrands = getRelatedBrands(brand, allBrands);
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title={`${brand.name} in India — Authorized Distributor | UV Test Solutions`}
-        description={`${brand.name} — ${brand.tagline} Supplied across India by UV Test Solutions with genuine warranty and after-sales support.`}
+        title={brandTitle(brand)}
+        description={brandDescription(brand)}
         canonical={`/brands/${brand.slug}`}
-        keywords={`${brand.name} India, ${brand.name} distributor India, ${brand.name} price India, ${brand.specialty}, buy ${brand.name} online India, UV Test Solutions`}
-        jsonLd={[
-          {
-            "@context": "https://schema.org",
-            "@type": "Brand",
-            name: brand.name,
-            logo: `https://www.uvtestsolutions.com${brand.logo}`,
-            description: brand.tagline,
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.uvtestsolutions.com/" },
-              { "@type": "ListItem", position: 2, name: "Brands", item: "https://www.uvtestsolutions.com/brands" },
-              { "@type": "ListItem", position: 3, name: brand.name, item: `https://www.uvtestsolutions.com/brands/${brand.slug}` },
-            ],
-          },
-        ]}
+        keywords={brandKeywords(brand)}
+        jsonLd={getBrandDetailJsonLd(brand)}
       />
       <Header />
 
@@ -44,6 +39,24 @@ const BrandDetail = () => {
         {/* Hero */}
         <section className="relative overflow-hidden bg-gradient-to-br from-primary/95 via-primary to-primary/80 text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
+            <nav aria-label="Breadcrumb" className="mb-6">
+              <ol className="flex flex-wrap items-center gap-2 text-sm text-primary-foreground/80">
+                <li>
+                  <Link to="/" className="hover:text-primary-foreground">
+                    Home
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
+                <li>
+                  <Link to="/brands" className="hover:text-primary-foreground">
+                    Brands
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
+                <li className="text-primary-foreground font-medium">{brand.name}</li>
+              </ol>
+            </nav>
+
             <Link
               to="/brands"
               className="inline-flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground mb-6 transition-colors"
@@ -57,8 +70,34 @@ const BrandDetail = () => {
                   ── Authorized Distributor — India
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-                  {brand.name}
+                  {short} in India — Authorized Distributor &amp; Price List
                 </h1>
+                <p className="text-lg md:text-xl text-primary-foreground/85 max-w-2xl mb-4">
+                  {brand.tagline}
+                </p>
+                <p className="text-primary-foreground/80 max-w-2xl mb-8">
+                  Buy genuine {brand.name} {brand.specialty.toLowerCase()} in India from UV Test
+                  Solutions — pan-India supply with warranty, calibration and application support.
+                </p>
+                <div className="flex flex-wrap gap-6 md:gap-10">
+                  <MetaItem label="Origin" value={brand.origin} />
+                  <MetaItem label="Founded" value={brand.founded} />
+                  <MetaItem label="Specialty" value={brand.specialty} />
+                </div>
+              </div>
+              <div className="bg-background/10 backdrop-blur border border-primary-foreground/20 rounded-xl p-8 flex items-center justify-center min-w-[220px] min-h-[180px]">
+                <img
+                  src={brand.logo}
+                  alt={`${brand.name} logo — ${brand.specialty} distributor in India`}
+                  width={200}
+                  height={96}
+                  className="max-h-24 max-w-[200px] object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
                 <p className="text-lg md:text-xl text-primary-foreground/85 max-w-2xl mb-8">
                   {brand.tagline}
                 </p>
