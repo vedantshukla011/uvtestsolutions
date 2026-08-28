@@ -124,6 +124,43 @@ const BrandDetail = () => {
           </div>
         </section>
 
+        {/* Buy in India / related product categories */}
+        <section className="py-12 border-t border-border">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-semibold mb-3">
+              Buying {short} in India — price, warranty and support
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mb-6 leading-relaxed">
+              UV Test Solutions supplies {brand.name} {brand.specialty.toLowerCase()} to customers
+              in Delhi NCR, Noida, Gurugram, Bengaluru, Pune, Chennai, Hyderabad and Ahmedabad —
+              with GST invoicing, manufacturer warranty, NABL-traceable calibration on request and
+              on-site application support. Share your model number or application and we will send
+              an {short} quote with current pricing and lead time.
+            </p>
+            {categoryLinks.length > 0 && (
+              <>
+                <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+                  Shop {short}-related product categories
+                </h3>
+                <ul className="flex flex-wrap gap-2 list-none p-0">
+                  {categoryLinks.map((l) => (
+                    <li key={l.href}>
+                      <Link
+                        to={l.href}
+                        className="inline-block text-sm px-3 py-1.5 rounded-full border border-border bg-card hover:border-primary hover:text-primary transition-colors"
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
+        </section>
+
+
+
         {/* Categories */}
         {brand.categories && brand.categories.length > 0 && (
           <section className="py-12 bg-muted/30">
