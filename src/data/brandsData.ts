@@ -24,6 +24,7 @@ import embuiltLogo from "@/assets/brands/embuilt.png";
 import rionLogo from "@/assets/brands/rion.gif";
 import vaisalaLogo from "@/assets/brands/vaisala.svg";
 import yokogawaLogo from "@/assets/brands/yokogawa.svg";
+import niLogo from "@/assets/brands/ni.svg";
 
 export interface BrandCategory {
   title: string;
@@ -914,7 +915,7 @@ export const brands: Brand[] = [
       { id: "USB-6009", title: "Multifunction DAQ Device", desc: "Low-cost 8-channel, 14-bit USB DAQ device for basic analog and digital measurement.", tags: ["USB", "14-bit", "48 kS/s"] },
       { id: "USB-6212", title: "16-bit Multifunction DAQ", desc: "16 analog inputs at 400 kS/s with analog output, DIO and counters for bench and lab use.", tags: ["16-bit", "400 kS/s", "Bus powered"] },
       { id: "PXIe-1092", title: "9-Slot PXI Express Chassis", desc: "Nine-slot PXIe chassis with high system bandwidth for modular automated test systems.", tags: ["9 slots", "PXIe", "58 GB/s"] },
-      { id: "PXIe-4081", title: "PXI Digital Multimeter", desc": "7½-digit PXI DMM with wide measurement range for high-accuracy automated test.", tags: ["7½ digit", "PXI", "LCR"] },
+      { id: "PXIe-4081", title: "PXI Digital Multimeter", desc: "7½-digit PXI DMM with wide measurement range for high-accuracy automated test.", tags: ["7½ digit", "PXI", "LCR"] },
       { id: "cDAQ-9174", title: "CompactDAQ Chassis", desc: "4-slot USB CompactDAQ chassis for mixed sensor measurement with C Series modules.", tags: ["4 slots", "USB", "C Series"] },
       { id: "cRIO-9045", title: "CompactRIO Controller", desc: "Rugged real-time FPGA controller for embedded monitoring, control and HIL applications.", tags: ["Real-time", "FPGA", "Rugged"] },
       { id: "LabVIEW", title: "Graphical Programming Software", desc: "Graphical development environment for measurement, test and control application development.", tags: ["Graphical", "DAQmx", "Automation"] },
