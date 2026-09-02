@@ -887,7 +887,7 @@ export const brands: Brand[] = [
   },
   {
     slug: "national-instruments",
-    name: "National Instruments (NI)",
+    name: "NI (National Instruments)",
     logo: niLogo,
     tagline:
       "LabVIEW, PXI and DAQ — the platform behind automated test and measurement systems since 1976.",
