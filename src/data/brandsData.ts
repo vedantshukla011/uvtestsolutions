@@ -24,6 +24,7 @@ import embuiltLogo from "@/assets/brands/embuilt.png";
 import rionLogo from "@/assets/brands/rion.gif";
 import vaisalaLogo from "@/assets/brands/vaisala.svg";
 import yokogawaLogo from "@/assets/brands/yokogawa.svg";
+import niLogo from "@/assets/brands/ni.svg";
 
 export interface BrandCategory {
   title: string;
@@ -884,6 +885,44 @@ export const brands: Brand[] = [
       { id: "CA700", title: "Pressure Calibrator", desc: "Handheld pressure calibrator for process instrumentation calibration.", tags: ["Pressure", "Handheld", "Loop power"] },
     ],
   },
+  {
+    slug: "national-instruments",
+    name: "NI (National Instruments)",
+    logo: niLogo,
+    tagline:
+      "LabVIEW, PXI and DAQ — the platform behind automated test and measurement systems since 1976.",
+    origin: "Austin, Texas, USA",
+    founded: "1976",
+    specialty: "Automated test, DAQ & PXI modular instrumentation",
+    parent: "Emerson Electric Co.",
+    popularIn: "Automated test labs, aerospace & defence, automotive/EV, universities",
+    knownFor: "LabVIEW graphical programming & PXI platform",
+    about: [
+      "National Instruments — now branded NI and part of Emerson — was founded in Austin, Texas in 1976 and pioneered virtual instrumentation: the idea that a PC plus modular hardware and software can replace racks of dedicated benchtop instruments.",
+      "NI's portfolio spans LabVIEW graphical system-design software, PXI/PXIe modular instrumentation, CompactDAQ and CompactRIO data acquisition and control platforms, multifunction DAQ devices, and instrument-control interfaces such as GPIB, USB and Ethernet — used to build production test, HIL simulation and validation systems.",
+      "NI hardware and LabVIEW are also a teaching standard in Indian engineering colleges, where ELVIS and myDAQ platforms are used for electronics, controls and measurement laboratories.",
+      "UV Test Solutions supports Indian R&D labs, EV and power-electronics manufacturers, aerospace and defence programmes and universities with NI-based automated test and data acquisition solutions, including system integration and application guidance.",
+    ],
+    categories: [
+      { title: "Data Acquisition (DAQ)", desc: "USB, PCIe and Ethernet multifunction DAQ devices for analog, digital and counter I/O." },
+      { title: "PXI Modular Instruments", desc: "PXI/PXIe chassis, controllers, digitizers, DMMs, source measure units and switches for automated test systems." },
+      { title: "CompactRIO & CompactDAQ", desc: "Rugged FPGA-based controllers and modular measurement systems for monitoring, control and HIL." },
+      { title: "LabVIEW & Software", desc: "LabVIEW, TestStand, VeriStand, DIAdem and DAQmx drivers for test development and analysis." },
+      { title: "Instrument Control", desc: "GPIB, serial and Ethernet interfaces with NI-VISA for controlling third-party instruments." },
+      { title: "Academic & Teaching Platforms", desc: "NI ELVIS III and myDAQ platforms for engineering measurement and controls laboratories." },
+    ],
+    models: [
+      { id: "USB-6009", title: "Multifunction DAQ Device", desc: "Low-cost 8-channel, 14-bit USB DAQ device for basic analog and digital measurement.", tags: ["USB", "14-bit", "48 kS/s"] },
+      { id: "USB-6212", title: "16-bit Multifunction DAQ", desc: "16 analog inputs at 400 kS/s with analog output, DIO and counters for bench and lab use.", tags: ["16-bit", "400 kS/s", "Bus powered"] },
+      { id: "PXIe-1092", title: "9-Slot PXI Express Chassis", desc: "Nine-slot PXIe chassis with high system bandwidth for modular automated test systems.", tags: ["9 slots", "PXIe", "58 GB/s"] },
+      { id: "PXIe-4081", title: "PXI Digital Multimeter", desc: "7½-digit PXI DMM with wide measurement range for high-accuracy automated test.", tags: ["7½ digit", "PXI", "LCR"] },
+      { id: "cDAQ-9174", title: "CompactDAQ Chassis", desc: "4-slot USB CompactDAQ chassis for mixed sensor measurement with C Series modules.", tags: ["4 slots", "USB", "C Series"] },
+      { id: "cRIO-9045", title: "CompactRIO Controller", desc: "Rugged real-time FPGA controller for embedded monitoring, control and HIL applications.", tags: ["Real-time", "FPGA", "Rugged"] },
+      { id: "LabVIEW", title: "Graphical Programming Software", desc: "Graphical development environment for measurement, test and control application development.", tags: ["Graphical", "DAQmx", "Automation"] },
+      { id: "ELVIS III", title: "Engineering Education Platform", desc: "All-in-one teaching platform with instrumentation for university electronics and controls labs.", tags: ["Education", "12 instruments", "Web-based"] },
+    ],
+  },
 ];
+
 
 export const getBrandBySlug = (slug: string) => brands.find((b) => b.slug === slug);
