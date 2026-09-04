@@ -17,10 +17,10 @@ const ContactInfo = () => {
             <div>
               <div className="font-medium text-sm text-muted-foreground">Phone</div>
               <a 
-                href="tel:+919643295120" 
+                href="tel:+919654109754" 
                 className="text-foreground hover:text-accent transition-colors font-medium"
               >
-                +91 9643295120
+                +91 9654109754
               </a>
               <div className="text-xs text-muted-foreground mt-1">Mon-Fri, 9AM-6PM EST</div>
             </div>
