@@ -21,7 +21,7 @@ export const organizationSchema = {
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+91-9643295120",
+      "telephone": "+91-9654109754",
       "contactType": "sales",
       "areaServed": "IN",
       "availableLanguage": ["English", "Hindi"]
