@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, CreditCard, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -73,6 +73,26 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* Payment Modes */}
+        <div className="pt-8 border-t border-border mb-8">
+          <h4 className="font-semibold mb-3">Payment Modes Accepted</h4>
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            {["Credit Card", "Debit Card", "UPI", "Net Banking"].map((mode) => (
+              <span
+                key={mode}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border bg-accent/5 text-xs font-medium text-muted-foreground"
+              >
+                <CreditCard className="w-3.5 h-3.5 text-accent" aria-hidden="true" />
+                {mode}
+              </span>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground flex items-center gap-1.5">
+            <ShieldCheck className="w-3.5 h-3.5 text-accent" aria-hidden="true" />
+            Secure online payments powered by <span className="font-semibold text-foreground">PayU</span>
+          </p>
         </div>
 
         {/* Bottom Bar */}
