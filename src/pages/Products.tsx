@@ -67,15 +67,15 @@ const Products = () => {
     <TooltipProvider delayDuration={200}>
     <div className="min-h-screen bg-background">
       <SEO
-        title={activeSubcategory ? `${activeSubcategory} - Buy Online India` : `Products - Test & Measuring Instruments`}
+        title={activeSubcategory ? `${activeSubcategory} Price in India — Buy Online` : `Test & Measuring Instruments Price List India`}
         description={activeSubcategory 
-          ? `Buy ${activeSubcategory} online in India from UV Test Solutions — top brands at competitive prices. Request a quote today.`
-          : "Testing & Diagnostics, Soldering, Precision Measuring, Power Tools & Hand Tools — 3900+ products from top global brands at UV Test Solutions."
+          ? `${activeSubcategory} price in India — compare models from Fluke, Keysight, Rigol, Siglent & UNI-T. GST invoice, calibration support and free quote from UV Test Solutions.`
+          : "Price list for multimeters, clamp meters, oscilloscopes, LCR meters, DC power supplies and soldering stations in India. 3900+ instruments, GST invoice, free quote."
         }
         canonical="/products"
         keywords={activeSubcategory 
-          ? `${activeSubcategory} India, buy ${activeSubcategory.toLowerCase()} online, ${activeSubcategory.toLowerCase()} price India, ${currentCategory.name}`
-          : "test equipment India, soldering station, oscilloscope, multimeter, precision measuring tools, power tools, hand tools, industrial tools India, buy test instruments online"
+          ? `${activeSubcategory.toLowerCase()} price, ${activeSubcategory.toLowerCase()} price in india, ${activeSubcategory.toLowerCase()} price list, buy ${activeSubcategory.toLowerCase()} online india, ${activeSubcategory} dealer India, ${activeSubcategory} supplier India, ${currentCategory.name}`
+          : "digital multimeter price, clamp meter price, oscilloscope price in india, lcr meter price, dc power supply price, soldering station price, function generator price, spectrum analyzer price, insulation tester price, thermal imaging camera price, test and measuring instruments price list India, buy test instruments online India"
         }
         jsonLd={activeSubcategory && subProducts
           ? getSubcategoryJsonLd(currentCategory.name, activeSubcategory, subProducts.products)

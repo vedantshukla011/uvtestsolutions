@@ -31,10 +31,10 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       
       <SEO
-        title="UV Test Solutions | Test & Measuring Instruments India"
-        description="India's trusted supplier of oscilloscopes, multimeters, DC loads, soldering stations & power tools from top global brands."
+        title="Multimeter, Clamp Meter & Oscilloscope Price India"
+        description="Compare digital multimeter, clamp meter, oscilloscope, LCR meter and DC power supply prices in India. Genuine Fluke, Keysight, Rigol & UNI-T — get a quote today."
         canonical="/"
-        keywords="test and measuring instruments India, oscilloscopes, multimeters, DC electronic load, Jartul JT6311A, programmable electronic load 150W, signal generators, soldering stations, power tools, hand tools, Keysight, Fluke, Tektronix, Rigol, Siglent, buy test equipment online India, electronic instruments dealer"
+        keywords="digital multimeter price, clamp meter price, oscilloscope price in india, digital storage oscilloscope price, lcr meter price, soldering station price, dc power supply price, programmable dc power supply, dc electronic load, function generator price, spectrum analyzer price, thermal imaging camera price, insulation tester price, ac power source, esd testing equipment, bench power supply india, test and measuring instruments, test and measuring instruments India, Fluke, Keysight, Tektronix, Rigol, Siglent, UNI-T, buy test equipment online India"
         jsonLd={[
           ...getHomepageJsonLd(),
           {
