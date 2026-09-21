@@ -261,7 +261,7 @@ const BrandDetail = () => {
                       <div className="flex items-center justify-between border-t border-border pt-3">
                         <div>
                           <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                            Price
+                            Price (Excl. GST)
                           </div>
                           <div className="text-base font-bold text-primary">
                             ₹{p.priceInr.toLocaleString("en-IN")}
