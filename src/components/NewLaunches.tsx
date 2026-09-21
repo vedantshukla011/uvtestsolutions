@@ -11,8 +11,26 @@ import hantekApe11l1000Image from "@/assets/products/hantek-ape11l1000.jpg";
 import unitUtr2830eImage from "@/assets/products/unit-utr2830e.jpg";
 import unitUap1000aImage from "@/assets/products/unit-uap1000a.jpg";
 import unitUtl8211plusImage from "@/assets/products/unit-utl8211plus.jpg";
+import wellerWt1012Image from "@/assets/products/weller-wt1012.jpg";
 
 export const newLaunches = [
+  {
+    name: "Weller WT 1012 Soldering Station Set 95W with WSP 80 Soldering Iron",
+    model: "WT 1012",
+    brand: "Weller",
+    price: "₹32,495 + GST",
+    brief:
+      "95 W WT 1 single-channel power unit supplied with the WSP 80 (80 W) soldering iron and WSR 201 safety rest. Silver-Line LT tips cover all standard soldering applications, with OFF time, process window, lock function and offset for repeatable production soldering. 230 V, 50/60 Hz.",
+    image: wellerWt1012Image,
+    href: "/products/weller-wt1012-soldering-station",
+    highlights: [
+      "95 W WT 1 power unit, 1 channel",
+      "WSP 80 iron (80 W) with Silver-Line LT tips",
+      "Includes WSR 201 safety rest",
+      "OFF time, process window, lock function, offset",
+      "230 V, 50/60 Hz · Article no. T0053440699N",
+    ],
+  },
   {
     name: "UNI-T UTL8211+ High-Precision Compact DC Electronic Load (400W/150V/40A)",
     model: "UTL8211+",
