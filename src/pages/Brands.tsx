@@ -39,7 +39,7 @@ const Brands = () => {
               Test &amp; Measurement Brands We Distribute Across India
             </h1>
             <p className="text-lg text-muted-foreground mb-4">
-              UV Test Solutions is an authorized Indian partner for {brands.length} leading test
+              UV Test Solutions is an Indian partner for {brands.length} leading test
               &amp; measurement manufacturers — covering oscilloscopes, digital multimeters,
               DC power supplies and electronic loads, spectrum and power analyzers, precision
               metrology, environmental measurement, soldering and rework, and EMC/safety test.
@@ -59,7 +59,7 @@ const Brands = () => {
               <li key={b.slug}>
                 <Link
                   to={`/brands/${b.slug}`}
-                  title={`${b.name} — authorized distributor in India`}
+                  title={`${b.name} — distributor in India`}
                   className="group h-full bg-card border border-border rounded-lg p-6 hover:border-primary hover:shadow-lg transition-all flex flex-col"
                 >
                   <div className="h-20 flex items-center justify-center mb-4 bg-muted/30 rounded">
