@@ -20,6 +20,7 @@ import MetrelMI3108 from "./pages/MetrelMI3108";
 import MetrelMI3132 from "./pages/MetrelMI3132";
 import OrionPhaseSync from "./pages/OrionPhaseSync";
 import WellerWE1010 from "./pages/WellerWE1010";
+import WellerWT1012 from "./pages/WellerWT1012";
 import HantekAPE11L1000 from "./pages/HantekAPE11L1000";
 import UnitUTR2830E from "./pages/UnitUTR2830E";
 import UnitUAP1000A from "./pages/UnitUAP1000A";
@@ -58,6 +59,7 @@ const App = () => (
             <Route path="/products/metrel-mi3132-evtester" element={<MetrelMI3132 />} />
             <Route path="/products/orion-phase-sync" element={<OrionPhaseSync />} />
             <Route path="/products/weller-we1010" element={<WellerWE1010 />} />
+            <Route path="/products/weller-wt1012-soldering-station" element={<WellerWT1012 />} />
             <Route path="/products/hantek-ape11l1000-ac-power-source" element={<HantekAPE11L1000 />} />
             <Route path="/products/unit-utr2830e-lcr-meter" element={<UnitUTR2830E />} />
             <Route path="/products/unit-uap1000a-ac-power-source" element={<UnitUAP1000A />} />
