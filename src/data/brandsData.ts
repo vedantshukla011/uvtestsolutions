@@ -25,6 +25,7 @@ import rionLogo from "@/assets/brands/rion.gif";
 import vaisalaLogo from "@/assets/brands/vaisala.svg";
 import yokogawaLogo from "@/assets/brands/yokogawa.svg";
 import niLogo from "@/assets/brands/ni.svg";
+import micsigLogo from "@/assets/brands/micsig.png";
 
 export interface BrandCategory {
   title: string;
@@ -936,6 +937,40 @@ export const brands: Brand[] = [
       { id: "cRIO-9045", title: "CompactRIO Controller", desc: "Rugged real-time FPGA controller for embedded monitoring, control and HIL applications.", tags: ["Real-time", "FPGA", "Rugged"] },
       { id: "LabVIEW", title: "Graphical Programming Software", desc: "Graphical development environment for measurement, test and control application development.", tags: ["Graphical", "DAQmx", "Automation"] },
       { id: "ELVIS III", title: "Engineering Education Platform", desc: "All-in-one teaching platform with instrumentation for university electronics and controls labs.", tags: ["Education", "12 instruments", "Web-based"] },
+    ],
+  },
+  {
+    slug: "micsig",
+    name: "Micsig",
+    logo: micsigLogo,
+    tagline:
+      "Fibre-optically isolated tablet oscilloscopes and high-voltage probes — safe measurements on live circuits.",
+    origin: "Shenzhen, China",
+    founded: "2013",
+    specialty: "Isolated & tablet oscilloscopes, HV differential and current probes",
+    parent: "Shenzhen Micsig Electronics Co., Ltd.",
+    popularIn: "EV & power electronics, inverters, motor drives, education",
+    knownFor: "Battery-powered tablet oscilloscopes with fully isolated channels",
+    about: [
+      "Micsig, founded in Shenzhen in 2013, made its name rethinking the oscilloscope form factor: fully isolated, battery-powered tablet oscilloscopes that can safely ride on high-voltage, floating circuits found in EV drivetrains, inverters and motor drives.",
+      "The portfolio spans the TO series tablet oscilloscopes (8-bit and 12-bit high-resolution), STO series bench oscilloscopes, high-voltage differential probes, AC/DC and Rogowski current probes, and optical-fibre isolated probe systems — eliminating ground-loop and safety risks in power-electronics debugging.",
+      "UV Test Solutions supplies Micsig instruments across India for EV and power-electronics R&D, inverter and motor-drive testing, education labs and field service teams — with warranty, calibration and after-sales support.",
+    ],
+    categories: [
+      { title: "Tablet Oscilloscopes", desc: "TO series battery-powered, fully isolated touch-screen oscilloscopes." },
+      { title: "Bench Oscilloscopes", desc: "STO series and 12-bit high-resolution bench DSOs." },
+      { title: "High-Voltage Differential Probes", desc: "HDP series probes for safe measurements up to several kilovolts." },
+      { title: "Current Probes", desc: "AC/DC current probes and Rogowski coils for power measurements." },
+      { title: "Optical-Fibre Isolated Probes", desc: "Fibre-optic isolation systems for high-voltage, floating measurements." },
+      { title: "Handheld & Automotive Scopes", desc: "Portable and automotive-diagnostic oscilloscopes for field service." },
+    ],
+    models: [
+      { id: "TO1104", title: "4-Channel Tablet Oscilloscope", desc: "100 MHz, 4 fully isolated channels with an 8-inch multi-touch screen and built-in battery for safe floating measurements.", tags: ["100 MHz", "4 isolated ch", "Battery powered"] },
+      { id: "TO2104", title: "High-Bandwidth Tablet Oscilloscope", desc: "200 MHz tablet oscilloscope with isolated channels and touch operation for power-electronics debugging.", tags: ["200 MHz", "Isolated ch", "Touch screen"] },
+      { id: "TO3000 Series", title: "12-Bit High-Resolution Tablet Oscilloscope", desc: "12-bit high-resolution tablet oscilloscopes for low-level signal detail in power and semiconductor testing.", tags: ["12-bit", "High resolution", "Isolated"] },
+      { id: "STO1104C Plus", title: "Bench Oscilloscope", desc: "Compact bench oscilloscope with large display and deep memory for education and production test.", tags: ["100 MHz", "Bench", "Deep memory"] },
+      { id: "HDP2700", title: "High-Voltage Differential Probe", desc: "Differential probe for safe high-voltage measurements on buses, IGBTs and floating circuits.", tags: ["High voltage", "Differential", "IGBT/bus"] },
+      { id: "CP5030A", title: "AC/DC Current Probe", desc: "AC/DC current probe for inverter, motor-drive and power-supply current waveforms.", tags: ["AC/DC", "30 A", "50 MHz"] },
     ],
   },
 ];

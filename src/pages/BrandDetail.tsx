@@ -135,7 +135,7 @@ const BrandDetail = () => {
               in Delhi NCR, Noida, Gurugram, Bengaluru, Pune, Chennai, Hyderabad and Ahmedabad —
               with GST invoicing, manufacturer warranty, NABL-traceable calibration on request and
               on-site application support. Share your model number or application and we will send
-              an {short} quote with current pricing and lead time.
+              you a {short} quote with current pricing and lead time.
             </p>
             {categoryLinks.length > 0 && (
               <>
