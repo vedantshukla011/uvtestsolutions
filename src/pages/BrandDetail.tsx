@@ -234,7 +234,7 @@ const BrandDetail = () => {
                 count={`${brand.products.length} PRODUCTS`}
               />
               <p className="text-sm text-muted-foreground mb-6 -mt-2">
-                Prices are indicative in INR (ex-works, exclusive of GST). Contact us for the latest quote, applicable discounts and lead time.
+                Prices are indicative in INR (ex-works, exclusive of GST). {brand.slug === "micsig" ? "Micsig probes are in stock within 2–4 weeks. Contact us for a confirmed quote and delivery date." : "Contact us for the latest quote, applicable discounts and lead time."}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {brand.products.map((p) => (
@@ -258,6 +258,9 @@ const BrandDetail = () => {
                       <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
                         {p.description}
                       </p>
+                      {brand.slug === "micsig" && (
+                        <p className="text-xs font-medium text-primary mb-3">In stock within 2–4 weeks</p>
+                      )}
                       <div className="flex items-center justify-between border-t border-border pt-3">
                         <div>
                           <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
