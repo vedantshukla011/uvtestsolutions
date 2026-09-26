@@ -149,7 +149,7 @@ export function getBrandDetailJsonLd(brand: Brand) {
             "@type": "Offer",
             price: p.priceInr,
             priceCurrency: "INR",
-            availability: "https://schema.org/InStock",
+            availability: brand.slug === "micsig" ? "https://schema.org/BackOrder" : "https://schema.org/InStock",
             itemCondition: "https://schema.org/NewCondition",
             url,
             seller,

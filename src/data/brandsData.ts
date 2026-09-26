@@ -26,6 +26,7 @@ import vaisalaLogo from "@/assets/brands/vaisala.svg";
 import yokogawaLogo from "@/assets/brands/yokogawa.svg";
 import niLogo from "@/assets/brands/ni.svg";
 import micsigLogo from "@/assets/brands/micsig.png";
+import { micsigProbeProducts } from "./micsigProducts";
 
 export interface BrandCategory {
   title: string;
@@ -972,6 +973,7 @@ export const brands: Brand[] = [
       { id: "HDP2700", title: "High-Voltage Differential Probe", desc: "Differential probe for safe high-voltage measurements on buses, IGBTs and floating circuits.", tags: ["High voltage", "Differential", "IGBT/bus"] },
       { id: "CP5030A", title: "AC/DC Current Probe", desc: "AC/DC current probe for inverter, motor-drive and power-supply current waveforms.", tags: ["AC/DC", "30 A", "50 MHz"] },
     ],
+    products: micsigProbeProducts,
   },
 ];
 
