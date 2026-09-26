@@ -7,6 +7,10 @@ import cpLowImage from "@/assets/products/micsig/cp-low.png.asset.json";
 import rcpImage from "@/assets/products/micsig/rcp.png.asset.json";
 import dpImage from "@/assets/products/micsig/dp.png.asset.json";
 
+// The CDN serves these immutable assets on the published host; use its absolute
+// address so product photos also render in the local Vite preview.
+const assetUrl = (path: string) => new URL(path, "https://uvtestsolutions.lovable.app").href;
+
 // Prices/specifications: Website_price_probes.xlsx supplied by UV Test Solutions.
 // Photos: official micsig.com product galleries, cached as site assets.
 export const micsigProbeProducts: BrandProduct[] = [
