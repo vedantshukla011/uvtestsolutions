@@ -36,6 +36,34 @@ export const organizationSchema = {
   "sameAs": []
 };
 
+const MAP_URL = "https://www.google.com/maps/search/?api=1&query=UV+Test+Solutions+B-6%2F6+Rajendra+Nagar+Ghaziabad+201001";
+
+export const localStoreSchema = {
+  "@context": "https://schema.org",
+  "@type": ["Store", "LocalBusiness"],
+  "@id": `${BASE_URL}/#store`,
+  "name": "UV Test Solutions",
+  "url": BASE_URL,
+  "image": `${BASE_URL}/logo.png`,
+  "logo": `${BASE_URL}/logo.png`,
+  "telephone": "+91-9654109754",
+  "email": "vinod.shukla@uvtestsolutions.com",
+  "priceRange": "₹₹",
+  "hasMap": MAP_URL,
+  "address": organizationSchema.address,
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:30",
+    "closes": "18:30"
+  }],
+  "areaServed": ["Ghaziabad", "Delhi", "Noida", "Greater Noida", "Gurugram", "Faridabad", "Meerut", "India"].map(n => ({ "@type": "Place", "name": n })),
+  "knowsAbout": ["Oscilloscopes", "Digital Multimeters", "Clamp Meters", "DC Power Supplies", "DC Electronic Loads", "LCR Meters", "Soldering Stations", "Function Generators", "Spectrum Analyzers", "Calibration"],
+  "parentOrganization": { "@type": "Organization", "name": "UV Test Solutions", "url": BASE_URL }
+};
+
+export const STORE_MAP_URL = MAP_URL;
+
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -79,7 +107,7 @@ export function getHomepageJsonLd() {
     }))
   };
 
-  return [organizationSchema, websiteSchema, itemList];
+  return [organizationSchema, localStoreSchema, websiteSchema, itemList];
 }
 
 export function getProductsPageJsonLd() {

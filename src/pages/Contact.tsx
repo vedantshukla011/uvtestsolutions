@@ -3,7 +3,8 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ContactForm from "@/components/ContactForm";
 import ContactInfo from "@/components/ContactInfo";
-import { Mail, Clock } from "lucide-react";
+import { Mail, Clock, MapPin } from "lucide-react";
+import { localStoreSchema, STORE_MAP_URL } from "@/lib/seoData";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -45,11 +46,11 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO
-        title="Contact UV Test Solutions — Get a Quote"
-        description="Request a quote for oscilloscopes, multimeters and electronic measuring instruments. 24-hour response. Contact UV Test Solutions today."
+        title="Test Equipment Store in Ghaziabad & Delhi NCR | UV Test Solutions"
+        description="Visit UV Test Solutions in Rajendra Nagar, Ghaziabad for oscilloscopes, multimeters, power supplies & soldering stations. Serving Delhi, Noida, Gurugram. Call +91 9654109754."
         canonical="/contact"
-        keywords="buy oscilloscopes India, multimeter quote, test equipment price, electronic instruments contact"
-        jsonLd={localBusinessJsonLd}
+        keywords="test equipment shop Ghaziabad, oscilloscope dealer Delhi NCR, multimeter shop near me, measuring instruments supplier Noida, soldering station dealer Delhi, electronic test equipment store Gurugram"
+        jsonLd={[localBusinessJsonLd, localStoreSchema]}
       />
       <Header />
 
@@ -128,6 +129,43 @@ const Contact = () => {
             <div className="lg:col-span-1">
               <ContactInfo />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Visit Our Office */}
+      <section className="py-16 bg-muted/30" aria-labelledby="visit-heading">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 id="visit-heading" className="text-3xl font-bold mb-4">
+              Visit Our Test Equipment Store in Ghaziabad, Delhi NCR
+            </h2>
+            <p className="text-muted-foreground mb-4 leading-relaxed">
+              See oscilloscopes, digital multimeters, clamp meters, DC power supplies, electronic loads,
+              LCR meters and soldering stations in person. Our office at B-6/6 Rajendra Nagar, Ghaziabad (UP 201001)
+              serves customers across Delhi, Noida, Greater Noida, Gurugram, Faridabad and Meerut.
+            </p>
+            <p className="font-medium mb-1">Open Monday – Saturday, 9:30 AM – 6:30 PM</p>
+            <p className="text-muted-foreground mb-6">
+              Call <a href="tel:+919654109754" className="text-accent font-semibold">+91 9654109754</a> before visiting to book a product demo.
+            </p>
+            <a
+              href={STORE_MAP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition"
+            >
+              <MapPin className="w-5 h-5" /> Get Directions
+            </a>
+          </div>
+          <div className="rounded-xl overflow-hidden border border-border aspect-video">
+            <iframe
+              title="UV Test Solutions location map, Rajendra Nagar, Ghaziabad"
+              src="https://www.google.com/maps?q=B-6%2F6+Rajendra+Nagar+Ghaziabad+201001&output=embed"
+              className="w-full h-full"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
