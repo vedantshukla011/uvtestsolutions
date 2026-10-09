@@ -62,7 +62,7 @@ const Brands = () => {
                   title={`${b.name} — distributor in India`}
                   className="group h-full bg-card border border-border rounded-lg p-6 hover:border-primary hover:shadow-lg transition-all flex flex-col"
                 >
-                  <div className="h-20 flex items-center justify-center mb-4 bg-muted/30 rounded">
+                  <div className={`h-20 flex items-center justify-center mb-4 rounded ${b.slug === "wocen" ? "bg-primary" : "bg-muted/30"}`}>
                     <img
                       src={b.logo}
                       alt={`${b.name} logo — ${b.specialty} supplied in India by UV Test Solutions`}

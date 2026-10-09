@@ -27,6 +27,12 @@ import yokogawaLogo from "@/assets/brands/yokogawa.svg";
 import niLogo from "@/assets/brands/ni.svg";
 import micsigLogo from "@/assets/brands/micsig.png";
 import { micsigProbeProducts } from "./micsigProducts";
+import wocenLogo from "@/assets/brands/wocen.png.asset.json";
+import wocenWb5000 from "@/assets/products/wocen/wb5000.jpg.asset.json";
+import wocenWb3000 from "@/assets/products/wocen/wb3000.jpg.asset.json";
+import wocenHb from "@/assets/products/wocen/hb.jpg.asset.json";
+
+const hostedWocenAsset = (url: string) => new URL(url, "https://uvtestsolutions.lovable.app").href;
 
 export interface BrandCategory {
   title: string;
@@ -976,6 +982,37 @@ export const brands: Brand[] = [
       { id: "CP5030A", title: "AC/DC Current Probe", desc: "AC/DC current probe for inverter, motor-drive and power-supply current waveforms.", tags: ["AC/DC", "30 A", "50 MHz"] },
     ],
     products: micsigProbeProducts,
+  },
+  {
+    slug: "wocen",
+    name: "Wocen Power Supplies",
+    logo: hostedWocenAsset(wocenLogo.url),
+    authorisedDistributor: true,
+    tagline: "Bidirectional DC power supplies and programmable power sources for EV, battery and power-electronics testing.",
+    origin: "Jinan, Shandong, China",
+    founded: "2002",
+    specialty: "Programmable DC power supplies & bidirectional test systems",
+    parent: "Shandong Wocen Power Equipment Co., Ltd.",
+    popularIn: "EV powertrain, battery simulation, automotive and energy testing",
+    knownFor: "Regenerative DC sources, SiC power conversion and high-power test systems",
+    about: [
+      "Wocen Power is a Chinese manufacturer of test power supplies and power-system solutions based in Jinan, Shandong. Its company history dates to 2002, and its portfolio serves automotive, aerospace and energy applications.",
+      "Its product range includes bidirectional DC test power supplies, programmable DC sources and AC power supplies. Source-and-sink operation and regenerative energy recovery support battery simulation, electric-drive validation and power-electronics testing.",
+      "UV TEST SOLUTIONS is an authorised distributor for Wocen Power Supplies in India. Contact us with your required voltage, current, power rating and application to select a suitable Wocen system and request a quote.",
+    ],
+    categories: [
+      { title: "Bidirectional DC Power Supplies", desc: "Regenerative source-and-sink systems for battery simulation, EV drivetrains and DC-bus testing." },
+      { title: "Programmable DC Power Supplies", desc: "Programmable DC sources for R&D, component validation and production testing." },
+      { title: "AC Power Supplies", desc: "AC test power sources for electrical equipment and power-system validation." },
+      { title: "High-Power EV Test Systems", desc: "High-voltage DC test systems for motors, controllers and electric powertrains." },
+    ],
+    models: [
+      { id: "WB5000", title: "SiC Bidirectional DC Test Power Supply", desc: "A regenerative DC test power supply using third-generation silicon-carbide technology. The series covers 20–1200 V and configurations up to 600 kW, with energy recovery to the grid. Ratings depend on the selected configuration.", tags: ["SiC technology", "20–1200 V", "Up to 600 kW"], image: hostedWocenAsset(wocenWb5000.url) },
+      { id: "WB3000", title: "High-Frequency Bidirectional DC Power Supply", desc: "High-power bidirectional DC testing for battery simulation and power-electronics validation. The series spans 12–1200 V, up to 1200 A and up to 600 kW, with a specified response time of 2 ms or less. Maximum ratings vary by configuration.", tags: ["12–1200 V", "Bidirectional", "≤2 ms response"], image: hostedWocenAsset(wocenWb3000.url) },
+      { id: "HB Series", title: "Bidirectional Programmable DC Power Supply", desc: "A compact 3U source-and-load platform with up to 30 kW per unit. Parallel expansion supports higher-power test requirements for batteries and other DC devices.", tags: ["3U chassis", "Up to 30 kW", "Parallel expansion"], image: hostedWocenAsset(wocenHb.url) },
+      { id: "EVWB", title: "EV Powertrain Bidirectional DC Test Supply", desc: "Designed for electric-motor and powertrain testing. The series covers 24–1200 V and power configurations up to 600 kW, with source-and-sink operation for electric-drive validation.", tags: ["EV powertrain", "24–1200 V", "Up to 600 kW"] },
+      { id: "MP Series", title: "Programmable DC Test Power Supply", desc: "A programmable DC test source in a 3U chassis, offering automatic wide-range output and fast dynamic response for device testing and laboratory applications.", tags: ["Programmable DC", "3U chassis", "Wide-range output"] },
+    ],
   },
 ];
 
