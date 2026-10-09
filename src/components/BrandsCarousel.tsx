@@ -74,7 +74,7 @@ const BrandsCarousel = () => {
               aria-label={`View ${brand.name} products`}
               className="flex-shrink-0 flex flex-col items-center justify-center p-6 bg-background rounded-xl border border-border/50 hover:border-primary hover:shadow-xl hover:shadow-primary/20 hover:bg-primary/5 transition-all duration-300 min-w-[160px] md:min-w-[200px] group cursor-pointer"
             >
-              <div className="h-16 md:h-20 flex items-center justify-center mb-3">
+              <div className={`h-16 md:h-20 flex items-center justify-center mb-3 ${brand.slug === "wocen" ? "bg-primary rounded px-3" : ""}`}>
                 <img
                   src={brand.logo}
                   alt={`${brand.name} logo`}

@@ -62,7 +62,7 @@ const Brands = () => {
                   title={`${b.name} — distributor in India`}
                   className="group h-full bg-card border border-border rounded-lg p-6 hover:border-primary hover:shadow-lg transition-all flex flex-col"
                 >
-                  <div className="h-20 flex items-center justify-center mb-4 bg-muted/30 rounded">
+                  <div className={`h-20 flex items-center justify-center mb-4 rounded ${b.slug === "wocen" ? "bg-primary" : "bg-muted/30"}`}>
                     <img
                       src={b.logo}
                       alt={`${b.name} logo — ${b.specialty} supplied in India by UV Test Solutions`}
@@ -75,6 +75,9 @@ const Brands = () => {
                   <h3 className="text-lg font-semibold mb-1">
                     {b.name} <span className="sr-only">distributor in India</span>
                   </h3>
+                  {b.authorisedDistributor && (
+                    <p className="text-xs font-semibold text-primary mb-2">Authorised Distributor</p>
+                  )}
                   <div className="font-mono text-[11px] uppercase tracking-wide text-muted-foreground mb-2">
                     {b.origin.split(",").pop()?.trim()} · {b.specialty}
                   </div>
