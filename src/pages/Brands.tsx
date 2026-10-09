@@ -75,6 +75,9 @@ const Brands = () => {
                   <h3 className="text-lg font-semibold mb-1">
                     {b.name} <span className="sr-only">distributor in India</span>
                   </h3>
+                  {b.authorisedDistributor && (
+                    <p className="text-xs font-semibold text-primary mb-2">Authorised Distributor</p>
+                  )}
                   <div className="font-mono text-[11px] uppercase tracking-wide text-muted-foreground mb-2">
                     {b.origin.split(",").pop()?.trim()} · {b.specialty}
                   </div>

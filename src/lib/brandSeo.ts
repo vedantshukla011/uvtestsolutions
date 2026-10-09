@@ -15,10 +15,13 @@ const shortName = (brand: Brand) => brand.name.split(" ")[0];
 
 /** Keyword-rich meta title for a brand page. */
 export const brandTitle = (brand: Brand) =>
-  `${shortName(brand)} India — Authorized Distributor & Price List | UV Test Solutions`;
+  brand.slug === "wocen"
+    ? "Wocen Power Supplies India | Authorised Distributor — UV Test Solutions"
+    : `${shortName(brand)} India — Authorized Distributor & Price List | UV Test Solutions`;
 
 /** Meta description that reads like a real dealer listing. */
 export const brandDescription = (brand: Brand) => {
+  if (brand.slug === "wocen") return "Wocen programmable DC and AC power supplies in India from authorised distributor UV Test Solutions. Explore product series and request a quote.";
   const cats = (brand.categories ?? []).slice(0, 3).map((c) => c.title.toLowerCase());
   const catText = cats.length ? ` Buy ${cats.join(", ")} and more.` : "";
   return `Buy genuine ${brand.name} ${brand.specialty.toLowerCase()} in India from UV Test Solutions — authorized supplier with warranty, calibration and service support.${catText} Request a quote today.`.slice(
@@ -105,7 +108,7 @@ export function getBrandDetailJsonLd(brand: Brand) {
       url,
       logo: `${BASE_URL}${brand.logo}`,
       description: brand.tagline,
-      foundingDate: brand.founded,
+      ...(brand.founded ? { foundingDate: brand.founded } : {}),
       ...(brand.parent ? { parentOrganization: { "@type": "Organization", name: brand.parent } } : {}),
     },
     {
@@ -161,7 +164,7 @@ export function getBrandDetailJsonLd(brand: Brand) {
     graph.push({
       "@context": "https://schema.org",
       "@type": "ItemList",
-      name: `Bestselling ${shortName(brand)} models in India`,
+      name: `${brand.slug === "wocen" ? "Featured" : "Bestselling"} ${shortName(brand)} models in India`,
       numberOfItems: brand.models.length,
       itemListElement: brand.models.map((m, i) => ({
         "@type": "ListItem",
@@ -171,14 +174,15 @@ export function getBrandDetailJsonLd(brand: Brand) {
           name: `${shortName(brand)} ${m.id}`,
           sku: m.id,
           description: m.desc,
+          ...(m.image ? { image: new URL(m.image, BASE_URL).href } : {}),
           brand: { "@type": "Brand", name: brand.name },
-          offers: {
+          ...(brand.slug !== "wocen" ? { offers: {
             "@type": "Offer",
             priceCurrency: "INR",
             availability: "https://schema.org/InStock",
             url,
             seller,
-          },
+          } } : {}),
         },
       })),
     });

@@ -37,6 +37,7 @@ export interface BrandModel {
   title: string;
   desc: string;
   tags: string[];
+  image?: string;
 }
 export interface BrandProduct {
   model: string;
@@ -51,7 +52,8 @@ export interface Brand {
   logo: string;
   tagline: string;
   origin: string;
-  founded: string;
+  founded?: string;
+  authorisedDistributor?: boolean;
   specialty: string;
   parent?: string;
   popularIn?: string;

@@ -70,7 +70,7 @@ const BrandDetail = () => {
                   ── Authorized Distributor — India
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-                  {short} in India — Authorized Distributor &amp; Price List
+                  {brand.slug === "wocen" ? "Wocen Power Supplies — Authorised Distributor in India" : `${short} in India — Authorized Distributor & Price List`}
                 </h1>
                 <p className="text-lg md:text-xl text-primary-foreground/85 max-w-2xl mb-4">
                   {brand.tagline}
@@ -81,7 +81,7 @@ const BrandDetail = () => {
                 </p>
                 <div className="flex flex-wrap gap-6 md:gap-10">
                   <MetaItem label="Origin" value={brand.origin} />
-                  <MetaItem label="Founded" value={brand.founded} />
+                  {brand.founded && <MetaItem label="Founded" value={brand.founded} />}
                   <MetaItem label="Specialty" value={brand.specialty} />
                 </div>
               </div>
@@ -114,7 +114,7 @@ const BrandDetail = () => {
               </div>
               <div className="bg-card border border-border rounded-lg p-6 md:p-7">
                 <FactRow label="Headquarters" value={brand.origin} />
-                <FactRow label="Founded" value={brand.founded} />
+                {brand.founded && <FactRow label="Founded" value={brand.founded} />}
                 {brand.parent && <FactRow label="Parent" value={brand.parent} />}
                 {brand.popularIn && <FactRow label="Popular in" value={brand.popularIn} />}
                 {brand.knownFor && <FactRow label="Known for" value={brand.knownFor} />}
@@ -190,7 +190,7 @@ const BrandDetail = () => {
         {brand.models && brand.models.length > 0 && (
           <section className="py-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <SectionHead title={`Bestselling ${brand.name.split(" ")[0]} Models`} count={`${brand.models.length} MODELS`} />
+              <SectionHead title={brand.slug === "wocen" ? "Featured Wocen Power Supplies" : `Bestselling ${brand.name.split(" ")[0]} Models`} count={`${brand.models.length} MODELS`} />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {brand.models.map((m) => (
                   <div
@@ -198,6 +198,11 @@ const BrandDetail = () => {
                     className="relative bg-card border border-border rounded-lg p-6 overflow-hidden"
                   >
                     <span className="absolute top-0 left-0 w-1 h-full bg-accent" />
+                    {m.image && (
+                      <div className="h-48 bg-background mb-5 flex items-center justify-center">
+                        <img src={m.image} alt={`${brand.name} ${m.id} — ${m.title}`} loading="lazy" width={320} height={192} className="max-h-full max-w-full object-contain" />
+                      </div>
+                    )}
                     <div className="flex items-start justify-between gap-3 mb-3">
                       <div className="w-10 h-10 rounded-md bg-accent/15 text-accent flex items-center justify-center">
                         <Package className="w-5 h-5" />
@@ -218,6 +223,11 @@ const BrandDetail = () => {
                         </span>
                       ))}
                     </div>
+                    {brand.slug === "wocen" && (
+                      <Button asChild variant="outline" size="sm" className="mt-5">
+                        <Link to="/contact"><Mail className="w-4 h-4" /> Request Quote</Link>
+                      </Button>
+                    )}
                   </div>
                 ))}
               </div>
