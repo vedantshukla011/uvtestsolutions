@@ -31,6 +31,11 @@ import wocenLogo from "@/assets/brands/wocen.png.asset.json";
 import wocenWb5000 from "@/assets/products/wocen/wb5000.jpg.asset.json";
 import wocenWb3000 from "@/assets/products/wocen/wb3000.jpg.asset.json";
 import wocenHb from "@/assets/products/wocen/hb.jpg.asset.json";
+import flirLogo from "@/assets/brands/flir.png.asset.json";
+import flirC5 from "@/assets/products/flir/c5.png.asset.json";
+import flirTg165x from "@/assets/products/flir/tg165x.png.asset.json";
+import flirE76 from "@/assets/products/flir/e76.png.asset.json";
+import flirE8pro from "@/assets/products/flir/e8pro.png.asset.json";
 
 const hostedWocenAsset = (url: string) => new URL(url, "https://uvtestsolutions.lovable.app").href;
 
@@ -1012,6 +1017,37 @@ export const brands: Brand[] = [
       { id: "HB Series", title: "Bidirectional Programmable DC Power Supply", desc: "A compact 3U source-and-load platform with up to 30 kW per unit. Parallel expansion supports higher-power test requirements for batteries and other DC devices.", tags: ["3U chassis", "Up to 30 kW", "Parallel expansion"], image: hostedWocenAsset(wocenHb.url) },
       { id: "EVWB", title: "EV Powertrain Bidirectional DC Test Supply", desc: "Designed for electric-motor and powertrain testing. The series covers 24–1200 V and power configurations up to 600 kW, with source-and-sink operation for electric-drive validation.", tags: ["EV powertrain", "24–1200 V", "Up to 600 kW"] },
       { id: "MP Series", title: "Programmable DC Test Power Supply", desc: "A programmable DC test source in a 3U chassis, offering automatic wide-range output and fast dynamic response for device testing and laboratory applications.", tags: ["Programmable DC", "3U chassis", "Wide-range output"] },
+    ],
+  },
+  {
+    slug: "flir",
+    name: "FLIR (Teledyne FLIR)",
+    logo: hostedWocenAsset(flirLogo.url),
+    authorisedDistributor: true,
+    tagline: "The world's leading thermal imaging cameras — see heat, find faults and prevent failures before they happen.",
+    origin: "Wilsonville, Oregon, USA",
+    founded: "1978",
+    specialty: "Thermal imaging & infrared cameras",
+    parent: "Teledyne Technologies",
+    popularIn: "Electrical inspection, predictive maintenance, building diagnostics, R&D",
+    knownFor: "MSX image enhancement and industry-standard infrared cameras",
+    about: [
+      "FLIR (now Teledyne FLIR) pioneered commercial thermal imaging in 1978 and remains the global benchmark for infrared cameras. Its patented MSX image enhancement embosses visible-light detail onto thermal images, making hot spots easy to locate and explain.",
+      "The range spans pocket-sized C-Series cameras, TG-Series spot thermal cameras, the Exx-Series for industrial inspection, and high-definition T-Series cameras for demanding R&D and utility work — covering electrical panels, motors, bearings, steam traps, building envelopes and more.",
+      "UV TEST SOLUTIONS supplies genuine FLIR thermal cameras across India with application guidance, so you pick the right resolution, temperature range and lens for your inspection workload. Request a quote for any FLIR model.",
+    ],
+    categories: [
+      { title: "Pocket Thermal Cameras", desc: "Compact C-Series cameras that fit in a pocket for quick electrical and HVAC checks." },
+      { title: "Spot Thermal Cameras", desc: "TG-Series IR imaging thermometers for fast, targeted temperature diagnostics." },
+      { title: "Industrial Inspection Cameras", desc: "Exx-Series cameras for predictive maintenance of electrical and mechanical assets." },
+      { title: "High-Performance & R&D Cameras", desc: "T-Series and A-Series cameras for utilities, research and continuous monitoring." },
+    ],
+    models: [
+      { id: "FLIR C5", title: "Compact Thermal Camera with WiFi", desc: "A pocket-sized 160 × 120 thermal camera with MSX enhancement, a 5 MP visual camera and built-in WiFi for FLIR Ignite cloud reporting — ideal for electrical panels, HVAC and building inspections.", tags: ["160 × 120 IR", "MSX enhancement", "WiFi + Ignite cloud"], image: hostedWocenAsset(flirC5.url) },
+      { id: "FLIR TG165-X", title: "Spot Thermal Camera", desc: "An IR imaging thermometer that shows exactly where to measure, with an 80 × 60 thermal sensor, bullseye laser pointer and -25°C to 300°C range for quick troubleshooting.", tags: ["80 × 60 IR", "Laser pointer", "-25°C to 300°C"], image: hostedWocenAsset(flirTg165x.url) },
+      { id: "FLIR E8 Pro", title: "Infrared Camera with Ignite Cloud", desc: "A 320 × 240 (76,800-pixel) thermal camera with MSX, a 3.5-inch touchscreen and one-touch level/span, covering -20°C to 550°C for electrical, mechanical and building diagnostics.", tags: ["320 × 240 IR", "-20°C to 550°C", "Touchscreen"], image: hostedWocenAsset(flirE8pro.url) },
+      { id: "FLIR E76", title: "Advanced Thermal Imaging Camera", desc: "A 320 × 240 pistol-grip camera with interchangeable AutoCal lenses, laser-assisted autofocus and up to 1000°C range — built for demanding predictive-maintenance routes.", tags: ["Interchangeable lenses", "Laser autofocus", "Up to 1000°C"], image: hostedWocenAsset(flirE76.url) },
+      { id: "FLIR ONE Edge Pro", title: "Wireless Thermal Camera for Mobile", desc: "A wireless 160 × 120 thermal camera that clips to or works remotely from your phone, with MSX and VividIR processing for inspections in awkward or hazardous spots.", tags: ["Wireless to phone", "160 × 120 IR", "MSX + VividIR"] },
     ],
   },
 ];
