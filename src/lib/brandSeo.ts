@@ -13,15 +13,82 @@ const seller = {
 
 const shortName = (brand: Brand) => brand.name.split(" ")[0];
 
+/**
+ * Per-brand SEO overrides, tuned from Google Search Console query data
+ * (high-impression / low-CTR and page-2 rankings get hand-written snippets).
+ */
+const brandSeoOverrides: Record<string, { title: string; description: string }> = {
+  wocen: {
+    title: "Wocen Power Supplies India | Authorised Distributor — UV Test Solutions",
+    description:
+      "Wocen programmable DC and AC power supplies in India from authorised distributor UV Test Solutions. Explore product series and request a quote.",
+  },
+  testo: {
+    title: "Testo India — Authorized Distributor, Best Prices & Stock | UV Test Solutions",
+    description:
+      "Authorized Testo distributor in India. Genuine Testo thermal imagers, clamp meters, anemometers & HVAC instruments with warranty & GST invoice. Request a quote today.",
+  },
+  keysight: {
+    title: "Keysight Distributors in India — Authorized Supplier & Price List | UV Test Solutions",
+    description:
+      "Authorized Keysight distributor in India. Oscilloscopes, DMMs, power supplies & spectrum analyzers with official warranty, calibration support & GST billing. Get a quote.",
+  },
+  vaisala: {
+    title: "Vaisala Distributors in India — Authorized Supplier | UV Test Solutions",
+    description:
+      "Authorized Vaisala distributor in India. Humidity, dew point, temperature & CO2 transmitters and probes with calibration support. Request prices for Vaisala instruments.",
+  },
+  tektronix: {
+    title: "Tektronix India — Authorized Distributor, Oscilloscopes & Prices | UV Test Solutions",
+    description:
+      "Authorized Tektronix distributor in India. TBS oscilloscopes, AFG function generators & Keithley SMUs with warranty and service support. Request a quote with best price.",
+  },
+  mitutoyo: {
+    title: "Mitutoyo India — Authorized Distributor & Price List | UV Test Solutions",
+    description:
+      "Authorized Mitutoyo distributor in India. Genuine micrometers, calipers, height gauges & CMM instruments with warranty and calibration certificates. Request a quote.",
+  },
+  hakko: {
+    title: "Hakko India — Authorized Distributor, Soldering Stations & Prices | UV Test Solutions",
+    description:
+      "Authorized Hakko distributor in India. FX-888D, FR-410 desoldering & genuine soldering tips in stock with warranty. Best prices, GST invoice. Request a quote today.",
+  },
+  siglent: {
+    title: "Siglent India — Authorized Distributor, Oscilloscopes & Prices | UV Test Solutions",
+    description:
+      "Authorized Siglent distributor in India. SDS oscilloscopes, SDG generators & spectrum analyzers with prices, warranty & support. 30+ models listed — request a quote.",
+  },
+  itech: {
+    title: "ITECH India — Authorized Distributor, DC Loads & Power Supplies | UV Test Solutions",
+    description:
+      "Authorized ITECH distributor in India. Programmable DC power supplies, electronic loads & battery test systems with warranty and application support. Request a quote.",
+  },
+  htc: {
+    title: "HTC Instruments India — Authorized Distributor & Price List | UV Test Solutions",
+    description:
+      "Authorized HTC distributor in India. Clamp meters, multimeters, insulation testers & thermal cameras at best prices with warranty and GST billing. Request a quote.",
+  },
+  metrel: {
+    title: "Metrel India — Authorized Distributor, Installation Testers | UV Test Solutions",
+    description:
+      "Authorized Metrel distributor in India. Electrical installation testers, PAT testers & power quality analyzers with calibration support. Request prices and a quote.",
+  },
+  rion: {
+    title: "Rion India — Authorized Distributor, Sound Level Meters | UV Test Solutions",
+    description:
+      "Authorized Rion distributor in India. Class 1 sound level meters, vibration meters & acoustic calibrators with NABL-traceable calibration. Request a quote today.",
+  },
+};
+
 /** Keyword-rich meta title for a brand page. */
 export const brandTitle = (brand: Brand) =>
-  brand.slug === "wocen"
-    ? "Wocen Power Supplies India | Authorised Distributor — UV Test Solutions"
-    : `${shortName(brand)} India — Authorized Distributor & Price List | UV Test Solutions`;
+  brandSeoOverrides[brand.slug]?.title ??
+  `${shortName(brand)} India — Authorized Distributor & Price List | UV Test Solutions`;
 
 /** Meta description that reads like a real dealer listing. */
 export const brandDescription = (brand: Brand) => {
-  if (brand.slug === "wocen") return "Wocen programmable DC and AC power supplies in India from authorised distributor UV Test Solutions. Explore product series and request a quote.";
+  const override = brandSeoOverrides[brand.slug]?.description;
+  if (override) return override;
   const cats = (brand.categories ?? []).slice(0, 3).map((c) => c.title.toLowerCase());
   const catText = cats.length ? ` Buy ${cats.join(", ")} and more.` : "";
   return `Buy genuine ${brand.name} ${brand.specialty.toLowerCase()} in India from UV Test Solutions — authorized supplier with warranty, calibration and service support.${catText} Request a quote today.`.slice(
