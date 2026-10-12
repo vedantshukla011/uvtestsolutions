@@ -93,8 +93,8 @@ const UnitUTR2830E = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="UNI-T UTR2830E 100 kHz LCR Meter — Price ₹66,499 in India | UV Test Solutions"
-        description="Buy the UNI-T UTR2830E digital LCR meter (100 kHz, 0.05% accuracy, 4.3in TFT, LAN/USB/HANDLER) at ₹66,499 incl. taxes. Datasheet & user manual download. Supplier in India."
+        title="UTR2830 LCR Meter Price in India — UNI-T UTR2830E ₹66,499 | UV Test Solutions"
+        description="UNI-T UTR2830E (UTR2830 series) 100 kHz digital LCR meter at ₹66,499 incl. taxes. 0.05% accuracy, 4.3in TFT, LAN/USB/HANDLER. Datasheet & manual download. In stock in India."
         canonical="/products/unit-utr2830e-lcr-meter"
         type="product"
         keywords="UNI-T UTR2830E, UTR2830E LCR meter price India, 100 kHz LCR meter, digital LCR bridge, LCR meter 0.05% accuracy, UNI-T LCR meter dealer India, component testing LCR meter, impedance analyser, inductance capacitance resistance meter, ESR meter, DCR measurement, HANDLER interface LCR meter, production line LCR tester, UTR2830 series, buy LCR meter online India, UV Test Solutions"
