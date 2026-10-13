@@ -9,7 +9,7 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="About Us - UV Test Solutions"
-        description="UV Test Solutions — 15+ years supplying electronic measuring instruments. ISO 9001 certified, serving manufacturing, R&D and education across India."
+        description="UV Test Solutions — more than 30 years of experience with testing technology and service, supplying electronic measuring instruments. ISO 9001 certified, serving manufacturing, R&D and education across India."
         canonical="/about"
         keywords="UV Test Solutions, electronic instruments company, test equipment supplier India, measuring instruments dealer"
       />
@@ -52,7 +52,7 @@ const About = () => {
                   </h2>
                   <p className="text-muted-foreground mb-4 leading-relaxed">
                     UV Test Solutions is a leading provider of high-quality electronic measuring 
-                    instruments and testing equipment. With years of experience in the industry, 
+                    instruments and testing equipment. With more than 30 years of experience with testing technology and service, 
                     we specialize in delivering precision tools that meet the demanding requirements 
                     of modern technology.
                   </p>
@@ -106,7 +106,7 @@ const About = () => {
                     Director (Founder)
                   </p>
                   <p className="text-muted-foreground leading-relaxed max-w-2xl">
-                    With more than 15 years in the industry, Vinod Shukla brings extensive expertise 
+                    With more than 30 years of experience with testing technology and service, Vinod Shukla brings extensive expertise 
                     in industrial applications. His deep understanding of measurement technology and 
                     commitment to quality has been instrumental in establishing UV Test Solutions as 
                     a trusted partner for precision electronic measuring instruments.

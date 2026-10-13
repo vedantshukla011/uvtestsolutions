@@ -94,8 +94,8 @@ const ContactInfo = () => {
                 <Award className="w-5 h-5 text-accent" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-foreground">15+ Years</div>
-                <div className="text-sm text-muted-foreground">Industry Experience</div>
+                <div className="text-2xl font-bold text-foreground">30+ Years</div>
+                <div className="text-sm text-muted-foreground">Experience with Testing Technology &amp; Service</div>
               </div>
             </div>
 
