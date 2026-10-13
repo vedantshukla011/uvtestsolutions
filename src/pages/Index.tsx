@@ -34,7 +34,7 @@ const Index = () => {
         title="Multimeter, Clamp Meter & Oscilloscope Price India"
         description="Compare digital multimeter, clamp meter, oscilloscope, LCR meter and DC power supply prices in India. Genuine Fluke, Keysight, Rigol & UNI-T — get a quote today."
         canonical="/"
-        keywords="digital multimeter price, clamp meter price, oscilloscope price in india, digital storage oscilloscope price, lcr meter price, soldering station price, dc power supply price, programmable dc power supply, dc electronic load, function generator price, spectrum analyzer price, thermal imaging camera price, insulation tester price, ac power source, esd testing equipment, bench power supply india, test and measuring instruments, test and measuring instruments India, Fluke, Keysight, Tektronix, Rigol, Siglent, UNI-T, buy test equipment online India"
+        keywords="multimeter price in india, multimeter, vernier caliper price, digital vernier caliper, digital multimeter price, clamp meter price, oscilloscope price in india, digital storage oscilloscope price, lcr meter price, soldering station price, dc power supply price, programmable dc power supply, dc electronic load, function generator price, spectrum analyzer price, thermal imaging camera price, insulation tester price, ac power source, esd testing equipment, bench power supply india, test and measuring instruments, test and measuring instruments India, Fluke, Keysight, Tektronix, Rigol, Siglent, UNI-T, buy test equipment online India"
         jsonLd={[
           ...getHomepageJsonLd(),
           {

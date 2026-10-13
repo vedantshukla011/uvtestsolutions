@@ -6,8 +6,14 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blogMeta: Record<string, { title: string; description: string; file: string }> = {
+  "vernier-caliper-guide-india": {
+    title: "Vernier Caliper Price in India — Types, Least Count & Buying Guide",
+    description:
+      "Vernier caliper guide for India: manual vs dial vs digital, least count, how to read one, and genuine Mitutoyo & Insize calipers with calibration support.",
+    file: "/blogs/vernier-caliper-guide-india.html",
+  },
   "digital-multimeter-guide": {
-    title: "Digital Multimeter Guide: Uses, Features & Buying Tips 2026",
+    title: "Multimeter Price in India 2026 — Digital Multimeter Buying Guide",
     description:
       "Complete Digital Multimeter (DMM) guide — uses, features, applications and buying tips. Find the best multimeter price in India.",
     file: "/blogs/digital-multimeter-guide.html",
