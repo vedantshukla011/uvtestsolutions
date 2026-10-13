@@ -6,6 +6,15 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "vernier-caliper-guide-india",
+    title: "Vernier Caliper Price in India — Types, Least Count & Buying Guide",
+    description:
+      "Manual vs dial vs digital vernier calipers, how to calculate least count, how to read a vernier, and what to check before buying in India.",
+    date: "2026-10-13",
+    readTime: "5 min read",
+    tags: ["Vernier Caliper", "Mitutoyo", "Insize", "Precision Measuring"],
+  },
+  {
     slug: "digital-multimeter-guide",
     title: "Digital Multimeter: Complete Guide, Uses & Buying Tips (2026)",
     description:

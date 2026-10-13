@@ -132,6 +132,12 @@
 
   <!-- ===== Blog Posts ===== -->
   <url>
+    <loc>https://www.uvtestsolutions.com/blog/vernier-caliper-guide-india</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.uvtestsolutions.com/blog/esd-protection-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
