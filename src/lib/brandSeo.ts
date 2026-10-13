@@ -73,6 +73,11 @@ const brandSeoOverrides: Record<string, { title: string; description: string }> 
     description:
       "Authorized Metrel distributor in India. Electrical installation testers, PAT testers & power quality analyzers with calibration support. Request prices and a quote.",
   },
+  micsig: {
+    title: "Micsig India — Tablet Oscilloscopes, Differential & Current Probes Price | UV Test Solutions",
+    description:
+      "Micsig distributor in India. TO1104/TO2104 tablet oscilloscopes, DP differential probes, CP current probes, RCP Rogowski & MOIP optical isolated probes with prices. Get a quote.",
+  },
   rion: {
     title: "Rion India — Authorized Distributor, Sound Level Meters | UV Test Solutions",
     description:
@@ -112,7 +117,11 @@ export const brandKeywords = (brand: Brand) => {
   const cats = (brand.categories ?? []).map((c) => `${s} ${c.title.toLowerCase()} price`);
   const models = (brand.models ?? []).map((m) => `${s} ${m.id} price India`);
   const products = (brand.products ?? []).map((p) => `${s} ${p.model} price India`);
-  return [...base, ...cats, ...models.slice(0, 8), ...products.slice(0, 12)].join(", ");
+  const extra =
+    brand.slug === "micsig"
+      ? ["Micsig oscilloscope price India", "Micsig tablet oscilloscope", "Micsig probe price", "Micsig differential probe", "Micsig current probe", "Micsig Rogowski coil", "Micsig optical isolated probe", "SigOFIT probe India"]
+      : [];
+  return [...base, ...extra, ...cats, ...models.slice(0, 8), ...products.slice(0, brand.slug === "micsig" ? 40 : 12)].join(", ");
 };
 
 /** Product-category deep links relevant to the brand, for internal linking. */
@@ -209,7 +218,8 @@ export function getBrandDetailJsonLd(brand: Brand) {
         position: i + 1,
         item: {
           "@type": "Product",
-          name: `${shortName(brand)} ${p.model}`,
+          name: `${shortName(brand)} ${p.model} ${p.category}`,
+          ...(p.image ? { image: p.image } : {}),
           sku: p.model,
           mpn: p.model,
           category: p.category,
@@ -227,6 +237,25 @@ export function getBrandDetailJsonLd(brand: Brand) {
         },
       })),
     });
+    if (brand.models?.length) {
+      graph.push({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: `${shortName(brand)} oscilloscopes and instruments in India`,
+        numberOfItems: brand.models.length,
+        itemListElement: brand.models.map((m, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            "@type": "Product",
+            name: `${shortName(brand)} ${m.id} ${m.title}`,
+            sku: m.id,
+            description: m.desc,
+            brand: { "@type": "Brand", name: brand.name },
+          },
+        })),
+      });
+    }
   } else if (brand.models?.length) {
     graph.push({
       "@context": "https://schema.org",
