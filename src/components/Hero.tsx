@@ -78,7 +78,7 @@ const Hero = () => {
               </div>
               <div>
                 <div className="text-2xl font-bold text-foreground transition-colors duration-300 group-hover:text-primary">30+ Years</div>
-                <div className="text-sm text-muted-foreground font-medium">Experience with Testing Technology &amp; Service</div>
+                <div className="text-sm text-muted-foreground font-medium leading-snug" style={{ textWrap: "balance" }}>Experience with Testing Technology and Service</div>
               </div>
             </div>
             <div className="group flex items-center gap-3 bg-background/80 backdrop-blur-sm border border-border/50 rounded-xl p-4 shadow-lg cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-primary/50 hover:bg-background/95">

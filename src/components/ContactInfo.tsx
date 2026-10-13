@@ -95,7 +95,7 @@ const ContactInfo = () => {
               </div>
               <div>
                 <div className="text-2xl font-bold text-foreground">30+ Years</div>
-                <div className="text-sm text-muted-foreground">Experience with Testing Technology &amp; Service</div>
+                <div className="text-sm text-muted-foreground leading-snug" style={{ textWrap: "balance" }}>Experience with Testing Technology and Service</div>
               </div>
             </div>
 
