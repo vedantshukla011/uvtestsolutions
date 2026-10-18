@@ -137,6 +137,13 @@ const BrandDetail = () => {
               on-site application support. Share your model number or application and we will send
               you a {short} quote with current pricing and lead time.
             </p>
+            {brand.slug === "micsig" && (
+              <p className="mb-6">
+                <Link to="/blog/micsig-probes-price-india" className="text-primary font-medium underline underline-offset-4">
+                  Micsig probes price list &amp; selection guide — differential, current, Rogowski and SigOFIT
+                </Link>
+              </p>
+            )}
             {categoryLinks.length > 0 && (
               <>
                 <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">

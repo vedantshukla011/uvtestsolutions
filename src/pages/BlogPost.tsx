@@ -6,6 +6,12 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blogMeta: Record<string, { title: string; description: string; file: string }> = {
+  "micsig-probes-price-india": {
+    title: "Micsig Probes Price in India — Differential, Current, Rogowski & SigOFIT Guide",
+    description:
+      "Micsig probe price list for India: DP differential, CP current, RCP Rogowski and MOIP SigOFIT optical isolated probes, plus how to choose.",
+    file: "/blogs/micsig-probes-price-india.html",
+  },
   "vernier-caliper-guide-india": {
     title: "Vernier Caliper Price in India — Types, Least Count & Buying Guide",
     description:
