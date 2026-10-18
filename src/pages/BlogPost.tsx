@@ -6,6 +6,12 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const blogMeta: Record<string, { title: string; description: string; file: string }> = {
+  "wocen-power-supply-india": {
+    title: "Wocen Power Supply India — Bidirectional DC Power Supply Guide (WB5000, WB3000, HB)",
+    description:
+      "Wocen bidirectional and programmable DC power supplies in India — WB5000, WB3000, HB, EVWB and MP series explained, plus how to choose.",
+    file: "/blogs/wocen-power-supply-india.html",
+  },
   "micsig-probes-price-india": {
     title: "Micsig Probes Price in India — Differential, Current, Rogowski & SigOFIT Guide",
     description:

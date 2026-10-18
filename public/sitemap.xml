@@ -132,6 +132,12 @@
 
   <!-- ===== Blog Posts ===== -->
   <url>
+    <loc>https://www.uvtestsolutions.com/blog/wocen-power-supply-india</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.uvtestsolutions.com/blog/micsig-probes-price-india</loc>
     <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
