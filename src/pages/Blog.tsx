@@ -6,6 +6,15 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "micsig-probes-price-india",
+    title: "Micsig Probes Price in India — Differential, Current, Rogowski & SigOFIT Guide",
+    description:
+      "Every Micsig probe family explained — DP differential, CP current, RCP Rogowski and MOIP SigOFIT — with Indian prices and how to choose.",
+    date: "2026-10-18",
+    readTime: "5 min read",
+    tags: ["Micsig", "Differential Probe", "Current Probe", "Rogowski"],
+  },
+  {
     slug: "vernier-caliper-guide-india",
     title: "Vernier Caliper Price in India — Types, Least Count & Buying Guide",
     description:
