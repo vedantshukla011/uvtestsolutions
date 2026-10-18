@@ -144,6 +144,13 @@ const BrandDetail = () => {
                 </Link>
               </p>
             )}
+            {brand.slug === "wocen" && (
+              <p className="mb-6">
+                <Link to="/blog/wocen-power-supply-india" className="text-primary font-medium underline underline-offset-4">
+                  Wocen power supply guide — which bidirectional or programmable DC supply fits your test
+                </Link>
+              </p>
+            )}
             {categoryLinks.length > 0 && (
               <>
                 <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-3">

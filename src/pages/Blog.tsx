@@ -6,6 +6,15 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "wocen-power-supply-india",
+    title: "Wocen Power Supply India — Bidirectional DC Power Supply Guide",
+    description:
+      "Wocen WB5000, WB3000, HB, EVWB and MP series explained — which bidirectional or programmable DC power supply fits your EV, battery or inverter test.",
+    date: "2026-10-18",
+    readTime: "5 min read",
+    tags: ["Wocen", "Bidirectional DC Power Supply", "EV Testing", "Battery Simulator"],
+  },
+  {
     slug: "micsig-probes-price-india",
     title: "Micsig Probes Price in India — Differential, Current, Rogowski & SigOFIT Guide",
     description:
