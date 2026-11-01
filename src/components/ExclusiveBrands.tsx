@@ -20,27 +20,27 @@ const banners = [
     label: "DP Series · High Voltage Differential Probes",
   },
   {
-    src: cp2100BannerAsset.url,
+    src: hostedAsset(cp2100BannerAsset.url),
     alt: "Micsig CP2100 Series Low Frequency AC/DC Current Probe — 800 kHz to 2.5 MHz bandwidth, switchable 10A/100A ranges",
     label: "CP2100 Series · Low Frequency AC/DC Current Probes",
   },
   {
-    src: acp1000BannerAsset.url,
+    src: hostedAsset(acp1000BannerAsset.url),
     alt: "Micsig ACP1000 AC Current Probe — 10 Hz to 100 kHz, tests up to 1000 A with 1% accuracy clamp design",
     label: "ACP1000 · AC Current Probes",
   },
   {
-    src: cpBannerAsset.url,
+    src: hostedAsset(cpBannerAsset.url),
     alt: "Micsig CP Series High Frequency AC/DC Current Probe — up to 150 MHz bandwidth, dual-range small and high current probes",
     label: "CP Series · High Frequency AC/DC Current Probes",
   },
   {
-    src: moipBannerAsset.url,
+    src: hostedAsset(moipBannerAsset.url),
     alt: "Micsig MOIP Series SigOFIT Optical-fibre Isolated Probe — up to 180 dB CMRR, 200 MHz to 1 GHz, zero drift and calibration-free",
     label: "MOIP Series · SigOFIT Optical-fibre Isolated Probes",
   },
   {
-    src: rcpBannerAsset.url,
+    src: hostedAsset(rcpBannerAsset.url),
     alt: "Micsig RCP Series Rogowski AC Current Probe — up to 30 MHz bandwidth, 30–12000 Apk, slim 1.6 mm coil, customizable diameter",
     label: "RCP Series · Rogowski AC Current Probes",
   },
