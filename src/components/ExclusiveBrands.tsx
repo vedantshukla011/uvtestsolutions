@@ -10,9 +10,12 @@ import cpBannerAsset from "@/assets/micsig-banners/cp.jpg.asset.json";
 import moipBannerAsset from "@/assets/micsig-banners/moip.png.asset.json";
 import rcpBannerAsset from "@/assets/micsig-banners/rcp.png.asset.json";
 
+// Asset pointers serve relative URLs; resolve against the hosted origin like brandsData does.
+const hostedAsset = (url: string) => new URL(url, "https://uvtestsolutions.lovable.app").href;
+
 const banners = [
   {
-    src: dpBannerAsset.url,
+    src: hostedAsset(dpBannerAsset.url),
     alt: "Micsig DP Series High Voltage Differential Probe — up to 300 MHz bandwidth, 7000 Vpk differential voltage, dual-range switching, BNC interface",
     label: "DP Series · High Voltage Differential Probes",
   },
