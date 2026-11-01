@@ -75,10 +75,10 @@ const ExclusiveBrands = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-[3fr_2fr] gap-8 max-w-6xl mx-auto items-stretch">
+        <div className="grid lg:grid-cols-[3fr_2fr] gap-8 max-w-6xl mx-auto items-start">
           {/* Left — banner carousel */}
           <div
-            className="relative rounded-2xl overflow-hidden border border-border bg-card shadow-lg group/carousel"
+            className="relative aspect-[1920/950] rounded-2xl overflow-hidden border border-border bg-card shadow-lg group/carousel"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
           >
