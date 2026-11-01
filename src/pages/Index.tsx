@@ -7,6 +7,7 @@ import BrandsCarousel from "@/components/BrandsCarousel";
 import ProductCategories from "@/components/ProductCategories";
 import ATESolutions from "@/components/ATESolutions";
 import NewLaunches, { newLaunches } from "@/components/NewLaunches";
+import ExclusiveBrands from "@/components/ExclusiveBrands";
 import Features from "@/components/Features";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
