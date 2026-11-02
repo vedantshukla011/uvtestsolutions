@@ -9,6 +9,7 @@ import acp1000BannerAsset from "@/assets/micsig-banners/acp1000.png.asset.json";
 import cpBannerAsset from "@/assets/micsig-banners/cp.jpg.asset.json";
 import moipBannerAsset from "@/assets/micsig-banners/moip.png.asset.json";
 import rcpBannerAsset from "@/assets/micsig-banners/rcp.png.asset.json";
+import cp2100VideoAsset from "@/assets/micsig-banners/cp2100-product-video.mp4.asset.json";
 
 // Asset pointers serve relative URLs; resolve against the hosted origin like brandsData does.
 const hostedAsset = (url: string) => new URL(url, "https://uvtestsolutions.lovable.app").href;
@@ -185,6 +186,36 @@ const ExclusiveBrands = () => {
                 <Link to="/contact?product=Micsig%20Probe">Request Quote</Link>
               </Button>
             </div>
+          </div>
+        </div>
+
+        {/* Below the carousel — CP2100 product video */}
+        <div className="max-w-6xl mx-auto mt-10">
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-3">
+              <Play className="h-4 w-4" /> Product Video
+            </div>
+            <h3 className="text-2xl md:text-3xl font-bold">
+              Micsig CP2100 — Low Frequency AC/DC Current Probe in Action
+            </h3>
+            <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+              See the CP2100 up close — 800 kHz to 2.5 MHz bandwidth, switchable 10 A / 100 A ranges and BNC output for
+              oscilloscopes and power analysers.
+            </p>
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-border bg-card shadow-lg">
+            <video
+              src={hostedAsset(cp2100VideoAsset.url)}
+              poster={hostedAsset(cp2100BannerAsset.url)}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              preload="metadata"
+              aria-label="Micsig CP2100 Low Frequency AC/DC Current Probe product demonstration video"
+              className="w-full aspect-video bg-background"
+            />
           </div>
         </div>
       </div>
