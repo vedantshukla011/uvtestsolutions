@@ -26,6 +26,8 @@ import UnitUTR2830E from "./pages/UnitUTR2830E";
 import UnitUAP1000A from "./pages/UnitUAP1000A";
 import UnitUTL8211Plus from "./pages/UnitUTL8211Plus";
 import EmcsosinSurgeGenerators from "./pages/EmcsosinSurgeGenerators";
+import MicsigDifferentialProbes from "./pages/MicsigDifferentialProbes";
+import MicsigCurrentProbes from "./pages/MicsigCurrentProbes";
 import Brands from "./pages/Brands";
 import BrandDetail from "./pages/BrandDetail";
 
@@ -65,6 +67,8 @@ const App = () => (
             <Route path="/products/unit-uap1000a-ac-power-source" element={<UnitUAP1000A />} />
             <Route path="/products/unit-utl8211plus-dc-electronic-load" element={<UnitUTL8211Plus />} />
             <Route path="/products/emcsosin-surge-generators" element={<EmcsosinSurgeGenerators />} />
+            <Route path="/products/micsig-high-voltage-differential-probe" element={<MicsigDifferentialProbes />} />
+            <Route path="/products/micsig-acdc-current-probe" element={<MicsigCurrentProbes />} />
             <Route path="/brands" element={<Brands />} />
             <Route path="/brands/:slug" element={<BrandDetail />} />
             
