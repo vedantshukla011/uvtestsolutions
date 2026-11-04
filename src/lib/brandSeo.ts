@@ -74,9 +74,9 @@ const brandSeoOverrides: Record<string, { title: string; description: string }> 
       "Authorized Metrel distributor in India. Electrical installation testers, PAT testers & power quality analyzers with calibration support. Request prices and a quote.",
   },
   micsig: {
-    title: "Micsig India — Tablet Oscilloscopes, Differential & Current Probes Price | UV Test Solutions",
+    title: "Micsig India — Tablet Oscilloscopes, High Voltage Differential & Current Probes Price | UV Test Solutions",
     description:
-      "Micsig distributor in India. TO1104/TO2104 tablet oscilloscopes, DP differential probes, CP current probes, RCP Rogowski & MOIP optical isolated probes with prices. Get a quote.",
+      "Authorised Micsig distributor in India. High voltage differential probes (DP7000/DP7002), AC/DC current probes (CP2100/CP series), Rogowski & MOIP probes, tablet oscilloscopes — prices excl. GST. Get a quote.",
   },
   rion: {
     title: "Rion India — Authorized Distributor, Sound Level Meters | UV Test Solutions",
@@ -119,7 +119,7 @@ export const brandKeywords = (brand: Brand) => {
   const products = (brand.products ?? []).map((p) => `${s} ${p.model} price India`);
   const extra =
     brand.slug === "micsig"
-      ? ["Micsig oscilloscope price India", "Micsig tablet oscilloscope", "Micsig probe price", "Micsig differential probe", "Micsig current probe", "Micsig Rogowski coil", "Micsig optical isolated probe", "SigOFIT probe India"]
+      ? ["Micsig oscilloscope price India", "Micsig tablet oscilloscope", "Micsig probe price", "Micsig differential probe", "Micsig high voltage differential probe", "high voltage differential probe price India", "differential probe for oscilloscope", "Micsig current probe", "AC/DC current probe price India", "oscilloscope current probe India", "Micsig Rogowski coil", "Rogowski current probe India", "Micsig optical isolated probe", "SigOFIT probe India"]
       : [];
   return [...base, ...extra, ...cats, ...models.slice(0, 8), ...products.slice(0, brand.slug === "micsig" ? 40 : 12)].join(", ");
 };
