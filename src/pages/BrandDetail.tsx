@@ -138,11 +138,23 @@ const BrandDetail = () => {
               you a {short} quote with current pricing and lead time.
             </p>
             {brand.slug === "micsig" && (
-              <p className="mb-6">
-                <Link to="/blog/micsig-probes-price-india" className="text-primary font-medium underline underline-offset-4">
-                  Micsig probes price list &amp; selection guide — differential, current, Rogowski and SigOFIT
-                </Link>
-              </p>
+              <div className="mb-6">
+                <p>
+                  <Link to="/products/micsig-high-voltage-differential-probe" className="text-primary font-medium underline underline-offset-4">
+                    Micsig high voltage differential probes — DP series price &amp; specifications
+                  </Link>
+                </p>
+                <p className="mt-2">
+                  <Link to="/products/micsig-acdc-current-probe" className="text-primary font-medium underline underline-offset-4">
+                    Micsig AC/DC current probes — CP2100, CP series and RCP Rogowski price &amp; specifications
+                  </Link>
+                </p>
+                <p className="mt-2">
+                  <Link to="/blog/micsig-probes-price-india" className="text-primary font-medium underline underline-offset-4">
+                    Micsig probes price list &amp; selection guide — differential, current, Rogowski and SigOFIT
+                  </Link>
+                </p>
+              </div>
             )}
             {brand.slug === "wocen" && (
               <p className="mb-6">
