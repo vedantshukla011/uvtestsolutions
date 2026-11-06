@@ -23,9 +23,9 @@ const imageFor = (category: string) =>
   );
 
 const PAGE_URL = "https://www.uvtestsolutions.com/products/micsig-acdc-current-probe";
-const PAGE_TITLE = "Micsig AC/DC Current Probes India — CP2100, CP Series, Rogowski Price | UV Test Solutions";
+const PAGE_TITLE = "Micsig AC/DC Current Probes India | CP2100 & CP Series";
 const PAGE_DESC =
-  "Buy Micsig AC/DC current probes in India. CP2100 low-frequency, CP3008/CP1003B high-frequency and RCP Rogowski coils — 800 kHz to 30 MHz, up to 12000 Apk. Authorised Micsig distributor — request a quote.";
+  "Micsig low- and high-frequency AC/DC current probes in India: CP2100, CP Series and RCP Rogowski. Compare bandwidths up to 100 MHz and request a quote from an authorised distributor.";
 
 const currentGroups = [
   {
@@ -139,7 +139,7 @@ const MicsigCurrentProbes = () => {
         description={PAGE_DESC}
         canonical="/products/micsig-acdc-current-probe"
         type="product"
-        keywords="current probe, AC DC current probe, current probe price India, oscilloscope current probe, Micsig current probe, CP2100, CP2100A, CP2100B, CP3008, CP1510, CP1003B, CP503B, Rogowski coil probe, Rogowski current transformer, current clamp for oscilloscope, wideband current probe India, current probe dealer India, buy current probe online India, Micsig India distributor, UV Test Solutions"
+        keywords="Micsig current probe price India, low frequency AC/DC current probe, high frequency AC/DC current probe, CP2100 price, CP2100A, CP2100B, CP3008, CP1510, CP1003B, CP503B, Rogowski current probe, Rogowski coil probe for oscilloscope, current probe India, wideband current probe, authorised Micsig distributor India, UV Test Solutions"
         jsonLd={[itemListJsonLd, breadcrumb]}
       />
       <Header />

@@ -14,9 +14,9 @@ import dpImage from "@/assets/products/micsig/dp.png.asset.json";
 const productImage = assetUrl(dpImage.url);
 
 const PAGE_URL = "https://www.uvtestsolutions.com/products/micsig-high-voltage-differential-probe";
-const PAGE_TITLE = "Micsig High Voltage Differential Probes India — DP Series Price & Specs | UV Test Solutions";
+const PAGE_TITLE = "Micsig Differential Probe Price India | DP7000 7000V | UV Test Solutions";
 const PAGE_DESC =
-  "Buy Micsig high voltage differential probes in India. DP7000, DP7002, DP3000, DP1500, DP700 series — up to 7000Vpk, 200 MHz, from ₹25,350 excl. GST. Authorised Micsig distributor — request a quote.";
+  "Micsig high-voltage differential probe prices and specs in India: DP7002, DP7000, DP3002, DP3000 and more, up to 7000 Vpk and 200 MHz. Authorised distributor; request a quote.";
 
 const dpProducts = micsigProbeProducts.filter((p) => p.category === "High-voltage differential probe");
 

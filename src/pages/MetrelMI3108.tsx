@@ -69,11 +69,11 @@ const MetrelMI3108 = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Metrel MI 3108 EurotestPV | PV & Installation Tester India"
-        description="Metrel MI 3108 EurotestPV — photovoltaic and electrical installation safety tester. I-V curve to 1000 V/15 A, RCD AC/A/B, insulation, loop, earth — EN 61557 / 62446 / 61829."
+        title="Metrel MI 3108 EurotestPV Price & Specs | India"
+        description="Metrel MI 3108 EurotestPV price and specifications in India — photovoltaic and installation tester for EN 62446 and EN 61557. I-V tracing to 1000 V/15 A. Download the datasheet or request a quote."
         canonical="/products/metrel-mi3108-eurotestpv"
         type="product"
-        keywords="Metrel MI 3108, EurotestPV, photovoltaic tester India, PV installation tester, I-V curve tracer, EN 62446 tester, EN 61557 installation tester, solar PV commissioning tester, RCD type B tester, insulation resistance tester 1kV, buy Metrel India"
+        keywords="Metrel MI 3108 price India, MI3108 EurotestPV, EurotestPV price, photovoltaic tester India, solar PV installation tester, I-V curve tracer, EN 62446 tester, EN 61557 installation tester, PV commissioning tester, RCD type B tester, Metrel tester quote India"
         jsonLd={[productJsonLd, breadcrumb]}
       />
       <Header />
