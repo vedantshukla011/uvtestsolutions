@@ -163,6 +163,7 @@ const ExclusiveBrands = () => {
               technology — high-voltage differential, AC/DC current, Rogowski coil and SigOFIT optical-fibre isolated
               probes — for power electronics, inverters, EV and high-voltage laboratories.
             </p>
+            <p className="text-sm font-semibold text-primary mb-4">Authorised Micsig distributor in India</p>
             <ul className="space-y-1.5 mb-6 text-sm">
               <li className="flex items-start gap-2">
                 <Star className="h-4 w-4 text-accent mt-0.5 shrink-0" />
@@ -186,6 +187,17 @@ const ExclusiveBrands = () => {
               <Button asChild variant="outline" className="gap-2">
                 <Link to="/contact?product=Micsig%20Probe">Request Quote</Link>
               </Button>
+            </div>
+            <div className="mt-5 border-t border-border pt-4">
+              <p className="text-sm font-semibold mb-2">Shop Micsig probes</p>
+              <div className="flex flex-col items-start gap-2 text-sm">
+                <Link to="/products/micsig-high-voltage-differential-probe" className="text-primary underline underline-offset-4 hover:text-primary/80">
+                  High-voltage differential probes — DP Series
+                </Link>
+                <Link to="/products/micsig-acdc-current-probe" className="text-primary underline underline-offset-4 hover:text-primary/80">
+                  Low- and high-frequency AC/DC current probes — CP &amp; RCP Series
+                </Link>
+              </div>
             </div>
           </div>
         </div>

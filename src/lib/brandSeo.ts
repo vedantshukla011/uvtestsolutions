@@ -59,9 +59,9 @@ const brandSeoOverrides: Record<string, { title: string; description: string }> 
       "Authorized Siglent distributor in India. SDS oscilloscopes, SDG generators & spectrum analyzers with prices, warranty & support. 30+ models listed — request a quote.",
   },
   itech: {
-    title: "ITECH India — Authorized Distributor, DC Loads & Power Supplies | UV Test Solutions",
+    title: "ITECH Power Supply India | DC Supplies & Loads | UV Test Solutions",
     description:
-      "Authorized ITECH distributor in India. Programmable DC power supplies, electronic loads & battery test systems with warranty and application support. Request a quote.",
+      "Explore ITECH programmable DC power supplies, electronic loads and regenerative bidirectional sources for battery, EV and power-electronics testing. Request a quote in India.",
   },
   htc: {
     title: "HTC Instruments India — Authorized Distributor & Price List | UV Test Solutions",
@@ -74,9 +74,9 @@ const brandSeoOverrides: Record<string, { title: string; description: string }> 
       "Authorized Metrel distributor in India. Electrical installation testers, PAT testers & power quality analyzers with calibration support. Request prices and a quote.",
   },
   micsig: {
-    title: "Micsig India — Tablet Oscilloscopes, High Voltage Differential & Current Probes Price | UV Test Solutions",
+    title: "Micsig Probes India | Differential, AC/DC & SigOFIT | UV Test Solutions",
     description:
-      "Authorised Micsig distributor in India. High voltage differential probes (DP7000/DP7002), AC/DC current probes (CP2100/CP series), Rogowski & MOIP probes, tablet oscilloscopes — prices excl. GST. Get a quote.",
+      "Authorised Micsig distributor in India. DP high-voltage differential, CP low/high-frequency AC/DC current, RCP Rogowski and SigOFIT MOIP probes. View specs and request a quote.",
   },
   rion: {
     title: "Rion India — Authorized Distributor, Sound Level Meters | UV Test Solutions",
