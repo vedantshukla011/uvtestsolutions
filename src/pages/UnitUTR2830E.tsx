@@ -93,7 +93,7 @@ const UnitUTR2830E = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="UNI-T UTR2830E LCR Meter Price India | ₹66,499 incl. Tax"
+        title="UTR2830E LCR Meter Price India ₹66,499"
         description="UTR2830E / UTR2830 100 kHz digital LCR meter with 0.05% accuracy and LAN, USB and HANDLER. ₹66,499 incl. taxes. Download the datasheet and manual or request a UNI-T quote in India."
         canonical="/products/unit-utr2830e-lcr-meter"
         type="product"

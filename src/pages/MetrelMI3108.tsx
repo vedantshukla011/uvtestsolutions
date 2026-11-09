@@ -69,7 +69,7 @@ const MetrelMI3108 = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Metrel MI 3108 EurotestPV Price & Specs | India"
+        title="Metrel MI 3108 EurotestPV Price India"
         description="Metrel MI 3108 EurotestPV price and specifications in India — photovoltaic and installation tester for EN 62446 and EN 61557. I-V tracing to 1000 V/15 A. Download the datasheet or request a quote."
         canonical="/products/metrel-mi3108-eurotestpv"
         type="product"
