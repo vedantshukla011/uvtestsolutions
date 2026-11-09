@@ -59,7 +59,7 @@ const brandSeoOverrides: Record<string, { title: string; description: string }> 
       "Authorized Siglent distributor in India. SDS oscilloscopes, SDG generators & spectrum analyzers with prices, warranty & support. 30+ models listed — request a quote.",
   },
   itech: {
-    title: "ITECH Power Supply India | DC Supplies & Loads | UV Test Solutions",
+    title: "ITECH Power Supply India | Programmable DC & Electronic Loads",
     description:
       "Explore ITECH programmable DC power supplies, electronic loads and regenerative bidirectional sources for battery, EV and power-electronics testing. Request a quote in India.",
   },
